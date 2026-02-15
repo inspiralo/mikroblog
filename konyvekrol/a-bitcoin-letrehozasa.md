@@ -16,4 +16,4 @@ A részletes, hosszabb bemutatót itt találod:
 
 👉 [Bitcoin létrehozása](https://inspirator.blog/bitcoin-letrehozasa/)
 
-Ha érdekel, hogyan indult el a világ első valódi digitális pénze, ez a könyv kötelező olvasmány.
+Ha érdekel, hogyan indult el a világ első valódi digitális pénze, ez a könyv kötelező olvasmány. Ez olyan könybemutatóm amiről kiindulva a könyvet teljes egészében megtalálhatod PDF formában, csak olvass figyelmesen.
