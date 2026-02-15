@@ -1,5 +1,5 @@
 ---
-Címkék: [könyvek, könyvajánló, olvasnivaló]
+Relevancia: [könyvek, könyvajánló, olvasnivaló]
 ---
 
 ## 📚Könyvekről
