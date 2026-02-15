@@ -1,5 +1,5 @@
 ---
-tags: [konyvek, konyvajanlo, olvasnivalo]
+Címkék: [könyvek, könyvajánló, olvasnivaló]
 ---
 
 ## 📚Könyvekről
