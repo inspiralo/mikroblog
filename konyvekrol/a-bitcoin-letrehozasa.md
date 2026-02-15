@@ -1,5 +1,5 @@
 ---
-Címkék: [Bitcoin, könyv, bemutató, könyvajanló]
+Relevancia: [Bitcoin, könyv, bemutató, könyvajanló]
 ---
 
 ## A Bitcoin létrehozása 
