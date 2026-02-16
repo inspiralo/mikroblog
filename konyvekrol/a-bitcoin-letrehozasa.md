@@ -1,6 +1,8 @@
 ---
-Relevancia: [Bitcoin, könyv, bemutató, könyvajanló]
+title: "Bitcoin létrehozása"
+tags: [Bitcoin, könyv, bemutató, könyvajánló, kripto ismeretek]
 ---
+
 
 ## A Bitcoin létrehozása 
 
