@@ -2,7 +2,7 @@
 title: "Inspiráló mikroblog"
 ---
 
-# Inspiráló mikroblog
+# Inspiráló mikroblogom
 
 Ez a mikroblog különböző témák rövid, tömör, gondolatébresztő bejegyzéseit gyűjti össze.  
 Célom, hogy értékes ismeretekhez juttassalak. A bonyolultabb dolgokat rendszerint nagyobb erőforráskezelés árán lehet csak az érdeklődők elé tárni. Éppen ezért használom eme mikro gondolataimat, amelyek a komplexebb, kifejtősebb tartalmaim felé fognak navigálni. Talán jobb ez így, mert statikusan bejárható, az emberek gyorsabban érik el, s természetesen a keresőgépeknek is erőforrást kímélő feldolgozási támpont, hogy a ki szemfüles 🤖 **AI ügynökökről** már ne is beszéljek 😉
