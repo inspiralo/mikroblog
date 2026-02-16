@@ -10,17 +10,16 @@ A cél a rendszerek, mintázatok, dilemmák és összefüggések feltárása —
 ## Témák
 
 {% comment %}
-  1) Összegyűjtjük az összes mappanevet a site.pages alapján
-  2) Kiszűrjük a gyökérfájlokat
-  3) Kiszűrjük a duplikációkat
-  4) Csak azokat listázzuk, ahol van index.md
+  A /docs alatti mappákból gyűjtjük ki a témákat.
+  A struktúra így néz ki:
+  docs/<téma>/index.md
 {% endcomment %}
 
 {% assign section_paths = "" | split: "" %}
 
 {% for p in site.pages %}
   {% assign parts = p.path | split: "/" %}
-  {% if parts.size > 1 %}
+  {% if parts.size > 2 and parts[0] == "docs" %}
     {% assign section = parts[1] %}
     {% unless section_paths contains section %}
       {% assign section_paths = section_paths | push: section %}
@@ -29,7 +28,7 @@ A cél a rendszerek, mintázatok, dilemmák és összefüggések feltárása —
 {% endfor %}
 
 {% for section in section_paths %}
-  {% assign index_path = "/docs/" | append: section | append: "/index.md" %}
+  {% assign index_path = "docs/" | append: section | append: "/index.md" %}
   {% assign index_page = site.pages | where: "path", index_path | first %}
   {% if index_page %}
 - **[{{ index_page.title }}]({{ index_page.url | relative_url }})**
@@ -38,7 +37,7 @@ A cél a rendszerek, mintázatok, dilemmák és összefüggések feltárása —
 
 ---
 
-## Legfrissebb mikro bejegyzéseimből 👇
+## Legutóbbi bejegyzések
 
 {% assign recent = site.pages 
   | where_exp: "p", "p.name != 'index.md'"
