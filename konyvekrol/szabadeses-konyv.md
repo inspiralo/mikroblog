@@ -1,5 +1,11 @@
+---
+Relevancia: [Szabadesés, könyv, bemutató, könyvajanló, Imre Regina Mária]
+---
+
 ### Szabadesés – Losonctól Kaliforniáig
 
 Egy regény, amely egyszerre személyes és társadalmi zuhanás: Losonctól egészen Kaliforniáig követjük végig, hogyan válik az „amerikai álom” ígérete egyre inkább a kapitalizmus finoman csomagolt csapdájává. A könyv nem kiált, nem moralizál — csak megmutatja, hogyan darálja be az egyént egy rendszer, amely szabadságot ígér, de gyakran csak a túl nagyoknak engedi meg a repülést.
+
+Ha végigolvasod a könyvet, talán Te megadad is véleményt alkothatsz arról, hogy az „*információ hatalom*” világkép az biztonságos, kellemes -e vagy sem. 
 
 👉 Részletes bemutató: [Szabadesés könyv – Losonctól Kaliforniáig](https://inspirator.blog/szabadeses-losonctol-kaliforniaig/)
