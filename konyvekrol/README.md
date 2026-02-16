@@ -9,4 +9,3 @@ Itt fogom gyűjteni a könyvbemutatókat, ajánlókat és rövid gondolatokat az
 
 ℹ️ Ezeket a tartalmakat itt találod:
 [📚 Könyvekről mappa](https://github.com/inspiralo/mikroblog/tree/main/docs/konyvekrol)
-
