@@ -8,5 +8,5 @@ Apró posztok formájában szeretnélek informálni érdekes könyvekről. Persz
 Itt fogom gyűjteni a könyvbemutatókat, ajánlókat és rövid gondolatokat azokról a művekről, amelyek valamiért megérintettek.
 
 ℹ️ Ezeket a tartalmakat itt találod:
-[📚 Könyvekről mappa](https://github.com/inspiralo/mikroblog/tree/main/konyvekrol)
+[📚 Könyvekről mappa](https://github.com/inspiralo/mikroblog/tree/main/docs/konyvekrol)
 
