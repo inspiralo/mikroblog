@@ -21,7 +21,7 @@ A cél a rendszerek, mintázatok, dilemmák és összefüggések feltárása —
 {% for p in site.pages %}
   {% assign parts = p.path | split: "/" %}
   {% if parts.size > 1 %}
-    {% assign section = parts[0] %}
+    {% assign section = parts[1] %}
     {% unless section_paths contains section %}
       {% assign section_paths = section_paths | push: section %}
     {% endunless %}
@@ -29,7 +29,7 @@ A cél a rendszerek, mintázatok, dilemmák és összefüggések feltárása —
 {% endfor %}
 
 {% for section in section_paths %}
-  {% assign index_path = section | append: "/index.md" %}
+  {% assign index_path = "/docs/" | append: section | append: "/index.md" %}
   {% assign index_page = site.pages | where: "path", index_path | first %}
   {% if index_page %}
 - **[{{ index_page.title }}]({{ index_page.url | relative_url }})**
@@ -38,11 +38,17 @@ A cél a rendszerek, mintázatok, dilemmák és összefüggések feltárása —
 
 ---
 
-## Legutóbbi bejegyzések
+## Legfrissebb mikro bejegyzéseimből 👇
 
-{% assign recent = site.pages | sort: "date" | reverse %}
+{% assign recent = site.pages 
+  | where_exp: "p", "p.name != 'index.md'"
+  | sort: "date"
+  | reverse
+  | slice: 0, 10
+%}
+
 {% for file in recent %}
-  {% if file.title and file.name != "index.md" %}
+  {% if file.title %}
 - **[{{ file.title }}]({{ file.url | relative_url }})**
   {% endif %}
 {% endfor %}
