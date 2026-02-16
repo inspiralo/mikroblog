@@ -1,5 +1,6 @@
 ---
-Relevancia: [Szabadesés, könyv, bemutató, könyvajanló, Imre Regina Mária]
+title: "Szabadesés – Losonctól Kaliforniáig"
+tags: [Szabadesés, könyv, bemutató, könyvajánló, Imre Regina Mária]
 ---
 
 ### Szabadesés – Losonctól Kaliforniáig
