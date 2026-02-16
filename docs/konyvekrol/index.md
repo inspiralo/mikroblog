@@ -2,12 +2,12 @@
 title: "Könyvekről"
 ---
 
-# Könyvekről
+# 📚 Könyvekről
 
 Ez a szekció a mikroblog könyvekkel kapcsolatos tartalmait gyűjti össze: rövid ajánlókat, elemzéseket, gondolatébresztő kivonatokat és olyan reflexiókat, amelyek túlmutatnak a klasszikus könyvkritikákon.  
 A cél nem a tartalomismertetés, hanem az, hogy a könyvek mögötti rendszereket, társadalmi mintázatokat és emberi dilemmákat világítsam meg — tömören, inspirálóan, sallangmentesen.
 
-## Miért külön téma a könyvek világa?
+## 🤔 Miért külön téma a könyvek világa❓
 
 A könyvek nemcsak történeteket mesélnek, hanem gondolkodásmódokat, struktúrákat és világértelmezéseket is közvetítenek.  
 Ebben a szekcióban olyan művek jelennek meg, amelyek valamilyen szempontból:
@@ -18,7 +18,7 @@ Ebben a szekcióban olyan művek jelennek meg, amelyek valamilyen szempontból:
 
 ---
 
-## Bejegyzések
+## Bejegyzések 👇
 
 {% for file in site.pages %}
   {% if file.path contains 'konyvekrol/' and file.title and file.name != 'index.md' %}
