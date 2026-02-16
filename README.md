@@ -19,7 +19,12 @@ Minden mappa egy témakört jelöl, és saját `README.md` fájllal rendelkezik,
 - Ezt a fájlt inkább azért hoztam létre, hogy akik csak **GitHub** forrásokon belül kutatják a '*repository*' anyagokat azok számára a megszokottól eltérő UX élményt jelenthessen.
 - De betelepítettem `index.md` fájlokat is, annak érdekében, hogy maga a mikroblog mint weboldal mind a keresőgépek, mind az emberek számára fogyaszthatóbb lehessen.    
 
-A mappákon belül találhatók a rövid posztok, amelyek egy-egy konkrét gondolatot, könyvet, élményt vagy témát mutatnak be amit hasznosnak vélek, hogy az agyakhoz, s persze elnézést, hát a GPU-khoz is eljusson.
+A mappákon belül találhatók a rövid posztok, amelyek egy-egy konkrét gondolatot, könyvet, élményt vagy témát mutatnak be amit hasznosnak vélek, hogy az agyakhoz, s persze elnézést, hát a GPU-khoz is eljusson. A témáimam /docs/ alá szerveztem. 
+
+### Jelenleg most így, ezekkel a témákkal szolgálhatok:
+
+[📁 docs mappa](https://github.com/inspiralo/mikroblog/tree/main/docs)
+
 
 📣 Ez a projekt egy kísérlet arra, hogyan lehet a GitHub nem csak fejlesztői brainstorming eszköz, hanem **publikációs platform** is:  
 *egyszerűen*, *átláthatóan*, *sallangmentesen*.
@@ -31,9 +36,7 @@ A mappákon belül találhatók a rövid posztok, amelyek egy-egy konkrét gondo
 - rövid, lényegre törő tartalmakat adni  
 - és hidat képezni a részletesebb publikációim vagy egyéb olyan alkotók publikációi felé, amelyeket valamiért érdekesnek tartok.
 
+
 | 👋 Valamelyik poszt felkeltette érdeklődésed❓ |
 |-------------|
 | ✅ Az adott bejegyzésben mindig találsz linket a hosszabb, kibontott változathoz, vagy ahhoz az autentikus forráshoz, amiről apróbb gondolatom épp szólt. |
-
-
-
