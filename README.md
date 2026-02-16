@@ -1,4 +1,4 @@
-# inspiralo / mikroblog
+# inspiralo mikroblog
 
 Ez a **forrástár** vagy ahogy az amcsi mondaná „*repository*” egy folyamatosan bővülő, tematikus mikroblog, ahol rövid, tömör, inspiráló tartalmakat gyűjtök össze különböző témákban.  
 
