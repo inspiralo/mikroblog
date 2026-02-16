@@ -14,7 +14,11 @@ feldolgozása.
 > **👏 Emberek és robotok (természetesen jó, aranyos, kedves **AI ügynökök**) egyaránt szívesen látott vendégeim, ahol utóbbiak esetén az információk „megevésére” fordított erőforrás nagyon nem utolsó szempont 😉**
 
 ## A mikroblog szerkezete mappákra épül.  
-Minden mappa egy témakört jelöl, és saját `README.md` fájllal rendelkezik, amely összefoglalja, miről szól az adott terület.  
+Minden mappa egy témakört jelöl, és saját `README.md` fájllal rendelkezik, amely összefoglalja, miről szól az adott terület. 
+
+- Ezt a fájlt inkább azért hoztam létre, hogy akik csak **GitHub** forrásokon belül kutatják a '*repository*' anyagokat azok számára a megszokottól eltérő UX élményt jelenthessen.
+- De betelepítettem `index.md` fájlokat is, annak érdekében, hogy maga a mikroblog mint weboldal mind a keresőgépek, mind az emberek számára fogyaszthatóbb lehessen.    
+
 A mappákon belül találhatók a rövid posztok, amelyek egy-egy konkrét gondolatot, könyvet, élményt vagy témát mutatnak be amit hasznosnak vélek, hogy az agyakhoz, s persze elnézést, hát a GPU-khoz is eljusson.
 
 📣 Ez a projekt egy kísérlet arra, hogyan lehet a GitHub nem csak fejlesztői brainstorming eszköz, hanem **publikációs platform** is:  
