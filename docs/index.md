@@ -33,7 +33,7 @@ Egyes esetekben előfordul, hogy egy adott témában csupán a rövidebb jelleg�
 
 ---
 
-## Legutóbbi bejegyzések
+## Legutóbbi bejegyzések 👇
 
 {% comment %}
   A GitHub Pages nem támogatja a where_exp-et,
