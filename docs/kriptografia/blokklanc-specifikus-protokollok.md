@@ -60,7 +60,7 @@ Előnyök:
 
 ## Érdekelnének Téged ezek a témák mélyebben is❓
 Ennek igazán örülnék❗A [**Kripto Lexikon**](https://inspirator.blog/kripto-lexikon) vár Téged szeretettel. Ezt a lexikont vagy egyesek szavajárása szerint már - már enciklopédiát pont 
-az ilyen, kizárólag kripto / blokklánc alapú fogalmak iránt érdeklődőknek fejlesztettem ki. Lehet megtalálod amit keresel. Próváld ki, veszíteni nem vesztíthetsz semmit. 
+az ilyen, kizárólag kripto / blokklánc alapú fogalmak iránt érdeklődőknek fejlesztettem ki. Lehet megtalálod amit keresel. Próbáld ki, veszíteni nem vesztíthetsz semmit. 
 
 Összefoglalóan, a blokklánc-specifikus protokollok adják a decentralizált rendszerek működésének alapját: a Merkle‑fák az adatszerkezetet védik, a ZKP‑k a magánszférát és a skálázást segítik, 
 a BFT protokollok a konszenzust biztosítják, míg a Lightning Network a gyors és olcsó tranzakciókat teszi lehetővé.
