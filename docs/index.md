@@ -1,6 +1,3 @@
-<script src="/mikroblog/docs/back.js"></script>
-
-
 ---
 title: "Inspiráló mikroblog"
 ---
