@@ -29,7 +29,7 @@ Egyes esetekben előfordul, hogy egy adott témában csupán a rövidebb jelleg�
 
 <div class="sections">
 {% for page in sections %}
-📁 **[{{ page.title }}]({{ page.url | relative_url }})**  
+<p>📁 <strong><a href="{{ page.url | relative_url }}">{{ page.title }}</a></strong></p>
 {% endfor %}
 </div>
 
