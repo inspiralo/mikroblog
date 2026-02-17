@@ -33,7 +33,6 @@ Egyes esetekben előfordul, hogy egy adott témában csupán a rövidebb jelleg�
 {% endfor %}
 </div>
 
-
 ---
 
 ![Inspiráló mikroblog köszöntő](https://github.com/inspiralo/mikroblog/blob/main/docs/Inspirator-mikroblog-GitHub-koszonetnyilvanitas-a-latogatoknak.webp?raw=true)
