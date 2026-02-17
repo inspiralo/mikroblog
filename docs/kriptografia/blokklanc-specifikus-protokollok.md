@@ -1,3 +1,9 @@
+---
+title: "Blokkláncs specifikus protokollok"
+tags: [blokklánc, blokklánc-protokollok, merkle-tree, zkp, zk-snark, zk-stark, bft, tendermint, lightning-network, bitcoin, layer2, kriptográfia, decentralizáció, konszenzus, skálázás]
+---
+
+
 # Blokklánc-specifikus protokollok
 
 A blokkláncok működésének alapját olyan speciális kriptográfiai protokollok adják, amelyek biztosítják az adatok változtathatatlanságát, a tranzakciók hitelességét és a hálózat konszenzusát. Ezek a protokollok különböző szerepeket töltenek be: egyesek az adatszerkezetet védik, mások a konszenzust biztosítják, míg vannak olyanok is, amelyek a skálázást vagy a magánszférát erősítik.
