@@ -1,3 +1,5 @@
+{% include backlink.html %}
+
 ---
 title: "Inspiráló mikroblog"
 ---
