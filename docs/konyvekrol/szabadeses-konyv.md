@@ -1,5 +1,6 @@
 ---
 title: "Szabadesés – Losonctól Kaliforniáig"
+layout: post
 tags: [Szabadesés, könyv, bemutató, könyvajánló, Imre Regina Mária]
 ---
 
