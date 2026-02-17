@@ -1,6 +1,5 @@
 ---
 title: "Hitelesítési és kulcskezelési protokollok"
-layout: post
 tags: [hitelesítési-protokollok, kulcskezelés, smime, srtp, eap-tls, fido2, webauthn, wifi-biztonsag, voip-biztonság, email-biztonság, jelszómentes-hitelesítés, digitális-biztonság, kriptográfia]
 ---
 
