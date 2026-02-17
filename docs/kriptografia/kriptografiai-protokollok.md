@@ -1,3 +1,8 @@
+---
+title: "Kriptográfiai protokollok"
+tags: [kriptográfia, kriptografiai-protokollok, tls, ssl, https, hsts, ssh, ipsec, vpn, pgp, gpg, diffie-hellman, kerberos, oauth2, openid-connect, webes-biztonsag, hitelesites, titkositas, digitalis-biztonsag]
+---
+
 # Kriptográfiai protokollok, csak a legfontosabb alapokról
 
 A modern digitális biztonság gerincét néhány kulcsfontosságú kriptográfiai protokoll adja. Ezek határozzák meg, hogyan titkosítjuk a kommunikációt, hogyan hitelesítjük a feleket, és hogyan cserélünk biztonságosan kulcsokat. Az alábbi protokollok ismerete nélkül nem lehet megérteni a mai internetbiztonság működését.
