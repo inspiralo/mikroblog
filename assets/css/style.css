@@ -1,0 +1,20 @@
+.sections {
+  column-count: 3;        /* hány oszlop legyen desktopon */
+  column-gap: 2rem;       /* oszlopok közti távolság */
+  list-style: none;       /* ha nem kell a pötty */
+  padding-left: 0;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .sections {
+    column-count: 2;
+  }
+}
+
+/* Mobil */
+@media (max-width: 600px) {
+  .sections {
+    column-count: 1;
+  }
+}
