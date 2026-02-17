@@ -1,3 +1,7 @@
+---
+title: "Kriptográfia"
+---
+
 # Kriptográfia 
 
 A kriptográfia olyan módszerek és algoritmusok összessége, amelyek célja az információ védelme: *bizalmasság*, *integritás*, *hitelesség* és a *nem‑megtagadhatóság* biztosítása. A modern digitális világban ez alapvető technológia minden **online kommunikáció**, **tranzakció** és **adatvédelem** mögött.
