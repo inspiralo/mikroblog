@@ -33,25 +33,5 @@ Egyes esetekben előfordul, hogy egy adott témában csupán a rövidebb jelleg�
 
 ---
 
-## Legutóbbi bejegyzések 👇
+![Inspiráló mikroblog köszöntő](https://github.com/inspiralo/mikroblog/blob/main/docs/Inspirator-mikroblog-GitHub-koszonetnyilvanitas-a-latogatoknak.webp?raw=true)
 
-{% comment %}
-  A GitHub Pages nem támogatja a where_exp-et,
-  ezért kézzel gyűjtjük ki a nem-index.md oldalakat.
-{% endcomment %}
-
-{% assign recent = "" | split: "" %}
-
-{% for p in site.pages %}
-  {% if p.name != "index.md" %}
-    {% assign recent = recent | push: p %}
-  {% endif %}
-{% endfor %}
-
-{% assign recent = recent | sort: "date" | reverse | slice: 0, 10 %}
-
-{% for file in recent %}
-  {% if file.title %}
-- **[{{ file.title }}]({{ file.url | relative_url }})**
-  {% endif %}
-{% endfor %}
