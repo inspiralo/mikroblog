@@ -1,6 +1,5 @@
 ---
 title: "Bitcoin létrehozása"
-layout: post
 tags: [Bitcoin, könyv, bemutató, könyvajánló, kripto ismeretek]
 ---
 
