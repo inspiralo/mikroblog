@@ -18,3 +18,6 @@
     column-count: 1;
   }
 }
+.sections {
+  column-fill: balance;
+}
