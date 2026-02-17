@@ -1,3 +1,8 @@
+---
+title: "Hitelesítési és kulcskezelési protokollok"
+tags: [hitelesítési-protokollok, kulcskezelés, smime, srtp, eap-tls, fido2, webauthn, wifi-biztonsag, voip-biztonság, email-biztonság, jelszómentes-hitelesítés, digitális-biztonság, kriptográfia]
+---
+
 # Hitelesítési és kulcskezelési protokollok
 
 A hitelesítési és kulcskezelési protokollok biztosítják, hogy a kommunikáló felek valóban azok legyenek, akiknek mondják magukat, valamint hogy a titkosításhoz szükséges kulcsok biztonságosan kerüljenek átadásra vagy kezelésre. Ezek a protokollok a modern hálózati biztonság alaprétegét alkotják.
