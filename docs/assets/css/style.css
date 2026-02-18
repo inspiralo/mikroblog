@@ -12,10 +12,11 @@ body {
 /* === Wrapper – régi GitHub Pages stílus === */
 
 .wrapper {
-  max-width: 720px;
-  margin: 0 auto;
+  max-width: none;
+  width: 100%;
   padding: 1rem;
 }
+
 
 /* === Page-content === */
 
