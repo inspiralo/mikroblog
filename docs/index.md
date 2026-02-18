@@ -1,3 +1,5 @@
+<link rel="icon" type="image/x-icon" href="/mikroblog/favicon.ico">
+
 ---
 title: "Inspiráló mikroblog"
 ---
