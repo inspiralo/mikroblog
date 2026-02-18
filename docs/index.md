@@ -34,7 +34,6 @@ Egyes esetekben előfordul, hogy egy adott témában csupán a rövidebb jelleg�
 <p> <strong><a href="{{ page.url | relative_url }}">{{ page.title }}</a></strong></p>
 {% endfor %}
 </div>
-
 ---
 
 <div class="wrapper">
