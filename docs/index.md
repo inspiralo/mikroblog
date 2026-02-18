@@ -1,6 +1,8 @@
 ---
-title: "Inspiráló mikroblog"
+layout: default
+title: Inspiráló mikroblog
 ---
+
 
 # ℹ️ Inspiráló mikroblogom
 
