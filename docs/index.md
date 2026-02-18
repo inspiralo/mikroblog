@@ -37,3 +37,4 @@ Egyes esetekben előfordul, hogy egy adott témában csupán a rövidebb jelleg�
 
 ![Inspiráló mikroblog köszöntő](https://github.com/inspiralo/mikroblog/blob/main/docs/Inspirator-mikroblog-GitHub-koszonetnyilvanitas-a-latogatoknak.webp?raw=true)
 
+<link rel="icon" type="image/x-icon" href="/mikroblog/favicon.ico">
