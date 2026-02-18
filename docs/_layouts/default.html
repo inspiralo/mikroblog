@@ -4,16 +4,32 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ page.title }}</title>
+
+  <!-- GitHub-szerű Markdown stílus -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.5.1/github-markdown.min.css">
+
+  <!-- GitHub Octicons ikonok -->
   <link rel="stylesheet" href="https://unpkg.com/@primer/octicons@17.10.0/build/build.css">
+
+  <!-- Saját stílusok -->
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+
   {% include head-custom.html %}
 </head>
 <body>
+
+  <!-- GitHub-szerű felső fejléc -->
+  <header class="site-header">
+    <div class="container">
+      <a href="{{ '/' | relative_url }}" class="site-title">Mikroblog</a>
+    </div>
+  </header>
+
   <main class="page-content" aria-label="Content">
     <div class="markdown-body">
       {{ content }}
     </div>
   </main>
+
 </body>
 </html>
