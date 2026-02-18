@@ -6,7 +6,7 @@ title: Inspiráló mikroblog
 <div class="markdown-body">
 
 <img src="Inspirator-mikroblog-GitHub-koszonetnyilvanitas-a-latogatoknak.webp" alt="Inspiráló mikroblog köszöntő">
-
+</div>
 # ℹ️ Inspiráló mikroblogom
 
 Ez a mikroblog különböző témák rövid, tömör, gondolatébresztő bejegyzéseit gyűjti össze.  
@@ -36,6 +36,4 @@ Egyes esetekben előfordul, hogy egy adott témában csupán a rövidebb jelleg�
 {% for page in sections %}
 <p><strong><a href="{{ page.url | relative_url }}">{{ page.title }}</a></strong></p>
 {% endfor %}
-</div>
-
 </div>
