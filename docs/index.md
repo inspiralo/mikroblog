@@ -37,4 +37,4 @@ Egyes esetekben előfordul, hogy egy adott témában csupán a rövidebb jelleg�
 
 ---
 
-<img src="https://github.com/inspiralo/mikroblog/blob/main/docs/Inspirator-mikroblog-GitHub-koszonetnyilvanitas-a-latogatoknak.webp" alt="Inspiráló mikroblog köszöntő">
+<img src="Inspirator-mikroblog-GitHub-koszonetnyilvanitas-a-latogatoknak.webp" alt="Inspiráló mikroblog köszöntő">
