@@ -37,4 +37,10 @@ Egyes esetekben előfordul, hogy egy adott témában csupán a rövidebb jelleg�
 
 ---
 
-<img src="https://inspiralo.github.io/mikroblog/Inspirator-mikroblog-GitHub-koszonetnyilvanitas-a-latogatoknak.webp" alt="Inspiráló mikroblog köszöntő">
+<div class="wrapper">
+  <img src="https://inspiralo.github.io/mikroblog/Inspirator-mikroblog-GitHub-koszonetnyilvanitas-a-latogatoknak.webp" alt="Inspiráló mikroblog köszöntő">
+
+  {{ content }}
+</div>
+
+
