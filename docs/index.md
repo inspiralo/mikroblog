@@ -32,6 +32,9 @@ Egyes esetekben előfordul, hogy egy adott témában csupán a rövidebb jelleg�
 
 <div class="sections">
 {% for page in sections %}
-<p><strong><a href="{{ page.url | relative_url }}">{{ page.title }}</a></strong></p>
+<p>
+  <span class="octicon octicon-file-directory"></span>
+  <strong><a href="{{ page.url | relative_url }}">{{ page.title }}</a></strong>
+</p>
 {% endfor %}
 </div>
