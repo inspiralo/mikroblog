@@ -1,3 +1,14 @@
+.wrapper {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.page-content {
+  padding: 0;
+}
+
+
 /* Alap oldalstílus – visszahozza a régi GitHub Pages kinézetet */
 body {
   max-width: 860px;
