@@ -3,6 +3,8 @@ layout: default
 title: Inspiráló mikroblog
 ---
 
+<img src="{{ '/Inspirator-mikroblog-GitHub-koszonetnyilvanitas-a-latogatoknak.webp' | relative_url }}" alt="Inspiráló mikroblog köszöntő">
+
 # ℹ️ Inspiráló mikroblogom
 
 Ez a mikroblog különböző témák rövid, tömör, gondolatébresztő bejegyzéseit gyűjti össze.  
