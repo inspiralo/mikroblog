@@ -3,6 +3,9 @@ layout: default
 title: Inspiráló mikroblog
 ---
 
+<div class="markdown-body">
+
+<img src="Inspirator-mikroblog-GitHub-koszonetnyilvanitas-a-latogatoknak.webp" alt="Inspiráló mikroblog köszöntő">
 
 # ℹ️ Inspiráló mikroblogom
 
@@ -31,11 +34,8 @@ Egyes esetekben előfordul, hogy egy adott témában csupán a rövidebb jelleg�
 
 <div class="sections">
 {% for page in sections %}
-<p> <strong><a href="{{ page.url | relative_url }}">{{ page.title }}</a></strong></p>
+<p><strong><a href="{{ page.url | relative_url }}">{{ page.title }}</a></strong></p>
 {% endfor %}
 </div>
----
 
-<div class="wrapper">
-  <img src="https://inspiralo.github.io/mikroblog/Inspirator-mikroblog-GitHub-koszonetnyilvanitas-a-latogatoknak.webp" alt="Inspiráló mikroblog köszöntő">
 </div>
