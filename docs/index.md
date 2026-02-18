@@ -38,3 +38,4 @@ Egyes esetekben előfordul, hogy egy adott témában csupán a rövidebb jelleg�
 {% endfor %}
 </div>
 <hr>
+<img src="{{ '/Inspirator-mikroblog-alja.webp' | relative_url }}" alt="Inspiráló mikroblog alsó záródizájn">
