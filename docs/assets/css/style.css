@@ -74,14 +74,22 @@
   text-decoration: underline;
 }
 
-/* Octicons ikonok javítása GitHub Markdown CSS után */
-.octicon {
-  font-family: "octicons-link", "octicons", sans-serif !important;
+.back-button {
+  margin-top: 2.5rem;
+  text-align: center;
+}
+
+.back-button a {
   display: inline-block;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1;
-  speak: none;
+  background: #0969da;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
   text-decoration: none;
-  vertical-align: text-bottom;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.back-button a:hover {
+  background: #0757b3;
 }
