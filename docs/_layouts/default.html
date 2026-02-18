@@ -26,6 +26,11 @@
     <div class="markdown-body">
       {{ content }}
     </div>
+    {% if page.url != "/" %}
+  <div class="back-button">
+    <a href="{{ '/' | relative_url }}">⬅️ Vissza a mikroblogra</a>
+  </div>
+{% endif %}
   </main>
 
 </body>
