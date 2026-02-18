@@ -33,10 +33,7 @@ Egyes esetekben előfordul, hogy egy adott témában csupán a rövidebb jelleg�
 <div class="sections">
 {% for page in sections %}
 <p>
-  <svg class="octicon" width="16" height="16">
-    <use xlink:href="https://cdnjs.cloudflare.com/ajax/libs/octicons/17.10.0/sprite.octicons.svg#file-directory"></use>
-  </svg>
-  <strong><a href="{{ page.url | relative_url }}">{{ page.title }}</a></strong>
+  📁 <strong><a href="{{ page.url | relative_url }}">{{ page.title }}</a></strong>
 </p>
 {% endfor %}
 </div>
