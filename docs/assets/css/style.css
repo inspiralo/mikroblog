@@ -1,6 +1,4 @@
-/* ---------------------------------------------------------
-   Alap tipográfia – kompakt, GitHub Pages-szerű
---------------------------------------------------------- */
+/* === Alap tipográfia – kompakt, GitHub Pages-szerű === */
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
@@ -11,53 +9,45 @@ body {
   color: #24292e;
 }
 
-/* ---------------------------------------------------------
-   Wrapper – kisebb, mint eddig (régi GitHub Pages stílus)
---------------------------------------------------------- */
+/* === Wrapper – régi GitHub Pages stílus === */
 
 .wrapper {
-  max-width: 720px;      /* kompakt szélesség */
+  max-width: 720px;
   margin: 0 auto;
-  padding: 1rem;         /* kisebb padding */
+  padding: 1rem;
 }
 
-/* ---------------------------------------------------------
-   Page-content
---------------------------------------------------------- */
+/* === Page-content === */
 
 .page-content {
   padding: 0;
 }
 
-/* ---------------------------------------------------------
-   Képek – kisebb margó, kompaktabb megjelenés
---------------------------------------------------------- */
+/* === Képek – kompakt margó === */
 
 img {
   max-width: 100%;
   height: auto;
   display: block;
-  margin: 1.25rem auto;   /* kisebb margó */
+  margin: 1.25rem auto;
   border-radius: 4px;
 }
 
-/* ---------------------------------------------------------
-   Témák listája – kompakt oszlopos elrendezés
---------------------------------------------------------- */
+/* === Témák listája – kompakt oszlopok === */
 
 .sections {
   column-count: 3;
-  column-gap: 1.5rem;     /* kisebb gap */
+  column-gap: 1.5rem;
   list-style: none;
   padding-left: 0;
   column-fill: balance;
 }
 
-/* Egyes témaelemek kompaktabb spacinggel */
+/* Témaelemek kompakt spacinggel */
 .sections p {
-  margin: 0.3rem 0;        /* kisebb függőleges margó */
-  font-size: 15px;         /* kisebb betűméret */
-  line-height: 1.3;        /* kisebb sortávolság */
+  margin: 0.3rem 0;
+  font-size: 15px;
+  line-height: 1.3;
 }
 
 /* Linkek – GitHub kék */
@@ -70,15 +60,13 @@ img {
   font-weight: 600;
 }
 
-/* Mappa ikon – közelebb a szöveghez */
+/* Mappa ikon */
 .sections p strong::before {
   content: "📁 ";
   margin-right: 0.2rem;
 }
 
-/* ---------------------------------------------------------
-   Reszponzív töréspontok
---------------------------------------------------------- */
+/* === Reszponzív töréspontok === */
 
 @media (max-width: 900px) {
   .sections {
