@@ -11,7 +11,7 @@ Célom, hogy értékes ismeretekhez juttassalak. A bonyolultabb dolgokat rendsze
 
 Egyes esetekben előfordul, hogy egy adott témában csupán a rövidebb jellegű gondolatom fejtem ki, bárminemű kifejtősebb hivatkozás nélkül. Ezek rendszerint akkor fognak előfordulni, amikor például egy *fogalmat*, *definciót* szeretnék számodra érthetővé varázsolni, vagy csak szimplán a véleményem közreadni a világ valamely témáimmal releváns eseményeivel kapcsolatban. Ezt azért is fontos volt a tudomásodra hoznom, mert ebben a megközelítésben kifejtősebb gondolataimmal az általam itt alkotott tartalmak egyáltalán nem képeznek redundanciát, tehát az apróbb meglátásaim is valami pluszt tesznek hozzá, ami reményeim szerint informatív lesz.   
 
-##💡 Témák
+## 💡 Témák
 
 {% comment %}
   Témák = minden olyan oldal, ami:
