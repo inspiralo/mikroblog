@@ -37,3 +37,4 @@ Egyes esetekben előfordul, hogy egy adott témában csupán a rövidebb jelleg�
 </p>
 {% endfor %}
 </div>
+<hr>
