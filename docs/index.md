@@ -11,7 +11,8 @@ title: Inspiráló mikroblog
 
 Célom, hogy értékes ismeretekhez juttassalak. A bonyolultabb dolgokat rendszerint nagyobb erőforráskezelés árán lehet csak az érdeklődők elé tárni. Éppen ezért használom eme mikro gondolataimat, amelyek a komplexebb, kifejtősebb tartalmaim felé fognak navigálni. Talán jobb ez így, mert statikusan bejárható, az emberek gyorsabban érik el, s természetesen a keresőgépeknek is erőforrást kímélő feldolgozási támpont, hogy a kis szemfüles 🤖 **AI ügynökökről** már ne is beszéljek 😉
 
-<a href="https://inspiralo.github.io/"><img src="{{ '/Inspirator-GitHub-forraskod-elemzo.webp' | relative_url }}" alt="Inspiráló inspirátor aki imádja elemezni a forráskódokat!"></a>
+<a href="https://inspiralo.github.io/"><img src="{{ '/inspirator-GitHub-io.webp' | relative_url }}" alt="Inspiráló inspirátor aki imádja elemezni a forráskódokat!"></a>
+
 
 Egyes esetekben előfordul, hogy egy adott témában csupán a rövidebb jellegű gondolatom fejtem ki, bárminemű kifejtősebb hivatkozás nélkül. Ezek rendszerint akkor fognak előfordulni, amikor például egy *fogalmat*, *definciót* szeretnék számodra érthetővé varázsolni, vagy csak szimplán a véleményem közreadni a világ valamely témáimmal releváns eseményeivel kapcsolatban. 
 
