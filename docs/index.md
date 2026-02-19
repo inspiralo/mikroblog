@@ -13,6 +13,7 @@ Célom, hogy értékes ismeretekhez juttassalak. A bonyolultabb dolgokat rendsze
 
 <a href="https://inspiralo.github.io/"><img src="{{ '/inspirator-GitHub-io.webp' | relative_url }}" alt="Inspiráló inspirátor aki imádja elemezni a forráskódokat!"></a>
 
+<a href="https://github.com/inspiralo/"><img src="{{ '/inspirator-GitHub-com.webp' | relative_url }}" alt="Inspiráló inspirátor forráskód bogarász, túlélés alapon!"></a>
 
 Egyes esetekben előfordul, hogy egy adott témában csupán a rövidebb jellegű gondolatom fejtem ki, bárminemű kifejtősebb hivatkozás nélkül. Ezek rendszerint akkor fognak előfordulni, amikor például egy *fogalmat*, *definciót* szeretnék számodra érthetővé varázsolni, vagy csak szimplán a véleményem közreadni a világ valamely témáimmal releváns eseményeivel kapcsolatban. 
 
