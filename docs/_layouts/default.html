@@ -4,14 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="index, follow">
-  <meta property="og:title" content="{{ page.title | escape }}">
-  <meta property="og:description" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}">
+
+  <!-- Dinamikus OG title (fallbackkel) -->
+  <meta property="og:title" content="{{ page.title | default: site.title | escape }}">
+
+  <!-- Robusztus OG description fallback -->
+  {% if page.excerpt %}
+    <meta property="og:description" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}">
+  {% elsif page.content %}
+    <meta property="og:description" content="{{ page.content | strip_html | strip_newlines | truncate: 160 }}">
+  {% else %}
+    <meta property="og:description" content="Mikroblog – inspiráló gondolatok, elemzések és rövid jegyzetek.">
+  {% endif %}
+
   <meta property="og:image" content="https://inspiralo.github.io/mikroblog/inspirator-GitHub-kozossegi-megosztas-1280x640.png">
   <meta property="og:url" content="{{ page.url | absolute_url }}">
   <meta property="og:type" content="article">
 
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://inspiralo.github.io/mikroblog/inspirator-GitHub-kozossegi-megosztas-1280x640.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://inspiralo.github.io/mikroblog/inspirator-GitHub-kozossegi-megosztas-1280x640.png">
 
   <title>{{ page.title }}</title>
 
@@ -36,14 +47,12 @@
     <div class="markdown-body">
       {{ content }}
     </div>
-    {% if page.url != "/" %}
-  <div class="back-button">
-    <button type="button" onclick="if (document.referrer) { history.back(); } else { window.location.href='{{ '/' | relative_url }}'; }">
-      ⬅️ Vissza
-    </button>
-  </div>
-{% endif %}
-  </main>
 
-</body>
-</html>
+    {% if page.url != "/" %}
+      <div class="back-button">
+        <button type="button" onclick="if (document.referrer) { history.back(); } else { window.location.href='{{ '/' | relative_url }}'; }">
+          ⬅️ Vissza
+        </button>
+      </div>
+    {% endif %}
+  </main>
