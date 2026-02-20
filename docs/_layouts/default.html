@@ -33,6 +33,41 @@
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 
   {% include head-custom.html %}
+
+  <!-- JSON-LD strukturált adat AEO + SEO optimalizáláshoz -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "{{ page.title | escape }}",
+    "description": "{% if page.excerpt %}{{ page.excerpt | markdownify | strip_html | replace: '\n', ' ' | replace: '  ', ' ' | escape }}{% elsif page.content %}{{ page.content | markdownify | strip_html | replace: '\n', ' ' | replace: '  ', ' ' | escape }}{% else %}Mikroblog – inspiráló gondolatok, elemzések és rövid jegyzetek.{% endif %}",
+    "datePublished": "{{ page.date }}",
+
+    "author": {
+      "@type": "Person",
+      "name": "Inspirátor",
+      "sameAs": [
+        "https://inspirator.blog"
+      ]
+    },
+
+    "publisher": {
+      "@type": "Person",
+      "name": "Inspirátor"
+    },
+
+    "brand": {
+      "@type": "Brand",
+      "name": "Inspirátor"
+    },
+
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "{{ page.url | absolute_url }}"
+    }
+  }
+  </script>
+
 </head>
 <body>
 
