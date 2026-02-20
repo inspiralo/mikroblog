@@ -2,7 +2,7 @@
 Relevancia: [Hotelek, szálláshelyek, külföld, belföld, utazás]
 ---
 
-# Hotelek – kategória leírás
+# Hotelek 
 
 Ez a kategória a mikroblog utazással kapcsolatos tartalmainak egyik központi gyűjtőpontja.  
 A „hotelek” kifejezés nemcsak a felhasználói keresésekben erős, hanem a tartalomgyártói ökoszisztémában is kiemelt szerepet kap, ezért stratégiai szempontból ez a legjobb kategórianév.
