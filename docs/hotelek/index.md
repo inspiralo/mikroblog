@@ -14,3 +14,14 @@ Nem klasszikus szállásfoglaló oldal vagyunk, nem árakat hasonlítunk össze,
 A mikroposztok között lesznek olyanok, amelyek konkrét úti cél + hotelek logikára épülnek (például *budapesti hotelek*, *zambiai hotelek*, *tengerparti hotelek*), és olyanok is, amelyek inkább a hotelélményről szólnak: miért kerül ennyibe egy 5 csillagos hotel, mitől jó egy reggeli, hogyan verhet rá egy kisebb, családias szállás egy nagy láncszállodára.
 
 A „Hotelek” kategória célja nem az, hogy minden szálláshelyet lefedjen, hanem az, hogy utazás előtt vagy után legyen egy hely, ahol rövid, őszinte, emberi nézőpontokkal találkozol a szállásvilágról – belföldön és külföldön egyaránt.
+
+## Bejegyzések 👇
+
+{% for file in site.pages %}
+  {% if file.path contains 'hotelek/' and file.title and file.name != 'index.md' %}
+- **[{{ file.title }}]({{ file.url | relative_url }})**  
+  {% if file.tags %}
+    <sub>Címkék: {{ file.tags | join: ', ' }}</sub>
+  {% endif %}
+  {% endif %}
+{% endfor %}
