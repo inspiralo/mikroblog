@@ -2,7 +2,7 @@
 title: "Hitelesítési és kulcskezelési protokollok"
 tags: [hitelesítési-protokollok, kulcskezelés, smime, srtp, eap-tls, fido2, webauthn, wifi-biztonsag, voip-biztonság, email-biztonság, jelszómentes-hitelesítés, digitális-biztonság, kriptográfia]
 date: 2026-02-17
-permalink: /mikroblog/kriptografia/hitelesitesi-es-kulcskezelesi-protokollok.html
+permalink: /kriptografia/hitelesitesi-es-kulcskezelesi-protokollok.html
 ---
 
 # Hitelesítési és kulcskezelési protokollok
