@@ -1,6 +1,8 @@
 ---
 title: "bitcoin mint készpénz"
 tags: [bitcoin, bitcoin készpénz, rsk, rbtc, el salvador, decentralizáció, pénzrendszer, kriptográfia, társadalmi hatások, bitcoin gazdaság]
+date: 2026-02-20
+permalink: /mikroblog/kriptografia/bitcoin-mint-keszpenz.html
 ---
 
 # bitcoin mint készpénz alapgondolatáról
