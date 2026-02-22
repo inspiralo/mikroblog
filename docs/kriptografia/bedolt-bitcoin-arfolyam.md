@@ -2,7 +2,7 @@
 title: "Bedőlt bitcoin árfolyam, vajon miért történik?"
 tags: [bitcoin, árfolyam, zuhan a bitcoin, miért esik a bitcoin, meddig eshet a bitcoin]
 date: 2026-02-21
-permalink: /mikroblog/kriptografia/bedolt-bitcoin-arfolyam.html
+permalink: /kriptografia/bedolt-bitcoin-arfolyam.html
 ---
 
 # Most őszintén, miért foglalkozol a bedőlt bitcoin árfolyamával❓
