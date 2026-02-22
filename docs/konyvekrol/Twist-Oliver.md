@@ -2,7 +2,7 @@
 title: "Miért fontos ma is Dickens gyerekhőse?"
 tags: [könyvekről, olvasás, ifjúság, irodalom]
 date: 2026-02-20
-permalink: /mikroblog/konyvekrol/Twist-Oliver.html
+permalink: /konyvekrol/Twist-Oliver.html
 ---
 
 📚 Egyre kevesebben olvasnak, mintha a történeteket már csak gyorsan fogyasztható információként kezelnénk. Pedig vannak könyvek, amelyekhez nem elég egy összefoglaló, mert a lényeg a sorok között él.
