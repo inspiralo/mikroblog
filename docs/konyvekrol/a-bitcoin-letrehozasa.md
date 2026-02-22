@@ -2,7 +2,7 @@
 title: "Bitcoin létrehozása"
 tags: [Bitcoin, könyv, bemutató, könyvajánló, kripto ismeretek]
 date: 2026-02-17
-permalink: /mikroblog/konyvekrol/a-bitcoin-letrehozasa.html
+permalink: /konyvekrol/a-bitcoin-letrehozasa.html
 ---
 
 
