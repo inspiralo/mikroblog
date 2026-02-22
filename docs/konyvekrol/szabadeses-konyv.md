@@ -1,6 +1,8 @@
 ---
 title: "Szabadesés – Losonctól Kaliforniáig"
 tags: [Szabadesés, könyv, bemutató, könyvajánló, Imre Regina Mária]
+date: 2026-02-17
+permalink: /mikroblog/konyvekrol/szabadeses-konyv.html
 ---
 
 ### Szabadesés – Losonctól Kaliforniáig
