@@ -2,7 +2,7 @@
 title: "Digitális gyűjtői kripto kártyák – és ebben hol helyezkedik el a Bleap?"
 tags: ["kriptográfia", "kripto kártya", "Bleap", "generációk"]
 date: 2026-02-21
-permalink: /mikroblog/kriptografia/digitalis-gyujtoi-kripto-kartya-generaciok.html
+permalink: /kriptografia/digitalis-gyujtoi-kripto-kartya-generaciok.html
 ---
 
 # Gondolatom a digitális gyűjtői kriptokártya‑generációkról és a Bleap külön kategóriájáról
