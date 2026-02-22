@@ -2,7 +2,7 @@
 title: "bitcoin tárolása"
 tags: [bitcoin, bitcoin tárolása, privát kulcs, seed phrase, wallet, hardver tárca, kriptográfia, biztonság, bitcoin címek, kulcskezelés]
 date: 2026-02-20
-permalink: /mikroblog/kriptografia/bitcoin-tarolasa.html
+permalink: /kriptografia/bitcoin-tarolasa.html
 ---
 
 A bitcoin tárolása valójában nem a „coinok” elhelyezéséről szól, hanem a **privát kulcsod** biztonságáról. Aki a kulcsot birtokolja, azé a bitcoin — ezért a tárolás kérdése valójában **kriptográfiai probléma**, nem technikai trükk.
