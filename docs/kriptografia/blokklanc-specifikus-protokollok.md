@@ -2,7 +2,7 @@
 title: "Blokkláncs specifikus protokollok"
 tags: [blokklánc, blokklánc-protokollok, merkle-tree, zkp, zk-snark, zk-stark, bft, tendermint, lightning-network, bitcoin, layer2, kriptográfia, decentralizáció, konszenzus, skálázás]
 date: 2026-02-17
-permalink: /mikroblog/kriptografia/blokklanc-specifikus-protokollok.html
+permalink: /kriptografia/blokklanc-specifikus-protokollok.html
 ---
 
 
