@@ -1,3 +1,10 @@
+---
+title: "Párizsi régió szálláshelyei"
+tags: [hotelek, Párizs környéke, látnivalók, utazás, kirándulás, túrák]
+date: 2026-02-23
+permalink: hotelek/parizsi-regio-szallashelyei.html
+---
+
 # Lenyűgöző hotelek a párizsi régióban
 Írásommal főleg azoknak kedvezek akik már kicsit rutinosabbak, azaz többször megfordultak már **Párizsban**. Értelemszerűen az ilyen érdeklődők a
 <a href="https://inspirator.blog/parizs-kornyeki-latnivalok" title="Fedezd fel a párizsi régiót és hoteleit">Párizs környéki látnivalók</a> 
