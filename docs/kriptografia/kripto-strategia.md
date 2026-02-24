@@ -40,5 +40,5 @@ Bitcoin eszközhöz jutni. Kell, tehát ide fiat❓ Igazából nem❗
 érhető tetten. Ha ezt megérted, a <a href="https://monetarisatrendezodes.substack.com/" title="A világ infrastrukturális átalakulása ami hosszabb távon a monetáris átrendeződéshez vezet!">monetáris átrendeződés</a>
 témám is hasznosnak fogod tartani, mert pont azokat a példákat mutatom, amiből kirajzolódik számodra a világ infrastrukturális átalakulása.
 
- 💡 Említett tartalmakra egyébként <a href="https://monetarisatrendezodes.substack.com/subscribe" title="kripto hírlevél feliratkozás">ITT</a> kényelmesen fel is iratkozhatsz, s úgy tud tehát olvasni, hogy elektronikus levesládádból ki sem kell másznod, és nem is kell kattintanod sehova.
+ 💡 Említett tartalmakra egyébként <a href="https://monetarisatrendezodes.substack.com/subscribe" title="kripto hírlevél feliratkozás">ITT</a> kényelmesen fel is iratkozhatsz, s úgy tudod tehát olvasni, hogy elektronikus levesládádból ki sem kell másznod, és nem is kell kattintanod sehova.
  
