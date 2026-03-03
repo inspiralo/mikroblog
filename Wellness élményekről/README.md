@@ -1,3 +1,7 @@
+---
+Relevancia: [Wellness, spa, szauna, szaunaszeánszok, wellness komplexumok, wellness kempingek]
+---
+
 # 🌿 Wellness élmények
 
 A Wellness élmények mappa a szaunázásról, spa‑pillanatokról és rövid regeneráló élményekről szól. Olyan apró történetekről,
