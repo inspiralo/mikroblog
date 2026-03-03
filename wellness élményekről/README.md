@@ -1,5 +1,5 @@
 ---
-Relevancia: [Wellness, spa, szauna, szaunaszeánszok, wellness komplexumok, wellness kempingek]
+Relevancia: [wellness, spa, szauna, szaunaszeánszok, wellness komplexumok, wellness kempingek]
 ---
 
 # 🌿 Wellness élmények
