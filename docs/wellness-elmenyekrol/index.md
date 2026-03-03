@@ -1,4 +1,4 @@
-# 🌿 Wellness élmények
+# 🌿 Wellness élményekről
 
 A *Wellness élmények* kategória a rövid, mégis emlékezetes regeneráló pillanatokról szól. Szaunázásról, spa‑térélményekről, különleges felöntésekről, csendes pihenőkről és minden olyan 
 apró részletről, amely egy helyet vagy alkalmat igazán jóvá tesz.
