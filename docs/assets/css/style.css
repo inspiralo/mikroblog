@@ -140,8 +140,12 @@
   }
 }
 
+/* ----------------------------- */
+/* KÁRTYA-SZERŰ <details> BLOKKOK */
+/* ----------------------------- */
+
 /* A <details> elemeket kártya-szerű blokkokká alakítja.
-   Ez megszünteti a nagy üres tereket, és vizuálisan tagolja a hónapokat, legalábbis az Inspirátor reményei szerint */
+   Ez megszünteti a nagy üres tereket, és vizuálisan tagolja a hónapokat. */
 details {
   border: 1px solid #d0d7de;      /* Finom GitHub-szerű keret */
   border-radius: 6px;             /* Lekerekített sarkok a kártya-hatásért */
@@ -151,28 +155,25 @@ details {
 }
 
 /* A <summary> elemet kattintható fejléccé alakítja.
-   Így a hónapok jól elkülönülnek és könnyen kezelhetők. */
+   A list-style: revert visszahozza a natív háromszöget. */
 details summary {
   cursor: pointer;                /* Mutatja, hogy kattintható */
   font-weight: 600;               /* Erősebb tipográfia a hónapcímekhez */
-  list-style: none;               /* Eltünteti az alapértelmezett marker helyét */
   font-size: 1.05rem;             /* Kicsit nagyobb, jól olvasható méret */
+  list-style: revert;             /* VISSZAHOZZA a natív háromszöget */
 }
 
-/* A natív háromszög marker megtartása, de finomhangolva */
-details summary::-webkit-details-marker {
-  margin-right: 6px;      /* kis térköz a szöveg előtt */
-  transform: scale(1.2);  /* picit nagyobb, jobban látható */
+/* A marker méretének növelése, hogy jobban látszódjon */
+details summary::marker {
+  font-size: 1.2rem;              /* nagyobb, szebb háromszög */
 }
 
-/* Amikor a <details> nyitva van, a summary alatt legyen egy kis tér.
-   Ez segít, hogy a lista ne tapadjon rá a címre. */
+/* Nyitott állapotban extra tér a summary alatt */
 details[open] summary {
   margin-bottom: 0.5rem;
 }
 
-/* A hónap alatti lista margóinak finomhangolása.
-   Így kompakt, áttekinthető marad a tartalom. */
+/* A hónap alatti lista margóinak finomhangolása */
 details ul {
   margin: 0.2rem 0 0.2rem 1rem;   /* Balra egy kis behúzás, felül-alul minimális tér */
   padding: 0;                     /* Alapértelmezett padding eltávolítása */
