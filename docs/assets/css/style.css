@@ -159,10 +159,10 @@ details summary {
   font-size: 1.05rem;             /* Kicsit nagyobb, jól olvasható méret */
 }
 
-/* Eltünteti a natív háromszög markert (Chrome, Safari).
-   Így tisztább, minimalista megjelenést kap. */
+/* A natív háromszög marker megtartása, de finomhangolva */
 details summary::-webkit-details-marker {
-  display: none;
+  margin-right: 6px;      /* kis térköz a szöveg előtt */
+  transform: scale(1.2);  /* picit nagyobb, jobban látható */
 }
 
 /* Amikor a <details> nyitva van, a summary alatt legyen egy kis tér.
