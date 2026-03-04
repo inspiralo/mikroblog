@@ -93,3 +93,16 @@
 .back-button a:hover {
   background: #0757b3;
 }
+
+@media (max-width: 600px) {
+  .sections p {
+    font-size: 1.25rem;     /* mobilon nagyobb, kényelmesebb betűméret */
+    line-height: 1.6;       /* magasabb sor, jobban kitölti a helyet */
+    margin: 0.6rem 0;       /* kellemes távolság a sorok között */
+  }
+
+  .sections a {
+    display: block;         /* a link kitölti a teljes sort */
+    padding: 0.8rem 0;      /* nagy, érintésbarát kattintható felület */
+  }
+}
