@@ -144,37 +144,66 @@
 /* KÁRTYA-SZERŰ <details> BLOKKOK */
 /* ----------------------------- */
 
-/* A <details> elemeket kártya-szerű blokkokká alakítja.
-   Ez megszünteti a nagy üres tereket, és vizuálisan tagolja a hónapokat. */
+/* ÉV-szintű <details> – ez a fő kártya
+   Ez jelenik meg első szinten (2026, 2025, 2024...) */
 details {
   border: 1px solid #d0d7de;      /* Finom GitHub-szerű keret */
-  border-radius: 6px;             /* Lekerekített sarkok a kártya-hatásért */
-  padding: 0.6rem 0.9rem;         /* Belső tér, hogy ne legyen túl zsúfolt */
-  background: #f6f8fa;            /* Világos háttér, jól illik a mikroblog stílusához */
-  margin: 0.8rem 0;               /* Függőleges térköz a kártyák között */
+  border-radius: 6px;             /* Lekerekített sarkok */
+  padding: 0.6rem 0.9rem;         /* Kényelmes belső tér */
+  background: #f6f8fa;            /* Világos háttér */
+  margin: 0.8rem 0;               /* Függőleges térköz */
 }
 
-/* A <summary> elemet kattintható fejléccé alakítja.
-   A list-style: revert visszahozza a natív háromszöget. */
-details summary {
-  cursor: pointer;                /* Mutatja, hogy kattintható */
-  font-weight: 600;               /* Erősebb tipográfia a hónapcímekhez */
-  font-size: 1.05rem;             /* Kicsit nagyobb, jól olvasható méret */
-  list-style: revert;             /* VISSZAHOZZA a natív háromszöget */
+/* ÉV-szintű summary – nagyobb, hangsúlyosabb */
+details > summary {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.1rem;              /* nagyobb betűméret */
+  list-style: revert;             /* natív háromszög visszahozása */
 }
 
-/* A marker méretének növelése, hogy jobban látszódjon */
-details summary::marker {
-  font-size: 1.2rem;              /* nagyobb, szebb háromszög */
+/* ÉV-szint marker – nagyobb háromszög */
+details > summary::marker {
+  font-size: 1.25rem;
 }
 
-/* Nyitott állapotban extra tér a summary alatt */
-details[open] summary {
+/* Nyitott év alatt legyen kis tér */
+details[open] > summary {
   margin-bottom: 0.5rem;
 }
 
-/* A hónap alatti lista margóinak finomhangolása */
+/* ----------------------------- */
+/* HÓNAP-szintű <details>        */
+/* ----------------------------- */
+
+/* A hónap-szintű <details> (az év alatt) legyen világosabb és kisebb */
+details details {
+  background: #ffffff;            /* fehérebb háttér – vizuális hierarchia */
+  border-color: #e5e7eb;          /* halványabb keret */
+  margin-left: 1rem;              /* beljebb húzva – alárendelt szint */
+  padding: 0.5rem 0.8rem;         /* kisebb belső tér */
+}
+
+/* HÓNAP-szint summary – finomabb tipográfia */
+details details summary {
+  cursor: pointer;
+  font-weight: 500;               /* kevésbé hangsúlyos */
+  font-size: 0.95rem;             /* kisebb betűméret */
+  list-style: revert;             /* natív marker itt is */
+}
+
+/* HÓNAP-szint marker – kisebb háromszög */
+details details summary::marker {
+  font-size: 1rem;
+}
+
+/* Nyitott hónap alatt kis tér */
+details details[open] summary {
+  margin-bottom: 0.4rem;
+}
+
+/* Posztlista margói */
 details ul {
-  margin: 0.2rem 0 0.2rem 1rem;   /* Balra egy kis behúzás, felül-alul minimális tér */
-  padding: 0;                     /* Alapértelmezett padding eltávolítása */
+  margin: 0.2rem 0 0.2rem 1rem;
+  padding: 0;
 }
