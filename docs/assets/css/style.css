@@ -96,13 +96,21 @@
 
 @media (max-width: 600px) {
   .sections p {
-    font-size: 1.25rem;     /* mobilon nagyobb, kényelmesebb betűméret */
-    line-height: 1.6;       /* magasabb sor, jobban kitölti a helyet */
-    margin: 0.6rem 0;       /* kellemes távolság a sorok között */
+    margin: 0.7rem 0;
   }
 
   .sections a {
-    display: block;         /* a link kitölti a teljes sort */
-    padding: 0.8rem 0;      /* nagy, érintésbarát kattintható felület */
+    display: block;              /* teljes sor kattintható */
+    padding: 1rem 1.2rem;        /* nagy tappolható felület csak mobilon! */
+    background: #f6f8fa;         /* GitHub-szerű világos háttér */
+    border: 1px solid #d0d7de;   /* finom keret */
+    border-radius: 8px;          /* menü-gomb érzet */
+    font-size: 1.1rem;           /* kényelmes méret */
+    line-height: 1.4;
+    color: #0969da;              /* GitHub linkkék */
+  }
+
+  .sections a:hover {
+    background: #eef1f4;         /* finom hover mobilon is */
   }
 }
