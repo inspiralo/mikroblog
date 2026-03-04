@@ -40,13 +40,47 @@ Ezekben a bejegyzésekben a rövid, letisztult benyomások kapnak helyet:
 
 ---
 
-## Ebben a wellness témámban jelenleg az alábbi apróbb bejegyzéseim olvashatod 👇
+## Ebben a wellness témámban jelenleg az alábbi apróbb bejegyzéseim olvashatod időrend szerint 👇
 
-{% for file in site.pages %}
-  {% if file.path contains 'wellness-elmenyekrol/' and file.title and file.name != 'index.md' %}
-- **[{{ file.title }}]({{ file.url | relative_url }})**  
-  {% if file.tags %}
-    <sub>Címkék: {{ file.tags | join: ', ' }}</sub>
+{% assign posts = "" | split: "" %}
+
+{% for p in site.pages %}
+  {% if p.path contains 'wellness-elmenyekrol/' and p.name != 'index.md' %}
+    {% assign posts = posts | push: p %}
   {% endif %}
-  {% endif %}
+{% endfor %}
+
+{% assign posts = posts | sort: "date" | reverse %}
+
+{% assign months = "" | split: "" %}
+
+{% for post in posts %}
+  {% assign ym = post.date | date: "%Y-%m" %}
+  {% unless months contains ym %}
+    {% assign months = months | push: ym %}
+  {% endunless %}
+{% endfor %}
+
+{% for ym in months %}
+  {% assign year = ym | slice: 0, 4 %}
+  {% assign month = ym | slice: 5, 2 %}
+
+  <details>
+    <summary><strong>{{ year }}. {{ month }}.</strong></summary>
+    <ul>
+      {% for post in posts %}
+        {% assign post_ym = post.date | date: "%Y-%m" %}
+        {% if post_ym == ym %}
+          <li>
+            <strong><a href="{{ post.url | relative_url }}">{{ post.title }}</a></strong><br>
+            <small>{{ post.date | date: "%Y. %m. %d." }}</small>
+            {% if post.tags %}
+              <br><small>Címkék: {{ post.tags | join: ', ' }}</small>
+            {% endif %}
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </details>
+
 {% endfor %}
