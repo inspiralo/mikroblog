@@ -18,7 +18,7 @@ Ebben a szekcióban olyan művek jelennek meg, amelyek valamilyen szempontból:
 
 ---
 
-## Bejegyzéseim könyvekről a kronológia alapján 👇
+## Bejegyzéseim, könyvekről a kronológia alapján 👇
 
 {% assign posts = "" | split: "" %}
 
@@ -60,3 +60,6 @@ Ebben a szekcióban olyan művek jelennek meg, amelyek valamilyen szempontból:
       {% endfor %}
     </ul>
   </details>
+
+{% endfor %}
+
