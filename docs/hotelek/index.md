@@ -23,14 +23,20 @@ A „Hotelek” kategória célja nem az, hogy minden szálláshelyet lefedjen, 
 
 ## Bejegyzéseim, mikor mit mondtam 👇
 
-{% assign posts = site.pages 
-  | where_exp: "p", "p.path contains 'hotelek/' and p.name != 'index.md'"
-  | sort: "date"
-  | reverse 
-%}
+{% assign posts = "" | split: "" %}
+
+{% for p in site.pages %}
+  {% if p.path contains 'hotelek/' and p.name != 'index.md' %}
+    {% assign posts = posts | push: p %}
+  {% endif %}
+{% endfor %}
+
+{% assign posts = posts | sort: "date" | reverse %}
 
 {% for post in posts %}
 - **[{{ post.title }}]({{ post.url | relative_url }})**  
   <small>{{ post.date | date: "%Y. %m. %d." }}</small>  
-  {% if post.tags %}<small>Címkék: {{ post.tags | join: ', ' }}</small>{% endif %}
+  {% if post.tags %}
+    <small>Címkék: {{ post.tags | join: ', ' }}</small>
+  {% endif %}
 {% endfor %}
