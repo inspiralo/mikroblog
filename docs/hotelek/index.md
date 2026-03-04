@@ -21,13 +21,16 @@ A mikroposztok között lesznek olyanok, amelyek konkrét úti cél + hotelek lo
 
 A „Hotelek” kategória célja nem az, hogy minden szálláshelyet lefedjen, hanem az, hogy utazás előtt vagy után legyen egy hely, ahol rövid, őszinte, emberi nézőpontokkal találkozol a szállásvilágról – belföldön és külföldön egyaránt.
 
-## Bejegyzések 👇
+## Bejegyzéseim, mikor mit mondtam 👇
 
-{% for file in site.pages %}
-  {% if file.path contains 'hotelek/' and file.title and file.name != 'index.md' %}
-- **[{{ file.title }}]({{ file.url | relative_url }})**  
-  {% if file.tags %}
-    <sub>Címkék: {{ file.tags | join: ', ' }}</sub>
-  {% endif %}
-  {% endif %}
+{% assign posts = site.pages 
+  | where_exp: "p", "p.path contains 'hotelek/' and p.name != 'index.md'"
+  | sort: "date"
+  | reverse 
+%}
+
+{% for post in posts %}
+- **[{{ post.title }}]({{ post.url | relative_url }})**  
+  <small>{{ post.date | date: "%Y. %m. %d." }}</small>  
+  {% if post.tags %}<small>Címkék: {{ post.tags | join: ', ' }}</small>{% endif %}
 {% endfor %}
