@@ -33,25 +33,38 @@ A „Hotelek” kategória célja nem az, hogy minden szálláshelyet lefedjen, 
 
 {% assign posts = posts | sort: "date" | reverse %}
 
-{% assign months = "" | split: "" %}
+{% assign years = "" | split: "" %}
 
 {% for post in posts %}
-  {% assign ym = post.date | date: "%Y-%m" %}
-  {% unless months contains ym %}
-    {% assign months = months | push: ym %}
+  {% assign y = post.date | date: "%Y" %}
+  {% unless years contains y %}
+    {% assign years = years | push: y %}
   {% endunless %}
 {% endfor %}
 
-{% for ym in months %}
-  {% assign year = ym | slice: 0, 4 %}
-  {% assign month = ym | slice: 5, 2 %}
+{% for y in years %}
+<details>
+  <summary><strong>{{ y }}</strong></summary>
 
-  <details>
-    <summary><strong>{{ year }}. {{ month }}.</strong></summary>
+  {% assign months = "" | split: "" %}
+  {% for post in posts %}
+    {% assign post_y = post.date | date: "%Y" %}
+    {% if post_y == y %}
+      {% assign m = post.date | date: "%m" %}
+      {% unless months contains m %}
+        {% assign months = months | push: m %}
+      {% endunless %}
+    {% endif %}
+  {% endfor %}
+
+  {% for m in months %}
+  <details style="margin-left: 1rem;">
+    <summary><strong>{{ y }}. {{ m }}.</strong></summary>
     <ul>
       {% for post in posts %}
-        {% assign post_ym = post.date | date: "%Y-%m" %}
-        {% if post_ym == ym %}
+        {% assign post_y = post.date | date: "%Y" %}
+        {% assign post_m = post.date | date: "%m" %}
+        {% if post_y == y and post_m == m %}
           <li>
             <strong><a href="{{ post.url | relative_url }}">{{ post.title }}</a></strong><br>
             <small>{{ post.date | date: "%Y. %m. %d." }}</small>
@@ -63,6 +76,7 @@ A „Hotelek” kategória célja nem az, hogy minden szálláshelyet lefedjen, 
       {% endfor %}
     </ul>
   </details>
+  {% endfor %}
 
+</details>
 {% endfor %}
-
