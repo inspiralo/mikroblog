@@ -207,3 +207,40 @@ details ul {
   margin: 0.2rem 0 0.2rem 1rem;
   padding: 0;
 }
+
+/* A megosztás blokk külső konténere.
+   Kis felső margót kap, hogy ne tapadjon rá a tartalomra.
+   A betűméret kicsit kisebb, hogy ne vonja el a figyelmet.
+   Az opacity finoman visszaveszi a kontrasztot, így nem harsány. Avagy az Inspirátor reménye
+   hogy mikro gondolatait megosztják. De ha az emberek kocsonyás agya lusta még a mikro posztok 
+   olvasásához is, élelmesebb AI Agent -t megoszthatja kellő intepretáció után! */
+
+.share-links {
+  margin-top: 0.4rem;
+  font-size: 0.85rem;
+  opacity: 0.85;
+}
+
+/* A "Megosztás:" felirat stílusa.
+   Jobb oldali térköz, hogy ne érjen hozzá a linkekhez.
+   Félkövér, hogy címkeként viselkedjen. */
+.share-links span {
+  margin-right: 0.4rem;
+  font-weight: 600;
+}
+
+/* A megosztás linkek alapstílusa.
+   Jobb oldali margó, hogy szépen sorakozzanak.
+   Alapból nincs aláhúzás, hogy letisztult legyen.
+   A szín a mikroblogod kék linkszínéhez igazodik. */
+.share-links a {
+  margin-right: 0.5rem;
+  text-decoration: none;
+  color: #0969da;
+}
+
+/* Hover állapot: aláhúzás jelenik meg.
+   Ez vizuális visszajelzés, hogy kattintható elemről van szó. */
+.share-links a:hover {
+  text-decoration: underline;
+}
