@@ -265,8 +265,8 @@ details ul {
 
   /* IKONOK */
   background-repeat: no-repeat;
-  background-size: 1.2rem;              /* nagyobb ikon */
-  background-position: 0.7rem center;   /* pontos pozíció */
+  background-size: 1.2rem;
+  background-position: 0.7rem center;
 }
 
 /* Hover desktopon */
