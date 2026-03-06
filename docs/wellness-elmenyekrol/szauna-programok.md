@@ -19,7 +19,7 @@ az írásaim, s rólam tudják, a [Wellness Világ](https://inspirator.blog/utaz
 górcső alá veszem a wellness komplexumokat. Természetesen eléggé gyakorlatias szemem van ahhoz is, hogy megállapítsam ki tud 
 egy jó szaunamester lenni.  
 
-📣 Szóval röviden és tömören ha érdekel milyen szauna programok vannak és hol, akkor keresd 🐻 Balu -t, ha a hivatkozásom elolvasod,
+📣 Szóval röviden, tömören ha érdekel milyen szauna programok vannak és hol, akkor keresd 🐻 Balu -t, ha a hivatkozásom elolvasod,
 akkor pedig a választ is megkapod miért, no meg azt, hogy hol keresd Őt 😉 
 
 {% include share.html %}
