@@ -36,5 +36,3 @@ hálózatán kezeled, akkor mozoghatsz Te akár különböző DeFi szektorokban 
 Tömören és gyönyören, bár elítélhetsz engem azért, mert a szemedbe mondom az igazságot és esetleg sztár influenszerek is megtáncoltatnak a YouTube csatornájukon, **DE** :
 
 > 👋 minden hígítás ott történik, ahol a Bitcoin elveszíti a trustless, PoW‑alapú garanciáit❗Megoldás, kezeljétek a **BTC**-t a saját hálózatán.
-
-{% include share.html %}
