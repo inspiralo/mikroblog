@@ -99,3 +99,5 @@ Ezekben a bejegyzésekben a rövid, letisztult benyomások kapnak helyet:
 
 </details>
 {% endfor %}
+
+{% include share.html %}
