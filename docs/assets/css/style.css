@@ -234,7 +234,10 @@ details ul {
   display: inline-flex;
   align-items: center;
   gap: 0.55rem;
-  padding: 0.55rem 0.9rem 0.55rem 2.2rem;
+
+  /* nagyobb hely az ikon előtt */
+  padding: 0.55rem 0.9rem 0.55rem 3rem;
+
   border-radius: 6px;
   background: white;
   border: 1px solid #e5e7eb;
@@ -242,9 +245,11 @@ details ul {
   color: #0969da;
   font-size: 0.9rem;
   white-space: nowrap;
+
+  /* ikonok láthatóvá tétele */
   background-repeat: no-repeat;
-  background-size: 1.2rem;
-  background-position: 0.7rem center;
+  background-size: 1.4rem;          /* nagyobb ikon */
+  background-position: 1.1rem center; /* jobbra tolva */
 }
 
 @media (hover: hover) {
