@@ -130,3 +130,4 @@ A kriptográfia a digitális biztonság alapja: védi az adatokat, hitelesíti a
 
 </details>
 {% endfor %}
+{% include share.html %}
