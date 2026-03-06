@@ -215,32 +215,35 @@ details ul {
    hogy mikro gondolatait megosztják. De ha az emberek kocsonyás agya lusta még a mikro posztok 
    olvasásához is, élelmesebb AI Agent -t megoszthatja kellő intepretáció után! */
 
+/* A megosztás blokk külső konténere.
+   Két soros, levegős, jól tagolt komponens lesz. */
 .share-links {
-  margin-top: 0.4rem;
-  font-size: 0.85rem;
-  opacity: 0.85;
+  margin-top: 1rem;              /* nagyobb tér a tartalom után */
+  padding: 0.8rem 0;             /* belső tér, hogy blokkhatása legyen */
+  border-top: 1px solid #e5e7eb; /* finom elválasztó vonal */
+  font-size: 0.95rem;            /* kicsit nagyobb, olvashatóbb */
 }
 
-/* A "Megosztás:" felirat stílusa.
-   Jobb oldali térköz, hogy ne érjen hozzá a linkekhez.
-   Félkövér, hogy címkeként viselkedjen. */
+/* A "Megosztás:" címke.
+   Erősebb, hogy vezesse a szemet. */
 .share-links span {
-  margin-right: 0.4rem;
+  display: block;                /* külön sorba kerül */
+  margin-bottom: 0.5rem;         /* tér a linkek előtt */
   font-weight: 600;
+  color: #444;
 }
 
-/* A megosztás linkek alapstílusa.
-   Jobb oldali margó, hogy szépen sorakozzanak.
-   Alapból nincs aláhúzás, hogy letisztult legyen.
-   A szín a mikroblogod kék linkszínéhez igazodik. */
+/* A megosztás linkek.
+   Ikon + szöveg, levegős, jól kattintható. */
 .share-links a {
-  margin-right: 0.5rem;
+  display: inline-block;
+  margin: 0.25rem 0.6rem 0.25rem 0; /* levegő a linkek között */
   text-decoration: none;
   color: #0969da;
+  white-space: nowrap;           /* ne törje meg az ikon és a szöveg közé */
 }
 
-/* Hover állapot: aláhúzás jelenik meg.
-   Ez vizuális visszajelzés, hogy kattintható elemről van szó. */
+/* Hover állapot: finom aláhúzás */
 .share-links a:hover {
   text-decoration: underline;
 }
