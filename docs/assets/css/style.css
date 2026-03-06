@@ -280,6 +280,47 @@ details ul {
   background-image: url("data:image/svg+xml;utf8,<svg fill='%230969da' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><path d='M12 0C5.4 0 0 5.1 0 11.5c0 2 .5 3.9 1.5 5.6L0 24l7.1-1.9c1.6.9 3.4 1.4 5.3 1.4 6.6 0 12-5.1 12-11.5S18.6 0 12 0zm6.8 16.4c-.3.8-1.7 1.5-2.4 1.6-.6.1-1.4.2-2.3-.1-.5-.2-1.2-.4-2.1-.8-3.7-1.6-6.1-5.3-6.3-5.6-.2-.3-1.5-2-1.5-3.8 0-1.8.9-2.7 1.2-3 .3-.3.7-.4 1-.4h.7c.2 0 .5 0 .7.6.3.8 1 2.7 1.1 2.9.1.2.1.4 0 .6-.1.2-.2.3-.4.5l-.6.6c-.2.2-.3.4-.1.8.2.4 1 1.6 2.1 2.6 1.4 1.2 2.6 1.6 3 .8l.4-.7c.2-.3.4-.5.7-.4.3.1 1.9.9 2.2 1.1.3.2.5.3.6.5.1.2.1.8-.2 1.6z'/></svg>");
 }
 
+/* --- MEGOSZTÁS BLOKK – SZERINTEM SZÉP, KÖZÉPRE IGAZÍTOTT, KÁRTYA-SZERŰ VERZIÓ --- */
+
+/* Külső konténer: középre igazított, kártya-hatás */
+.share-links {
+  margin: 1.5rem auto 0 auto;      /* felül több tér, középre igazítva */
+  padding: 0.8rem 1rem;            /* belső tér */
+  max-width: 420px;                /* ne legyen túl széles */
+  background: #f9fafb;             /* finom világos háttér */
+  border: 1px solid #e5e7eb;       /* finom keret */
+  border-radius: 8px;              /* kártya-hatás */
+  text-align: center;              /* középre igazított tartalom */
+}
+
+/* "Megosztás:" címke */
+.share-links span {
+  display: block;
+  margin-bottom: 0.6rem;
+  font-weight: 600;
+  color: #444;
+  font-size: 0.95rem;
+}
+
+/* Linkek: ikon + szöveg, kompakt elrendezés */
+.share-links a.share {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin: 0.25rem 0.5rem;
+  padding-left: 1.4rem;            /* hely az ikonoknak */
+  text-decoration: none;
+  color: #0969da;
+  font-size: 0.9rem;
+  background-repeat: no-repeat;
+  background-size: 1rem;
+  background-position: left center;
+  white-space: nowrap;
+}
+
+.share-links a.share:hover {
+  text-decoration: underline;
+}
 /* VK ikon */
 .share.vk {
   background-image: url("data:image/svg+xml;utf8,<svg fill='%230969da' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><path d='M12.6 17.9c-.4 0-.7-.2-.9-.5-.7-1.2-2.2-3.8-3.1-3.8-.6 0-.8.4-.8 1.3v2.4c0 .4-.3.7-.7.7H4.2c-.4 0-.7-.3-.7-.7V6.7c0-.4.3-.7.7-.7h3c.4 0 .7.3.7.7v3.7c0 .3.2.5.5.5.3 0 .5-.2.7-.4 1.1-1.5 2.4-3.9 3.1-5.2.2-.3.4-.5.8-.5h3.5c.6 0 .8.4.6.9-.4 1.1-2.4 4.4-3.3 5.6-.3.4-.3.6 0 1 1 1.3 2.8 3.5 3.4 4.4.3.5.1.9-.5.9h-3.1z'/></svg>");
