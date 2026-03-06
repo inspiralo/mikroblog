@@ -1,0 +1,31 @@
+<div class="share-links">
+  <span>Megosztás:</span>
+
+  <!-- Facebook -->
+  <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ include.page.url | default: page.url }}" 
+     target="_blank" rel="noopener">Facebook</a>
+
+  <!-- X / Twitter -->
+  <a href="https://twitter.com/intent/tweet?url={{ site.url }}{{ include.page.url | default: page.url }}&text={{ include.page.title | default: page.title }}" 
+     target="_blank" rel="noopener">X</a>
+
+  <!-- LinkedIn -->
+  <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ site.url }}{{ include.page.url | default: page.url }}" 
+     target="_blank" rel="noopener">LinkedIn</a>
+
+  <!-- Reddit -->
+  <a href="https://www.reddit.com/submit?url={{ site.url }}{{ include.page.url | default: page.url }}&title={{ include.page.title | default: page.title }}" 
+     target="_blank" rel="noopener">Reddit</a>
+
+  <!-- Telegram -->
+  <a href="https://t.me/share/url?url={{ site.url }}{{ include.page.url | default: page.url }}&text={{ include.page.title | default: page.title }}" 
+     target="_blank" rel="noopener">Telegram</a>
+
+  <!-- WhatsApp -->
+  <a href="https://api.whatsapp.com/send?text={{ include.page.title | default: page.title }}%20{{ site.url }}{{ include.page.url | default: page.url }}" 
+     target="_blank" rel="noopener">WhatsApp</a>
+
+  <!-- VKontakte -->
+  <a href="https://vk.com/share.php?url={{ site.url }}{{ include.page.url | default: page.url }}&title={{ include.page.title | default: page.title }}" 
+     target="_blank" rel="noopener">VK</a>
+</div>
