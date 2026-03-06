@@ -215,35 +215,72 @@ details ul {
    hogy mikro gondolatait megosztják. De ha az emberek kocsonyás agya lusta még a mikro posztok 
    olvasásához is, élelmesebb AI Agent -t megoszthatja kellő intepretáció után! */
 
-/* A megosztás blokk külső konténere.
-   Két soros, levegős, jól tagolt komponens lesz. */
+/* Megosztás blokk konténer */
 .share-links {
-  margin-top: 1rem;              /* nagyobb tér a tartalom után */
-  padding: 0.8rem 0;             /* belső tér, hogy blokkhatása legyen */
-  border-top: 1px solid #e5e7eb; /* finom elválasztó vonal */
-  font-size: 0.95rem;            /* kicsit nagyobb, olvashatóbb */
+  margin-top: 1rem;
+  padding: 0.8rem 0;
+  border-top: 1px solid #e5e7eb;
+  font-size: 0.95rem;
 }
 
-/* A "Megosztás:" címke.
-   Erősebb, hogy vezesse a szemet. */
+/* "Megosztás:" címke */
 .share-links span {
-  display: block;                /* külön sorba kerül */
-  margin-bottom: 0.5rem;         /* tér a linkek előtt */
+  display: block;
+  margin-bottom: 0.5rem;
   font-weight: 600;
   color: #444;
 }
 
-/* A megosztás linkek.
-   Ikon + szöveg, levegős, jól kattintható. */
-.share-links a {
-  display: inline-block;
-  margin: 0.25rem 0.6rem 0.25rem 0; /* levegő a linkek között */
+/* Alap linkstílus ikonokkal */
+.share-links a.share {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;                 /* ikon és szöveg közti tér */
+  margin: 0.25rem 0.7rem 0.25rem 0;
   text-decoration: none;
   color: #0969da;
-  white-space: nowrap;           /* ne törje meg az ikon és a szöveg közé */
+  white-space: nowrap;
+  padding-left: 1.4rem;         /* hely az ikon számára */
+  background-repeat: no-repeat;
+  background-size: 1rem;
+  background-position: left center;
 }
 
-/* Hover állapot: finom aláhúzás */
-.share-links a:hover {
+.share-links a.share:hover {
   text-decoration: underline;
+}
+
+/* Facebook ikon */
+.share.fb {
+  background-image: url("data:image/svg+xml;utf8,<svg fill='%230969da' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><path d='M22 12a10 10 0 1 0-11.5 9.9v-7h-2v-3h2v-2.3c0-2 1.2-3.1 3-3.1.9 0 1.8.1 1.8.1v2h-1c-1 0-1.3.6-1.3 1.2V12h2.2l-.4 3h-1.8v7A10 10 0 0 0 22 12z'/></svg>");
+}
+
+/* X (Twitter) ikon */
+.share.x {
+  background-image: url("data:image/svg+xml;utf8,<svg fill='%230969da' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><path d='M18.9 2H22l-7.7 8.8L23 22h-6.3l-5-6.5L5.8 22H2l8.2-9.4L1 2h6.4l4.3 5.7L18.9 2z'/></svg>");
+}
+
+/* LinkedIn ikon */
+.share.li {
+  background-image: url("data:image/svg+xml;utf8,<svg fill='%230969da' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><path d='M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.5 8h4V23h-4V8zm7.5 0h3.8v2h.1c.5-.9 1.8-2.1 3.9-2.1 4.2 0 5 2.8 5 6.4V23h-4v-7.5c0-1.8 0-4.1-2.5-4.1s-2.9 2-2.9 4V23h-4V8z'/></svg>");
+}
+
+/* Reddit ikon */
+.share.rd {
+  background-image: url("data:image/svg+xml;utf8,<svg fill='%23ff4500' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><path d='M24 12c0 6.6-5.4 12-12 12S0 18.6 0 12 5.4 0 12 0s12 5.4 12 12zM7.5 13c-.8 0-1.5-.7-1.5-1.5S6.7 10 7.5 10s1.5.7 1.5 1.5S8.3 13 7.5 13zm9 0c-.8 0-1.5-.7-1.5-1.5S15.7 10 16.5 10s1.5.7 1.5 1.5S17.3 13 16.5 13zm-9.3 3.2c1.1.7 2.6 1.1 4.3 1.1s3.2-.4 4.3-1.1c.3-.2.4-.6.2-.9-.2-.3-.6-.4-.9-.2-1 .6-2.3.9-3.6.9s-2.6-.3-3.6-.9c-.3-.2-.7-.1-.9.2-.2.3-.1.7.2.9z'/></svg>");
+}
+
+/* Telegram ikon */
+.share.tg {
+  background-image: url("data:image/svg+xml;utf8,<svg fill='%230969da' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><path d='M9.9 15.6l-.4 5.4c.6 0 .9-.3 1.2-.6l2.9-2.8 6 4.4c1.1.6 1.9.3 2.2-1l4-18.7c.4-1.7-.6-2.4-1.7-2L1.7 9.3C0 10 .1 11 1.4 11.4l5.8 1.8L19 5.4c.6-.4 1.1-.2.7.2'/></svg>");
+}
+
+/* WhatsApp ikon */
+.share.wa {
+  background-image: url("data:image/svg+xml;utf8,<svg fill='%230969da' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><path d='M12 0C5.4 0 0 5.1 0 11.5c0 2 .5 3.9 1.5 5.6L0 24l7.1-1.9c1.6.9 3.4 1.4 5.3 1.4 6.6 0 12-5.1 12-11.5S18.6 0 12 0zm6.8 16.4c-.3.8-1.7 1.5-2.4 1.6-.6.1-1.4.2-2.3-.1-.5-.2-1.2-.4-2.1-.8-3.7-1.6-6.1-5.3-6.3-5.6-.2-.3-1.5-2-1.5-3.8 0-1.8.9-2.7 1.2-3 .3-.3.7-.4 1-.4h.7c.2 0 .5 0 .7.6.3.8 1 2.7 1.1 2.9.1.2.1.4 0 .6-.1.2-.2.3-.4.5l-.6.6c-.2.2-.3.4-.1.8.2.4 1 1.6 2.1 2.6 1.4 1.2 2.6 1.6 3 .8l.4-.7c.2-.3.4-.5.7-.4.3.1 1.9.9 2.2 1.1.3.2.5.3.6.5.1.2.1.8-.2 1.6z'/></svg>");
+}
+
+/* VK ikon */
+.share.vk {
+  background-image: url("data:image/svg+xml;utf8,<svg fill='%230969da' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><path d='M12.6 17.9c-.4 0-.7-.2-.9-.5-.7-1.2-2.2-3.8-3.1-3.8-.6 0-.8.4-.8 1.3v2.4c0 .4-.3.7-.7.7H4.2c-.4 0-.7-.3-.7-.7V6.7c0-.4.3-.7.7-.7h3c.4 0 .7.3.7.7v3.7c0 .3.2.5.5.5.3 0 .5-.2.7-.4 1.1-1.5 2.4-3.9 3.1-5.2.2-.3.4-.5.8-.5h3.5c.6 0 .8.4.6.9-.4 1.1-2.4 4.4-3.3 5.6-.3.4-.3.6 0 1 1 1.3 2.8 3.5 3.4 4.4.3.5.1.9-.5.9h-3.1z'/></svg>");
 }
