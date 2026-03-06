@@ -99,6 +99,9 @@
     </div>
 
     {% if page.url != "/" %}
+
+    {% include share.html %}
+    
       <div class="back-button">
         <button type="button" onclick="if (document.referrer) { history.back(); } else { window.location.href='{{ '/' | relative_url }}'; }">
           ⬅️ Vissza
