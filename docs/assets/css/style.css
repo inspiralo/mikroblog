@@ -102,7 +102,6 @@
 
 @media (max-width: 600px) {
 
-  /* Témalistából mobilos menügombok */
   .sections p {
     margin: 0.7rem 0;
   }
@@ -122,7 +121,6 @@
     background: #eef1f4;
   }
 
-  /* Mobilos vissza gomb – jól látható, külön blokk */
   .back-button {
     margin-top: 2rem;
   }
@@ -144,65 +142,52 @@
 /* KÁRTYA-SZERŰ <details> BLOKKOK */
 /* ----------------------------- */
 
-/* ÉV-szintű <details> – ez a fő kártya
-   Ez jelenik meg első szinten (2026, 2025, 2024...) */
 details {
-  border: 1px solid #d0d7de;      /* Finom GitHub-szerű keret */
-  border-radius: 6px;             /* Lekerekített sarkok */
-  padding: 0.6rem 0.9rem;         /* Kényelmes belső tér */
-  background: #f6f8fa;            /* Világos háttér */
-  margin: 0.8rem 0;               /* Függőleges térköz */
+  border: 1px solid #d0d7de;
+  border-radius: 6px;
+  padding: 0.6rem 0.9rem;
+  background: #f6f8fa;
+  margin: 0.8rem 0;
 }
 
-/* ÉV-szintű summary – nagyobb, hangsúlyosabb */
 details > summary {
   cursor: pointer;
   font-weight: 600;
-  font-size: 1.1rem;              /* nagyobb betűméret */
-  list-style: revert;             /* natív háromszög visszahozása */
+  font-size: 1.1rem;
+  list-style: revert;
 }
 
-/* ÉV-szint marker – nagyobb háromszög */
 details > summary::marker {
   font-size: 1.25rem;
 }
 
-/* Nyitott év alatt legyen kis tér */
 details[open] > summary {
   margin-bottom: 0.5rem;
 }
 
-/* ----------------------------- */
-/* HÓNAP-szintű <details>        */
-/* ----------------------------- */
-
-/* A hónap-szintű <details> (az év alatt) legyen világosabb és kisebb */
+/* Hónap-szint */
 details details {
-  background: #ffffff;            /* fehérebb háttér – vizuális hierarchia */
-  border-color: #e5e7eb;          /* halványabb keret */
-  margin-left: 1rem;              /* beljebb húzva – alárendelt szint */
-  padding: 0.5rem 0.8rem;         /* kisebb belső tér */
+  background: #ffffff;
+  border-color: #e5e7eb;
+  margin-left: 1rem;
+  padding: 0.5rem 0.8rem;
 }
 
-/* HÓNAP-szint summary – finomabb tipográfia */
 details details summary {
   cursor: pointer;
-  font-weight: 500;               /* kevésbé hangsúlyos */
-  font-size: 0.95rem;             /* kisebb betűméret */
-  list-style: revert;             /* natív marker itt is */
+  font-weight: 500;
+  font-size: 0.95rem;
+  list-style: revert;
 }
 
-/* HÓNAP-szint marker – kisebb háromszög */
 details details summary::marker {
   font-size: 1rem;
 }
 
-/* Nyitott hónap alatt kis tér */
 details details[open] summary {
   margin-bottom: 0.4rem;
 }
 
-/* Posztlista margói */
 details ul {
   margin: 0.2rem 0 0.2rem 1rem;
   padding: 0;
@@ -212,7 +197,6 @@ details ul {
 /* MEGOSZTÁS BLOKK – VÉGLEGES, MOBILBARÁT, IKONOS, GOMBOS     */
 /* ---------------------------------------------------------- */
 
-/* Külső kártya */
 .share-links {
   margin: 1.8rem auto 0 auto;
   padding: 1rem 1.2rem;
@@ -223,7 +207,6 @@ details ul {
   text-align: center;
 }
 
-/* "Megosztás:" címke */
 .share-links span {
   display: block;
   margin-bottom: 0.8rem;
@@ -232,14 +215,12 @@ details ul {
   font-size: 1rem;
 }
 
-/* Linkek konténere – mobilon függőleges, desktopon vízszintes */
 .share-links .share-container {
   display: flex;
   flex-direction: column;
   gap: 0.7rem;
 }
 
-/* Desktop */
 @media (min-width: 600px) {
   .share-links .share-container {
     flex-direction: row;
@@ -249,12 +230,11 @@ details ul {
   }
 }
 
-/* Gombos linkek ikonokkal */
 .share-links a.share {
   display: inline-flex;
   align-items: center;
   gap: 0.55rem;
-  padding: 0.55rem 0.9rem 0.55rem 2.2rem; /* hely az ikonoknak */
+  padding: 0.55rem 0.9rem 0.55rem 2.2rem;
   border-radius: 6px;
   background: white;
   border: 1px solid #e5e7eb;
@@ -262,23 +242,18 @@ details ul {
   color: #0969da;
   font-size: 0.9rem;
   white-space: nowrap;
-
-  /* IKONOK */
   background-repeat: no-repeat;
   background-size: 1.2rem;
   background-position: 0.7rem center;
 }
 
-/* Hover desktopon */
 @media (hover: hover) {
   .share-links a.share:hover {
     background: #eef1f4;
   }
 }
 
-/* ---------------------- */
-/* PLATFORM IKONOK (SVG) */
-/* ---------------------- */
+/* PLATFORM IKONOK */
 
 .share.fb {
   background-image: url("data:image/svg+xml;utf8,<svg fill='%230969da' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><path d='M22 12a10 10 0 1 0-11.5 9.9v-7h-2v-3h2v-2.3c0-2 1.2-3.1 3-3.1.9 0 1.8.1 1.8.1v2h-1c-1 0-1.3.6-1.3 1.2V12h2.2l-.4 3h-1.8v7A10 10 0 0 0 22 12z'/></svg>");
