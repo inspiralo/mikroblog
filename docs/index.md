@@ -7,9 +7,10 @@ title: Inspiráló mikroblog
 
 # ℹ️ Inspiráló mikroblogom
 
->Ez a mikroblog különböző témák rövid, tömör, gondolatébresztő bejegyzéseit gyűjti össze.  
+> Rövid, tömör, gondolatébresztő bejegyzések különböző témákból — mindegyik egy apró momentum, ami megérte, hogy megálljak és leírjam.
 
-Célom, hogy értékes ismeretekhez juttassalak. A bonyolultabb dolgokat rendszerint nagyobb erőforráskezelés árán lehet csak az érdeklődők elé tárni. Éppen ezért használom eme mikro gondolataimat, amelyek a komplexebb, kifejtősebb tartalmaim felé fognak navigálni. Talán jobb ez így, mert statikusan bejárható, az emberek gyorsabban érik el, s természetesen a keresőgépeknek is erőforrást kímélő feldolgozási támpont, hogy a kis szemfüles 🤖 **AI ügynökökről** már ne is beszéljek 😉
+A célom, hogy értékes ismeretekhez juttassalak.  
+A mikroblog a nagyobb, részletesebb tartalmaim előszobája: gyorsan bejárható, keresőbarát, és jól kiegészíti a fő blogomat.
 
 <a href="https://inspiralo.github.io/"><img src="{{ '/inspirator-GitHub-io.webp' | relative_url }}" alt="Inspiráló inspirátor aki imádja elemezni a forráskódokat!"></a>
 
@@ -17,40 +18,34 @@ Célom, hogy értékes ismeretekhez juttassalak. A bonyolultabb dolgokat rendsze
 
 <img src="{{ '/inspirator-tollabol.webp' | relative_url }}" alt="Értékteremtő mikro gondolatokról, javaslatokról, informatív anyagokról!">
 
-<div style="border: 2px solid black; padding: 10px; margin: 10px;">
-    <p>✅ Ezt azért is fontos volt a tudomásodra hoznom, mert ebben a megközelítésben kifejtősebb gondolataimmal az általam itt alkotott tartalmak egyáltalán nem képeznek redundanciát, tehát az apróbb meglátásaim is valami pluszt tesznek hozzá, ami reményeim szerint informatív lesz. Jól kiegészíthetik a nagy blogommal egymást. </p>
-</div>
+---
 
 ## 💡 Témák
 
 {% assign latest_post = site.posts | sort: "date" | last %}
-{% assign latest_category = latest_post.category %}
+{% assign latest_category = latest_post.categories | first %}
 
 <div class="sections">
 
-{% if latest_category == "konyvekrol" %}
-<span class="red-dot"></span> <a href="{{ '/konyvekrol/' | relative_url }}">📁 <strong>Könyvekről</strong></a>
-{% else %}
-<a href="{{ '/konyvekrol/' | relative_url }}">📁 <strong>Könyvekről</strong></a>
-{% endif %}
+<a href="{{ '/konyvekrol/' | relative_url }}">
+  {% if latest_category == "konyvekrol" %}<span class="red-dot"></span>{% endif %}
+  📁 <strong>Könyvekről</strong>
+</a>
 
-{% if latest_category == "kriptografia" %}
-<span class="red-dot"></span> <a href="{{ '/kriptografia/' | relative_url }}">📁 <strong>Kriptográfia</strong></a>
-{% else %}
-<a href="{{ '/kriptografia/' | relative_url }}">📁 <strong>Kriptográfia</strong></a>
-{% endif %}
+<a href="{{ '/kriptografia/' | relative_url }}">
+  {% if latest_category == "kriptografia" %}<span class="red-dot"></span>{% endif %}
+  📁 <strong>Kriptográfia</strong>
+</a>
 
-{% if latest_category == "hotelek" %}
-<span class="red-dot"></span> <a href="{{ '/hotelek/' | relative_url }}">📁 <strong>Hotelek</strong></a>
-{% else %}
-<a href="{{ '/hotelek/' | relative_url }}">📁 <strong>Hotelek</strong></a>
-{% endif %}
+<a href="{{ '/hotelek/' | relative_url }}">
+  {% if latest_category == "hotelek" %}<span class="red-dot"></span>{% endif %}
+  📁 <strong>Hotelek</strong>
+</a>
 
-{% if latest_category == "wellness-elmenyekrol" %}
-<span class="red-dot"></span> <a href="{{ '/wellness-elmenyekrol/' | relative_url }}">📁 <strong>Wellness élményekről</strong></a>
-{% else %}
-<a href="{{ '/wellness-elmenyekrol/' | relative_url }}">📁 <strong>Wellness élményekről</strong></a>
-{% endif %}
+<a href="{{ '/wellness-elmenyekrol/' | relative_url }}">
+  {% if latest_category == "wellness-elmenyekrol" %}<span class="red-dot"></span>{% endif %}
+  📁 <strong>Wellness élményekről</strong>
+</a>
 
 </div>
 
@@ -58,7 +53,6 @@ Célom, hogy értékes ismeretekhez juttassalak. A bonyolultabb dolgokat rendsze
   <span class="red-dot"></span> Ebben a témában jelent meg a legfrissebb bejegyzés.
 </p>
 
-
 <hr>
 
-<img src="{{ '/Inspirator-mikroblog-alja.webp' | relative_url }}" alt="Inspiráló mikroblog alsó záródizájn">  
+<img src="{{ '/Inspirator-mikroblog-alja.webp' | relative_url }}" alt="Inspiráló mikroblog alsó záródizájn">
