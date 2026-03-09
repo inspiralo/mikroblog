@@ -5,6 +5,7 @@ category: konyvekrol
 tags: [Bitcoin, könyv, bemutató, könyvajánló, kripto ismeretek]
 date: 2026-02-17
 permalink: /konyvekrol/a-bitcoin-letrehozasa.html
+categories: ["konyvekrol"]
 ---
 
 ## A Bitcoin létrehozása 
