@@ -5,6 +5,7 @@ category: kriptografia
 tags: [kriptográfia, kriptográfiai-protokollok, tls, ssl, https, hsts, ssh, ipsec, vpn, pgp, gpg, diffie-hellman, kerberos, oauth2, openid-connect, webes-biztonság, hitelesítés, titkosítás, digitális-biztonság]
 date: 2026-02-17
 permalink: /kriptografia/kriptografiai-protokollok.html
+categories: ["kriptografia"]
 ---
 
 # Kriptográfiai protokollok, csak a legfontosabb alapokról
