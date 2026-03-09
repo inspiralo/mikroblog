@@ -50,7 +50,7 @@ A mikroblog a nagyobb, részletesebb tartalmaim előszobája: gyorsan bejárhat�
 </div>
 
 <p class="latest-info">
-  <span class="red-dot"></span> Ebben a témában jelent meg a legfrissebb bejegyzés.
+  <span class="red-dot"></span> Ebben a témában formáltam legutóbb véleményt, írtam valami érdekesről 😉
 </p>
 
 <hr>
