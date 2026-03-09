@@ -1,3 +1,7 @@
+---
+title: "Wellness élményekről"
+---
+
 # Wellness élményekről
 
 A *Wellness élmények* kategória a rövid, mégis emlékezetes regeneráló pillanatokról szól. Szaunázásról, spa‑térélményekről, különleges felöntésekről, csendes pihenőkről és minden olyan 
@@ -19,10 +23,6 @@ Ebben a kategóriában gyakran jelennek meg:
 - különleges szaunamesterek és stílusok  
 - térélmények, amelyek megmaradnak  
 - apró tanulságok, amiket érdemes továbbvinni
-
-A hangulatot jól megadja a friss élménybeszámoló Baluról is,  
-amely pontosan azt a közvetlen, személyes tónust hozza,  
-amire ez a mappa épül.
 
 ---
 
@@ -49,27 +49,30 @@ Ezekben a bejegyzésekben a rövid, letisztult benyomások kapnak helyet:
   {% assign posts = "" %}
 {% endif %}
 
-{% assign current_year = "" %}
-{% assign current_month = "" %}
+{% assign years = posts | group_by_exp: "post", "post.date | date: '%Y'" %}
 
-{% for post in posts %}
-  {% assign y = post.date | date: "%Y" %}
-  {% assign m = post.date | date: "%m" %}
+{% for year in years %}
+<details>
+  <summary><strong>{{ year.name }}</strong></summary>
 
-  {% if y != current_year %}
-  <h2>{{ y }}</h2>
-  {% assign current_year = y %}
-  {% assign current_month = "" %}
-  {% endif %}
+  {% assign months = year.items | group_by_exp: "post", "post.date | date: '%Y. %m.'" %}
 
-  {% if m != current_month %}
-  <h3>{{ y }}. {{ m }}.</h3>
-  {% assign current_month = m %}
-  {% endif %}
+  {% for month in months %}
+  <details style="margin-left: 1rem;">
+    <summary><strong>{{ month.name }}</strong></summary>
+    <ul>
+      {% for post in month.items %}
+      <li>
+        <strong><a href="{{ post.url | relative_url }}">{{ post.title }}</a></strong><br>
+        <small>{{ post.date | date: "%Y. %m. %d." }}</small>
+        {% if post.tags %}
+          <br><small>Címkék: {{ post.tags | join: ', ' }}</small>
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+  </details>
+  {% endfor %}
 
-  <p>
-    <strong><a href="{{ post.url | relative_url }}">{{ post.title }}</a></strong><br>
-    <small>{{ post.date | date: "%Y. %m. %d." }}</small>
-  </p>
-
+</details>
 {% endfor %}
