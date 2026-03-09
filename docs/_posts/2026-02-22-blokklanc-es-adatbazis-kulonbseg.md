@@ -3,6 +3,7 @@ title: "Mi különbözteti meg a blokkláncot egy hagyományos adatbázistól?"
 tags: ["kriptográfia", "blokklánc", "adatbázis", "technológia"]
 date: 2026-02-22
 permalink: /kriptografia/blokklanc-es-adatbazis-kulonbseg.html
+categories: ["kriptografia"]
 ---
 
 A blokklánc és a hagyományos adatbázis első ránézésre hasonlónak tűnhet, de a működésük alapvetően eltér. A blokklánc decentralizált, minden 
