@@ -5,6 +5,7 @@ category: kriptografia
 tags: [scam, átverés, buta levél, igénytelen, erőforráspazarlás]
 date: 2026-03-09
 permalink: /kriptografia/erthetetlen-zsivany-pszichologia.html
+categories: ["kriptografia"]
 ---
 
 # Alábbi trükkel próbálják a különböző kripto platformokon kriptovalutákat tartók pénzét lenyúlni❗
