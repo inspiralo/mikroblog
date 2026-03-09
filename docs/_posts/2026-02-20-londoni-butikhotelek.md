@@ -5,6 +5,7 @@ category: hotelek
 tags: [hotelek, London, boutique hotelek, utazás, szállás, butikhotelek]
 date: 2026-02-20
 permalink: hotelek/londoni-butikhotelek.html
+categories: ["hotelek"]
 ---
 
 Londonban a butikhotelek világa külön műfaj: kisebb, karakteres szállások, ahol a dizájn, a hangulat és a személyesség sokkal többet számít, mint a csillagok száma. Ezek a helyek nem a tömegturistáknak készülnek, hanem azoknak, akik szeretnek egy várost a részletein keresztül megismerni.
