@@ -5,6 +5,7 @@ category: kriptografia
 tags: [bitcoin, árfolyam, zuhan a bitcoin, miért esik a bitcoin, meddig eshet a bitcoin]
 date: 2026-02-21
 permalink: /kriptografia/bedolt-bitcoin-arfolyam.html
+categories: ["kriptografia"]
 ---
 
 # Most őszintén, miért foglalkozol a bedőlt bitcoin árfolyamával❓
