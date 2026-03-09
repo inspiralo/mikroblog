@@ -1,0 +1,4 @@
+source: docs
+markdown: kramdown
+highlighter: rouge
+theme: null
