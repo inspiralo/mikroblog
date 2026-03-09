@@ -5,6 +5,7 @@ category: konyvekrol
 tags: [Szabadesés, könyv, bemutató, könyvajánló, Imre Regina Mária]
 date: 2026-02-17
 permalink: /konyvekrol/szabadeses-konyv.html
+categories: ["konyvekrol"]
 ---
 
 ### Szabadesés – Losonctól Kaliforniáig
