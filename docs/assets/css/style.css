@@ -15,42 +15,50 @@
   border-radius: 6px;
 }
 
-/* Témalista oszlopokkal (desktop) */
+/* --------------------------------------------- */
+/* FŐOLDAL – TÉMAKÁRTYÁK (KÖZÉPRE IGAZÍTVA)     */
+/* --------------------------------------------- */
+
 .sections {
-  column-count: 3;
-  column-gap: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;   /* KÖZÉPRE IGAZÍTÁS */
+  gap: 1.2rem;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0;
   list-style: none;
-  padding-left: 0;
 }
 
-.sections p {
-  margin: 0.3rem 0;
-  font-size: 15px;
-  line-height: 1.3;
-}
-
-.sections a {
+.topic-card {
+  display: block;
+  width: 260px;              /* egységes kártyaszélesség */
+  padding: 1rem 1.2rem;
+  background: #f6f8fa;
+  border: 1px solid #d0d7de;
+  border-radius: 8px;
+  font-size: 1.05rem;
+  color: #0969da;
   text-decoration: none;
 }
 
-.sections a:hover {
-  text-decoration: underline;
+.topic-card:hover {
+  background: #eef1f4;
 }
 
 /* Mobil töréspontok */
-@media (max-width: 900px) {
-  .sections {
-    column-count: 2;
-  }
-}
-
 @media (max-width: 600px) {
-  .sections {
-    column-count: 1;
+  .topic-card {
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 1rem 1.2rem;
   }
 }
 
-/* Felső GitHub-szerű fejléc */
+/* --------------------------------------------- */
+/* Felső GitHub-szerű fejléc                    */
+/* --------------------------------------------- */
+
 .site-header {
   background: #f6f8fa;
   border-bottom: 1px solid #d0d7de;
@@ -96,31 +104,8 @@
   background: #0757b3;
 }
 
-/* ----------------------------- */
-/* MOBILOS MENÜGOMBOK + VISSZA  */
-/* ----------------------------- */
-
+/* Mobilos vissza gomb */
 @media (max-width: 600px) {
-
-  .sections p {
-    margin: 0.7rem 0;
-  }
-
-  .sections a {
-    display: block;
-    padding: 1rem 1.2rem;
-    background: #f6f8fa;
-    border: 1px solid #d0d7de;
-    border-radius: 8px;
-    font-size: 1.1rem;
-    line-height: 1.4;
-    color: #0969da;
-  }
-
-  .sections a:hover {
-    background: #eef1f4;
-  }
-
   .back-button {
     margin-top: 2rem;
   }
@@ -138,9 +123,9 @@
   }
 }
 
-/* ----------------------------- */
-/* KÁRTYA-SZERŰ <details> BLOKKOK */
-/* ----------------------------- */
+/* --------------------------------------------- */
+/* KÁRTYA-SZERŰ <details> BLOKKOK (ÉV–HÓNAP)     */
+/* --------------------------------------------- */
 
 details {
   border: 1px solid #d0d7de;
@@ -193,9 +178,9 @@ details ul {
   padding: 0;
 }
 
-/* ---------------------------------------------------------- */
+/* --------------------------------------------- */
 /* MEGOSZTÁS BLOKK – PLATFORM SZÍNŰ, IKONOK NÉLKÜL */
-/* ---------------------------------------------------------- */
+/* --------------------------------------------- */
 
 .share-links {
   margin: 1.8rem auto 0 auto;
@@ -250,7 +235,6 @@ details ul {
 }
 
 /* PLATFORM SZÍNEK */
-
 .share.fb { color: #1877F2; border-color: #1877F2; }
 .share.x  { color: #000000; border-color: #000000; }
 .share.li { color: #0076B2; border-color: #0076B2; }
@@ -259,7 +243,7 @@ details ul {
 .share.wa { color: #25D366; border-color: #25D366; }
 .share.vk { color: #0077FF; border-color: #0077FF; }
 
-/* Piros pont a legfrissebb témához : avagy Inspirátor melyik témához szól utoljára hozzá? */
+/* Piros pont a legfrissebb témához */
 .red-dot {
   display: inline-block;
   width: 10px;
@@ -270,23 +254,9 @@ details ul {
   vertical-align: middle;
 }
 
-/* UX szerű tudatása, hogy mit jelent a piros pont! */
+/* UX szerű tudatása, hogy mit jelent a piros pont */
 .latest-info {
   font-size: 0.9rem;
   color: #888;
   margin-top: 0.5rem;
-}
-/* Főoldal témakitöltés érzete! */
-.topic-card {
-  display: block;
-  padding: 1rem 1.2rem;
-  background: #f6f8fa;
-  border: 1px solid #d0d7de;
-  border-radius: 8px;
-  margin-bottom: 1rem;
-  font-size: 1.05rem;
-  color: #0969da;
-}
-.topic-card:hover {
-  background: #eef1f4;
 }
