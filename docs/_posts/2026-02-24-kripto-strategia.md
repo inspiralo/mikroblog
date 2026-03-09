@@ -5,6 +5,7 @@ category: kriptografia
 tags: [Bitcoin, kripto kezdés, kripto tanulás, kripto stratégia, DCA, fundamentális alapok, tokenizált gazdaságok]
 date: 2026-02-24
 permalink: /kriptografia/kripto-strategia.html
+categories: ["kriptografia"]
 ---
 
 # Mi a helyes kripto stratégia❓
