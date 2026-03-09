@@ -5,6 +5,7 @@ category: kriptografia
 tags: [bitcoin, árfolyam, zuhanás, halálkereszt, piaci működés, spekulánsok]
 date: 2026-03-03
 permalink: /kriptografia/halalkereszt.html
+categories: ["kriptografia"]
 ---
 
 # Az árfolyam spekuláns mániások most tudják, vagy nem tudják mi szösz a halálkereszt❓
