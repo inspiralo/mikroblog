@@ -276,3 +276,17 @@ details ul {
   color: #888;
   margin-top: 0.5rem;
 }
+/* Főoldal témakitöltés érzete! */
+.topic-card {
+  display: block;
+  padding: 1rem 1.2rem;
+  background: #f6f8fa;
+  border: 1px solid #d0d7de;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  font-size: 1.05rem;
+  color: #0969da;
+}
+.topic-card:hover {
+  background: #eef1f4;
+}
