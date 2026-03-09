@@ -32,48 +32,30 @@ A „Hotelek” kategória célja nem az, hogy minden szálláshelyet lefedjen, 
   {% assign posts = "" %}
 {% endif %}
 
-{% assign current_year = "" %}
-{% assign current_month = "" %}
+{% assign years = posts | group_by_exp: "post", "post.date | date: '%Y'" %}
 
-{% for post in posts %}
-  {% assign post_year = post.date | date: "%Y" %}
-  {% assign post_month = post.date | date: "%m" %}
+{% for year in years %}
+<details>
+  <summary><strong>{{ year.name }}</strong></summary>
 
-  {% if post_year != current_year %}
-    {% if current_year != "" %}
-        </details>
-      </details>
-    {% endif %}
-    <details>
-      <summary><strong>{{ post_year }}</strong></summary>
-    {% assign current_year = post_year %}
-    {% assign current_month = "" %}
-  {% endif %}
+  {% assign months = year.items | group_by_exp: "post", "post.date | date: '%Y. %m.'" %}
 
-  {% if post_month != current_month %}
-    {% if current_month != "" %}
-      </details>
-    {% endif %}
-    <details style="margin-left: 1rem;">
-      <summary><strong>{{ post_year }}. {{ post_month }}.</strong></summary>
-    {% assign current_month = post_month %}
-  {% endif %}
-
-  <ul>
-    <li>
-      <strong><a href="{{ post.url | relative_url }}">{{ post.title }}</a></strong><br>
-      <small>{{ post.date | date: "%Y. %m. %d." }}</small>
-      {% if post.tags %}
-        <br><small>Címkék: {{ post.tags | join: ', ' }}</small>
-      {% endif %}
-    </li>
-  </ul>
-
-{% endfor %}
-
-{% if current_month != "" %}
+  {% for month in months %}
+  <details style="margin-left: 1rem;">
+    <summary><strong>{{ month.name }}</strong></summary>
+    <ul>
+      {% for post in month.items %}
+      <li>
+        <strong><a href="{{ post.url | relative_url }}">{{ post.title }}</a></strong><br>
+        <small>{{ post.date | date: "%Y. %m. %d." }}</small>
+        {% if post.tags %}
+          <br><small>Címkék: {{ post.tags | join: ', ' }}</small>
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
   </details>
-{% endif %}
-{% if current_year != "" %}
+  {% endfor %}
+
 </details>
-{% endif %}
+{% endfor %}
