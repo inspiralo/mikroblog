@@ -42,7 +42,12 @@ Ezekben a bejegyzésekben a rövid, letisztult benyomások kapnak helyet:
 
 ## Bejegyzéseim időrendben 👇
 
-{% assign posts = site.categories.wellness-elmenyekrol | sort: "date" | reverse %}
+{% assign raw_posts = site.categories["wellness-elmenyekrol"] %}
+{% if raw_posts %}
+  {% assign posts = raw_posts | sort: "date" | reverse %}
+{% else %}
+  {% assign posts = "" %}
+{% endif %}
 
 {% assign current_year = "" %}
 {% assign current_month = "" %}
