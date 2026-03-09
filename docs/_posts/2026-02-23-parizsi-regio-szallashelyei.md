@@ -5,6 +5,7 @@ category: hotelek
 tags: [hotelek, Párizs környéke, látnivalók, utazás, kirándulás, túrák]
 date: 2026-02-23
 permalink: hotelek/parizsi-regio-szallashelyei.html
+categories: ["hotelek"]
 ---
 
 # Lenyűgöző hotelek a párizsi régióban
