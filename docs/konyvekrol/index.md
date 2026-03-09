@@ -20,7 +20,12 @@ Ebben a szekcióban olyan művek jelennek meg, amelyek valamilyen szempontból:
 
 ## Bejegyzéseim időrendben 👇
 
-{% assign posts = site.categories.konyvekrol | sort: "date" | reverse %}
+{% assign raw_posts = site.categories["konyvekrol"] %}
+{% if raw_posts %}
+  {% assign posts = raw_posts | sort: "date" | reverse %}
+{% else %}
+  {% assign posts = "" %}
+{% endif %}
 
 {% assign current_year = "" %}
 {% assign current_month = "" %}
