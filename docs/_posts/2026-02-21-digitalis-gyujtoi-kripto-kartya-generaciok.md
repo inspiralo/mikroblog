@@ -5,6 +5,7 @@ category: kriptografia
 tags: ["kriptográfia", "kripto kártya", "Bleap", "generációk"]
 date: 2026-02-21
 permalink: /kriptografia/digitalis-gyujtoi-kripto-kartya-generaciok.html
+categories: ["kriptografia"]
 ---
 
 # Gondolatom a digitális gyűjtői kriptokártya‑generációkról és a Bleap külön kategóriájáról
