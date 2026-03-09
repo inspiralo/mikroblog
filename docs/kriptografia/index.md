@@ -69,11 +69,19 @@ A **Diffie–Hellman** kulcscsere protokoll az egyik alapvető megoldás a bizto
 
 ## Összegzés
 
-A kriptográfia a digitális biztonság alapja: védi az adatokat, hitelesíti a kommunikációt és biztosítja a tranzakciók integritását. A jövő a **kvantumbiztos** és **elliptikus görbéken alapuló** megoldások felé mutat, mivel a klasszikus algoritmusok hosszú távon nem lesznek elegendőek. Tehát a mikroblogomnak ez olyan meglehetősen tágas szeglete, ahol a kriptográfia világával releváns apróbb gondolataim vagy épp edukatív jellegű tartalmaim olvashatod. Természetesen ha akadnak érdekesebb szolgáltatások azokra is felhívom a figyelmed, vagy ha a kriptográfia relevanciájában a médiában történik valami kommunikáció amivel kapcsolatban apróbb véleményem adnám közre, azt is itt láthatod.
+A kriptográfia a digitális biztonság alapja: védi az adatokat, hitelesíti a kommunikációt és biztosítja a tranzakciók integritását. A jövő a **kvantumbiztos** és **elliptikus görbéken alapuló** megoldások felé mutat.  
+Ez a mikroblogom egyik legfontosabb szeglete: itt találod az apróbb gondolataimat, edukatív jegyzeteimet és a kriptográfia világához kapcsolódó rövid tartalmaimat.
+
+---
 
 ## Bejegyzéseim időrendben 👇
 
-{% assign posts = site.categories.kriptografia | sort: "date" | reverse %}
+{% assign raw_posts = site.categories["kriptografia"] %}
+{% if raw_posts %}
+  {% assign posts = raw_posts | sort: "date" | reverse %}
+{% else %}
+  {% assign posts = "" %}
+{% endif %}
 
 {% assign current_year = "" %}
 {% assign current_month = "" %}
