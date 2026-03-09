@@ -5,6 +5,7 @@ category: kriptografia
 tags: [kripto fogalmak, kripto tudástár, blokkláncokról, kripto enciklopédia, kripto szótár]
 date: 2026-02-28
 permalink: /kriptografia/kripto-fogalmak.html
+categories: ["kriptografia"]
 ---
 
 # Kripto fogalmak
