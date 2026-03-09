@@ -15,7 +15,7 @@
   border-radius: 6px;
 }
 
-/* Témalistád oszlopokkal (desktop) */
+/* Témalista oszlopokkal (desktop) */
 .sections {
   column-count: 3;
   column-gap: 1.5rem;
