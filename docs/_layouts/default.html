@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RHBHX1SJFT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-RHBHX1SJFT');
+</script>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow">
+  <meta name="google-site-verification" content="PmmDkzXqp2XU_rrwqWjlzWymh3ZcoXHG5N9ib6DFrwM" />
+
+  <!-- Dinamikus OG title (fallbackkel) -->
+  <meta property="og:title" content="{{ page.title | default: site.title | escape }}">
+
+  <!-- Robusztus OG description fallback (markdown-biztos + szóköz-megőrző verzió) -->
+  {% if page.excerpt %}
+    <meta property="og:description" content="{{ page.excerpt | markdownify | strip_html | replace: '\n', ' ' | replace: '  ', ' ' | truncate: 160 }}">
+  {% elsif page.content %}
+    <meta property="og:description" content="{{ page.content | markdownify | strip_html | replace: '\n', ' ' | replace: '  ', ' ' | truncate: 160 }}">
+  {% else %}
+    <meta property="og:description" content="Mikroblog – inspiráló gondolatok, elemzések és rövid jegyzetek.">
+  {% endif %}
+
+  <meta property="og:image" content="https://inspiralo.github.io/mikroblog/inspirator-GitHub-kozossegi-megosztas-1280x640.png">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:type" content="article">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://inspiralo.github.io/mikroblog/inspirator-GitHub-kozossegi-megosztas-1280x640.png">
+
+  <title>{{ page.title }}</title>
+
+  <!-- GitHub-szerű Markdown stílus -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.5.1/github-markdown.min.css">
+
+  <!-- Saját stílusok -->
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+
+  {% include head-custom.html %}
+
+  <!-- JSON-LD strukturált adat AEO + SEO optimalizáláshoz -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "{{ page.title | escape }}",
+    "description": "{% if page.excerpt %}{{ page.excerpt | markdownify | strip_html | replace: '\n', ' ' | replace: '  ', ' ' | escape }}{% elsif page.content %}{{ page.content | markdownify | strip_html | replace: '\n', ' ' | replace: '  ', ' ' | escape }}{% else %}Mikroblog – inspiráló gondolatok, elemzések és rövid jegyzetek.{% endif %}",
+    "datePublished": "{{ page.date }}",
+
+    "author": {
+      "@type": "Person",
+      "name": "Inspirátor",
+      "sameAs": [
+        "https://inspiralo.github.io",
+        "https://inspiralo.github.io/mikroblog/",
+        "https://inspirator.blog",
+        "https://seo.inspirator.blog",
+        "https://substack.com/@mrgeniusrefferator"
+      ]
+    },
+
+    "publisher": {
+      "@type": "Person",
+      "name": "Inspirátor"
+    },
+
+    "brand": {
+      "@type": "Brand",
+      "name": "Inspirátor"
+    },
+
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "{{ page.url | absolute_url }}"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- GitHub-szerű felső fejléc -->
+  <header class="site-header">
+    <div class="container">
+      <a href="{{ '/' | relative_url }}" class="site-title">Mikroblog</a>
+    </div>
+  </header>
+
+  <main class="page-content" aria-label="Content">
+    <div class="markdown-body">
+      {{ content }}
+    </div>
+
+    {% if page.url != "/" %}
+
+    {% include share.html %}
+    
+      <div class="back-button">
+        <button type="button" onclick="if (document.referrer) { history.back(); } else { window.location.href='{{ '/' | relative_url }}'; }">
+          ⬅️ Vissza
+        </button>
+      </div>
+    {% endif %}
+  </main>
