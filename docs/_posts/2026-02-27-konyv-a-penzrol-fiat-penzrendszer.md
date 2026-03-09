@@ -5,6 +5,7 @@ category: konyvekrol
 tags: [pénz, gazdaság, bitcoin, modern pénzügyi szemlélet, alternatív monetáris rendszer]
 date: 2026-02-27
 permalink: /konyvekrol/konyv-a-penzrol-fiat-penzrendszer.html
+categories: ["konyvekrol"]
 ---
 
 # A Fiat STANDARD könyvről
