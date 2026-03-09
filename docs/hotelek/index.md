@@ -17,13 +17,20 @@ Nem klasszikus szállásfoglaló téma ez, nem feltétlen árakat hasonlítok ö
 
 A mikroposztok között lesznek olyanok, amelyek konkrét úti cél + hotelek logikára épülnek (például *budapesti hotelek*, *zambiai hotelek*, *tengerparti hotelek*), és olyanok is, amelyek inkább a hotelélményről szólnak: 
 
-> miért kerül ennyibe egy 5 csillagos hotel, mitől jó egy reggeli, hogyan verhet rá egy kisebb, családias szállás egy nagy láncszállodára ❓Ilyesféle gondolatok lesznek❗
+> miért kerül ennyibe egy 5 csillagos hotel, mitől jó egy reggeli, hogyan verhet rá egy kisebb, családias szállás egy nagy láncszállodára ❓ Ilyesféle gondolatok lesznek❗
 
 A „Hotelek” kategória célja nem az, hogy minden szálláshelyet lefedjen, hanem az, hogy utazás előtt vagy után legyen egy hely, ahol rövid, őszinte, emberi nézőpontokkal találkozol a szállásvilágról – belföldön és külföldön egyaránt.
 
+---
+
 ## Bejegyzéseim, mikor mit mondtam a hotelek témámban 👇
 
-{% assign posts = site.categories.hotelek | sort: "date" | reverse %}
+{% assign raw_posts = site.categories["hotelek"] %}
+{% if raw_posts %}
+  {% assign posts = raw_posts | sort: "date" | reverse %}
+{% else %}
+  {% assign posts = "" %}
+{% endif %}
 
 {% assign current_year = "" %}
 {% assign current_month = "" %}
@@ -34,8 +41,8 @@ A „Hotelek” kategória célja nem az, hogy minden szálláshelyet lefedjen, 
 
   {% if post_year != current_year %}
     {% if current_year != "" %}
-        </details> <!-- hónap lezárása -->
-      </details>   <!-- év lezárása -->
+        </details>
+      </details>
     {% endif %}
     <details>
       <summary><strong>{{ post_year }}</strong></summary>
@@ -45,7 +52,7 @@ A „Hotelek” kategória célja nem az, hogy minden szálláshelyet lefedjen, 
 
   {% if post_month != current_month %}
     {% if current_month != "" %}
-      </details> <!-- előző hónap lezárása -->
+      </details>
     {% endif %}
     <details style="margin-left: 1rem;">
       <summary><strong>{{ post_year }}. {{ post_month }}.</strong></summary>
@@ -65,8 +72,8 @@ A „Hotelek” kategória célja nem az, hogy minden szálláshelyet lefedjen, 
 {% endfor %}
 
 {% if current_month != "" %}
-  </details> <!-- utolsó hónap lezárása -->
+  </details>
 {% endif %}
 {% if current_year != "" %}
-</details> <!-- utolsó év lezárása -->
+</details>
 {% endif %}
