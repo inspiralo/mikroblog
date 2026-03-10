@@ -1,4 +1,186 @@
-<h1 id="wellness-élményekről">Wellness élményekről</h1>
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RHBHX1SJFT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-RHBHX1SJFT');
+</script>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow">
+  <meta name="google-site-verification" content="PmmDkzXqp2XU_rrwqWjlzWymh3ZcoXHG5N9ib6DFrwM" />
+
+  <!-- Dinamikus OG title -->
+  <meta property="og:title" content="Wellness élményekről">
+
+  <!-- Robusztus OG description fallback -->
+  
+    <meta property="og:description" content="Wellness élményekről
+
+A Wellness élmények kategória a rövid, mégis emlékezetes regeneráló pillanatokról szól. Szaunázásról, spa‑térélményekről, különleges fe...">
+  
+
+  <meta property="og:image" content="https://inspiralo.github.io/mikroblog/inspirator-GitHub-kozossegi-megosztas-1280x640.png">
+  <meta property="og:url" content="/mikroblog/wellness-elmenyekrol/">
+  <meta property="og:type" content="article">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://inspiralo.github.io/mikroblog/inspirator-GitHub-kozossegi-megosztas-1280x640.png">
+
+  <title>Wellness élményekről</title>
+
+  <!-- GitHub-szerű Markdown stílus -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.5.1/github-markdown.min.css">
+
+  <!-- Saját stílusok – baseurl-kompatibilis -->
+  <link rel="stylesheet" href="/mikroblog/assets/css/style.css">
+
+  <link rel="icon" type="image/x-icon" href="/mikroblog/favicon.ico">
+
+
+  <!-- JSON-LD strukturált adat -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Wellness élményekről",
+    "description": "Wellness élményekről
+
+A Wellness élmények kategória a rövid, mégis emlékezetes regeneráló pillanatokról szól. Szaunázásról, spa‑térélményekről, különleges felöntésekről, csendes pihenőkről és minden olyan 
+apró részletről, amely egy helyet vagy alkalmat igazán jóvá tesz.
+
+A fókusz nem a hosszú beszámolókon van, hanem a lényegen: mi volt az a momentum, ami miatt érdemes volt megállni, figyelni, jelen lenni, esetleges hosszabb beszámolót a bennük lévő 
+hivatkozás útján, szinte biztos, hogy megfogod lelni 😉
+
+
+
+🔥 Szaunaélmények
+
+A szaunázás egyszerre rituálé és játék.
+A jó felöntés, a ritmus, a hő és a figyelem együtt adják azt a sajátos állapotot, amit máshol nem lehet megtalálni.
+
+Ebben a kategóriában gyakran jelennek meg:
+
+
+ rövid élményjegyzetek egy-egy alkalomról
+ különleges szaunamesterek és stílusok
+ térélmények, amelyek megmaradnak
+ apró tanulságok, amiket érdemes továbbvinni
+
+
+
+
+💧 Spa és pihenőtér
+
+A spa‑élményeknél a tér, a fény, a víz és a ritmus számít.
+Nem a luxus, hanem az összhang.
+
+Ezekben a bejegyzésekben a rövid, letisztult benyomások kapnak helyet:
+
+
+ milyen volt a tér aránya
+ milyen hangulatot adott a víz
+ volt‑e valami váratlanul jó részlet
+ mi az, amit érdemes megjegyezni későbbre
+
+
+
+
+Bejegyzéseim időrendben 👇
+
+{% assign raw_posts = site.categories[“wellness-elmenyekrol”] %}
+{% if raw_posts %}
+ {% assign posts = raw_posts | sort: “date” | reverse %}
+{% else %}
+ {% assign posts = “” %}
+{% endif %}
+
+
+ 
+  
+   {% assign years = posts
+   group_by_exp: “post”, “post.date
+   date: ‘%Y’” %}
+  
+ 
+
+
+{% for year in years %}
+
+ {{ year.name }}
+
+ {% assign months = year.items | group_by_exp: &quot;post&quot;, &quot;post.date | date: &#39;%Y. %m.&#39;&quot; %}
+
+ {% for month in months %}
+ 
+  {{ month.name }}
+  
+   {% for post in month.items %}
+   
+    {{ post.title }}
+    {{ post.date | date: &quot;%Y. %m. %d.&quot; }}
+    {% if post.tags %}
+     Címkék: {{ post.tags | join: &#39;, &#39; }}
+    {% endif %}
+   
+   {% endfor %}
+  
+ 
+ {% endfor %}
+
+
+{% endfor %}
+",
+    "datePublished": "",
+
+    "author": {
+      "@type": "Person",
+      "name": "Inspirátor",
+      "sameAs": [
+        "https://inspiralo.github.io",
+        "https://inspiralo.github.io/mikroblog/",
+        "https://inspirator.blog",
+        "https://seo.inspirator.blog",
+        "https://substack.com/@mrgeniusrefferator"
+      ]
+    },
+
+    "publisher": {
+      "@type": "Person",
+      "name": "Inspirátor"
+    },
+
+    "brand": {
+      "@type": "Brand",
+      "name": "Inspirátor"
+    },
+
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "/mikroblog/wellness-elmenyekrol/"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- GitHub-szerű felső fejléc -->
+  <header class="site-header">
+    <div class="container">
+      <!-- FIX: nincs több duplázódás -->
+      <a href="/mikroblog/" class="site-title">Mikroblog</a>
+    </div>
+  </header>
+
+  <main class="page-content" aria-label="Content">
+    <div class="markdown-body">
+      <h1 id="wellness-élményekről">Wellness élményekről</h1>
 
 <p>A <em>Wellness élmények</em> kategória a rövid, mégis emlékezetes regeneráló pillanatokról szól. Szaunázásról, spa‑térélményekről, különleges felöntésekről, csendes pihenőkről és minden olyan 
 apró részletről, amely egy helyet vagy alkalmat igazán jóvá tesz.</p>
@@ -66,3 +248,61 @@ Nem a luxus, hanem az összhang.</p>
 
 </details>
 
+
+    </div>
+
+    
+      <div class="share-links">
+  <span>💡 Gondolatom hasznosnak vélted❓ Oszd meg:</span>
+
+  <div class="share-container">
+
+    <!-- Facebook -->
+    <a class="share fb"
+       href="https://www.facebook.com/sharer/sharer.php?u=/mikroblog/wellness-elmenyekrol/"
+       target="_blank" rel="noopener">Facebook</a>
+
+    <!-- X / Twitter -->
+    <a class="share x"
+       href="https://twitter.com/intent/tweet?url=/mikroblog/wellness-elmenyekrol/&text=Wellness élményekről"
+       target="_blank" rel="noopener">X</a>
+
+    <!-- LinkedIn -->
+    <a class="share li"
+       href="https://www.linkedin.com/sharing/share-offsite/?url=/mikroblog/wellness-elmenyekrol/"
+       target="_blank" rel="noopener">LinkedIn</a>
+
+    <!-- Reddit -->
+    <a class="share rd"
+       href="https://www.reddit.com/submit?url=/mikroblog/wellness-elmenyekrol/&title=Wellness élményekről"
+       target="_blank" rel="noopener">Reddit</a>
+
+    <!-- Telegram -->
+    <a class="share tg"
+       href="https://t.me/share/url?url=/mikroblog/wellness-elmenyekrol/&text=Wellness élményekről"
+       target="_blank" rel="noopener">Telegram</a>
+
+    <!-- WhatsApp -->
+    <a class="share wa"
+       href="https://api.whatsapp.com/send?text=Wellness élményekről%20/mikroblog/wellness-elmenyekrol/"
+       target="_blank" rel="noopener">WhatsApp</a>
+
+    <!-- VKontakte -->
+    <a class="share vk"
+       href="https://vk.com/share.php?url=/mikroblog/wellness-elmenyekrol/&title=Wellness élményekről"
+       target="_blank" rel="noopener">VK</a>
+
+  </div>
+</div>
+
+      <div class="back-button">
+        <!-- FIX: vissza gomb is baseurl-kompatibilis -->
+        <button type="button" onclick="if (document.referrer) { history.back(); } else { window.location.href='/mikroblog/'; }">
+          ⬅️ Vissza
+        </button>
+      </div>
+    
+  </main>
+
+</body>
+</html>
