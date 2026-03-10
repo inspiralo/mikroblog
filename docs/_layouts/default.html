@@ -31,7 +31,10 @@
   {% endif %}
 
   <meta property="og:image" content="https://inspiralo.github.io/mikroblog/inspirator-GitHub-kozossegi-megosztas-1280x640.png">
-  <meta property="og:url" content="{{ page.url | absolute_url }}">
+
+  <!-- FIX: OG URL mindig helyes, még Pages-bug esetén is -->
+  <meta property="og:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
+
   <meta property="og:type" content="article">
 
   <meta name="twitter:card" content="summary_large_image">
@@ -80,7 +83,7 @@
 
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "{{ page.url | absolute_url }}"
+      "@id": "{{ site.url }}{{ site.baseurl }}{{ page.url }}"
     }
   }
   </script>
@@ -90,7 +93,6 @@
   <!-- GitHub-szerű felső fejléc -->
   <header class="site-header">
     <div class="container">
-      <!-- FIX: nincs több duplázódás -->
       <a href="{{ '/' | relative_url }}" class="site-title">Mikroblog</a>
     </div>
   </header>
@@ -103,7 +105,6 @@
     {% if page.url != "/" %}
       {% include share.html url=page.url title=page.title %}
       <div class="back-button">
-        <!-- FIX: vissza gomb is baseurl-kompatibilis -->
         <button type="button" onclick="if (document.referrer) { history.back(); } else { window.location.href='{{ '/' | relative_url }}'; }">
           ⬅️ Vissza
         </button>
