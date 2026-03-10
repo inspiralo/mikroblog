@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "Most érted vagy nem érted mi a halálkereszt ha egyszer spekulálsz?"
 category: kriptografia
 tags: [bitcoin, árfolyam, zuhanás, halálkereszt, piaci működés, spekulánsok]
