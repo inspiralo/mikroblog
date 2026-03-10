@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "Párizsi régió szálláshelyei"
 category: hotelek
 tags: [hotelek, Párizs környéke, látnivalók, utazás, kirándulás, túrák]
