@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "Londoni butikhotlek"
 category: hotelek
 tags: [hotelek, London, boutique hotelek, utazás, szállás, butikhotelek]
