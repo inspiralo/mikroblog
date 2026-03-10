@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "Bedőlt bitcoin árfolyam, vajon miért történik?"
 category: kriptografia
 tags: [bitcoin, árfolyam, zuhan a bitcoin, miért esik a bitcoin, meddig eshet a bitcoin]
