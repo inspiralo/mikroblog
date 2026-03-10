@@ -101,7 +101,7 @@
     </div>
 
     {% if page.url != "/" %}
-      {% include share.html %}
+      {% include share.html url=page.url title=page.title %}
       <div class="back-button">
         <!-- FIX: vissza gomb is baseurl-kompatibilis -->
         <button type="button" onclick="if (document.referrer) { history.back(); } else { window.location.href='{{ '/' | relative_url }}'; }">
