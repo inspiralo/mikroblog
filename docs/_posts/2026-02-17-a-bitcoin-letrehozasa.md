@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "Bitcoin létrehozása"
 category: konyvekrol
 tags: [Bitcoin, könyv, bemutató, könyvajánló, kripto ismeretek]
