@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "A modern fiat pénzrendszer rejtett architektúrája"
 category: konyvekrol
 tags: [pénz, gazdaság, bitcoin, modern pénzügyi szemlélet, alternatív monetáris rendszer]
