@@ -16,7 +16,7 @@
   <meta name="robots" content="index, follow">
   <meta name="google-site-verification" content="PmmDkzXqp2XU_rrwqWjlzWymh3ZcoXHG5N9ib6DFrwM" />
 
-  <!-- Dinamikus OG title (fallbackkel) -->
+  <!-- Dinamikus OG title -->
   <meta property="og:title" content="Inspiráló mikroblog">
 
   <!-- Robusztus OG description fallback -->
@@ -41,7 +41,7 @@
   <!-- GitHub-szerű Markdown stílus -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.5.1/github-markdown.min.css">
 
-  <!-- Saját stílusok -->
+  <!-- Saját stílusok – baseurl-kompatibilis -->
   <link rel="stylesheet" href="/mikroblog/assets/css/style.css">
 
   <link rel="icon" type="image/x-icon" href="/mikroblog/favicon.ico">
@@ -159,7 +159,8 @@ A mikroblog a nagyobb, részletesebb tartalmaim előszobája: gyorsan bejárhat�
   <!-- GitHub-szerű felső fejléc -->
   <header class="site-header">
     <div class="container">
-      <a href="/mikroblog/mikroblog" class="site-title">Mikroblog</a>
+      <!-- FIX: nincs több duplázódás -->
+      <a href="/mikroblog/" class="site-title">Mikroblog</a>
     </div>
   </header>
 
