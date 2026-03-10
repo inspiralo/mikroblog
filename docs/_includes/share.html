@@ -3,39 +3,42 @@
 
   <div class="share-container">
 
+    {% assign full_url = page.url | absolute_url %}
+    {% assign full_title = page.title %}
+
     <!-- Facebook -->
     <a class="share fb"
-       href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}/mikroblog{{ include.page.url | default: page.url }}"
+       href="https://www.facebook.com/sharer/sharer.php?u={{ full_url }}"
        target="_blank" rel="noopener">Facebook</a>
 
     <!-- X / Twitter -->
     <a class="share x"
-       href="https://twitter.com/intent/tweet?url={{ site.url }}/mikroblog{{ include.page.url | default: page.url }}&text={{ include.page.title | default: page.title }}"
+       href="https://twitter.com/intent/tweet?url={{ full_url }}&text={{ full_title }}"
        target="_blank" rel="noopener">X</a>
 
     <!-- LinkedIn -->
     <a class="share li"
-       href="https://www.linkedin.com/sharing/share-offsite/?url={{ site.url }}/mikroblog{{ include.page.url | default: page.url }}"
+       href="https://www.linkedin.com/sharing/share-offsite/?url={{ full_url }}"
        target="_blank" rel="noopener">LinkedIn</a>
 
     <!-- Reddit -->
     <a class="share rd"
-       href="https://www.reddit.com/submit?url={{ site.url }}/mikroblog{{ include.page.url | default: page.url }}&title={{ include.page.title | default: page.title }}"
+       href="https://www.reddit.com/submit?url={{ full_url }}&title={{ full_title }}"
        target="_blank" rel="noopener">Reddit</a>
 
     <!-- Telegram -->
     <a class="share tg"
-       href="https://t.me/share/url?url={{ site.url }}/mikroblog{{ include.page.url | default: page.url }}&text={{ include.page.title | default: page.title }}"
+       href="https://t.me/share/url?url={{ full_url }}&text={{ full_title }}"
        target="_blank" rel="noopener">Telegram</a>
 
     <!-- WhatsApp -->
     <a class="share wa"
-       href="https://api.whatsapp.com/send?text={{ include.page.title | default: page.title }}%20{{ site.url }}/mikroblog{{ include.page.url | default: page.url }}"
+       href="https://api.whatsapp.com/send?text={{ full_title }}%20{{ full_url }}"
        target="_blank" rel="noopener">WhatsApp</a>
 
     <!-- VKontakte -->
     <a class="share vk"
-       href="https://vk.com/share.php?url={{ site.url }}/mikroblog{{ include.page.url | default: page.url }}&title={{ include.page.title | default: page.title }}"
+       href="https://vk.com/share.php?url={{ full_url }}&title={{ full_title }}"
        target="_blank" rel="noopener">VK</a>
 
   </div>
