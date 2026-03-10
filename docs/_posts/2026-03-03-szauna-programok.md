@@ -1,5 +1,7 @@
 ---
+layout: default
 title: "Szauna programok szervezőjéről"
+category: wellness-elmenyekrol
 tags: [szauna, szauna élmény, szauna programok, szauna szeánszok, szaunaszeánsz Budapest, szaunázás menete]
 date: 2026-03-03
 permalink: /wellness-elmenyekrol/szauna-programok.html
