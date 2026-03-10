@@ -1,0 +1,58 @@
+<h1 id="kriptográfiai-protokollok-csak-a-legfontosabb-alapokról">Kriptográfiai protokollok, csak a legfontosabb alapokról</h1>
+
+<p>A modern digitális biztonság gerincét néhány kulcsfontosságú kriptográfiai protokoll adja. Ezek határozzák meg, hogyan titkosítjuk a kommunikációt, hogyan hitelesítjük a feleket, és hogyan cserélünk biztonságosan kulcsokat. Az alábbi protokollok ismerete nélkül nem lehet megérteni a mai internetbiztonság működését.</p>
+
+<hr />
+
+<h2 id="tls--ssl">TLS / SSL</h2>
+<p>A webes titkosítás alapja.<br />
+A HTTPS mögött futó protokoll, amely biztosítja a böngésző és a szerver közötti titkosított kommunikációt.<br />
+Védi az adatokat <em>lehallgatás</em>, <em>módosítás</em> és <em>hamisítás</em> ellen. Viszont önmagában a <strong>HTTPS</strong> sem elégséges: az online tartalmakat szolgáltatók részéről fontos lenne, hogy weboldalaik megfelelő <a href="https://inspirator.blog/hsts-fejlec-hozzaadasa/"><strong>HSTS fejléccel rendelkezzenek</strong></a>.<br />
+Ha ez a fejléc jelen van, a böngészők még első alkalommal sem próbálkoznak a sima HTTP protokollal, így elkerülhető a downgrade‑támadás és az SSL stripping.</p>
+
+<hr />
+
+<h2 id="ssh">SSH</h2>
+<p>Biztonságos távoli hozzáférést biztosító protokoll.<br />
+Rendszergazdák, fejlesztők és szerverüzemeltetők alap eszköze.<br />
+Titkosított csatornát hoz létre, és kulcsalapú hitelesítést is támogat.</p>
+
+<hr />
+
+<h2 id="ipsec">IPSec</h2>
+<p>A VPN‑ek egyik legfontosabb építőeleme.<br />
+Titkosítja az IP‑csomagokat, így biztonságos alagutat hoz létre két hálózat vagy két eszköz között.<br />
+Vállalati környezetben széles körben használt.</p>
+
+<hr />
+
+<h2 id="pgp--gpg">PGP / GPG</h2>
+<p><a href="https://inspirator.blog/email-titkositas-gyorstalpaloja/"><strong>E‑mail titkosításra</strong></a> és digitális aláírásra szolgáló protokollcsalád.<br />
+A felhasználók saját nyilvános és privát kulcspárral rendelkeznek, így biztosítható a bizalmasság és a hitelesség.<br />
+A GPG a PGP nyílt forrású implementációja. Pont ebben a témában ha érdekel egy kifejtősebb írásom is elolvasára javaslom, ezért is linkeltem.</p>
+
+<hr />
+
+<h2 id="diffiehellman-kulcscsere">Diffie–Hellman kulcscsere</h2>
+<p>Az egyik legfontosabb kriptográfiai alapmechanizmus.<br />
+Lehetővé teszi, hogy két fél biztonságosan osszon meg egy közös titkos kulcsot anélkül, hogy azt valaha is elküldenék egymásnak.<br />
+A legtöbb modern protokoll (pl. TLS) épít rá.</p>
+
+<hr />
+
+<h2 id="kerberos">Kerberos</h2>
+<p>Hitelesítési protokoll nagyvállalati környezetben.<br />
+Központi “jegykiadó” szerver (KDC) segítségével biztosítja, hogy a felhasználók és szolgáltatások megbízhatóan azonosíthatók legyenek.<br />
+Windows domain környezetekben alapértelmezett.</p>
+
+<hr />
+
+<h2 id="oauth-20-és-openid-connect">OAuth 2.0 és OpenID Connect</h2>
+<p>A modern webes hitelesítés és jogosultságkezelés szabványai.<br />
+Lehetővé teszik, hogy egy alkalmazás hozzáférést kapjon egy másik szolgáltatás erőforrásaihoz anélkül, hogy jelszót kellene megosztani.<br />
+Az OpenID Connect az OAuth 2.0-ra épül, és kifejezetten a felhasználók hitelesítésére szolgál.</p>
+
+<hr />
+
+<h2 id="jelen-apróbb-összeállításom-indoka-">Jelen apróbb összeállításom indoka 👇</h2>
+<p>Ezek a protokollok alkotják a digitális biztonság alaprétegét: a webes titkosítástól a VPN‑eken át a modern webes hitelesítésig. A kriptográfia gyakorlati megértéséhez ezek ismerete elengedhetetlen.</p>

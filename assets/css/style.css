@@ -1,0 +1,263 @@
+/* A teljes tartalom konténere */
+.markdown-body {
+  max-width: 1021px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem 1rem;
+}
+
+/* Hero-kép */
+.markdown-body img {
+  display: block;
+  margin: 0 auto 2rem auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+/* --------------------------------------------- */
+/* FŐOLDAL – TÉMAKÁRTYÁK (KÖZÉPRE IGAZÍTVA)     */
+/* --------------------------------------------- */
+
+.sections {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;   /* KÖZÉPRE IGAZÍTÁS */
+  gap: 1.2rem;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+.topic-card {
+  display: block;
+  width: 260px;              /* egységes kártyaszélesség */
+  padding: 1rem 1.2rem;
+  background: #f6f8fa;
+  border: 1px solid #d0d7de;
+  border-radius: 8px;
+  font-size: 1.05rem;
+  color: #0969da;
+  text-decoration: none;
+}
+
+.topic-card:hover {
+  background: #eef1f4;
+}
+
+/* Mobil töréspontok */
+@media (max-width: 600px) {
+  .topic-card {
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 1rem 1.2rem;
+  }
+}
+
+/* --------------------------------------------- */
+/* Felső GitHub-szerű fejléc                    */
+/* --------------------------------------------- */
+
+.site-header {
+  background: #f6f8fa;
+  border-bottom: 1px solid #d0d7de;
+  padding: 12px 0;
+  margin-bottom: 24px;
+}
+
+.site-header .container {
+  max-width: 1021px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.site-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #0969da;
+  text-decoration: none;
+}
+
+.site-title:hover {
+  text-decoration: underline;
+}
+
+/* Desktopos vissza gomb */
+.back-button {
+  margin-top: 2.5rem;
+  text-align: center;
+}
+
+.back-button a {
+  display: inline-block;
+  background: #0969da;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.back-button a:hover {
+  background: #0757b3;
+}
+
+/* Mobilos vissza gomb */
+@media (max-width: 600px) {
+  .back-button {
+    margin-top: 2rem;
+  }
+
+  .back-button a {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    background: #0969da;
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+}
+
+/* --------------------------------------------- */
+/* KÁRTYA-SZERŰ <details> BLOKKOK (ÉV–HÓNAP)     */
+/* --------------------------------------------- */
+
+details {
+  border: 1px solid #d0d7de;
+  border-radius: 6px;
+  padding: 0.6rem 0.9rem;
+  background: #f6f8fa;
+  margin: 0.8rem 0;
+}
+
+details > summary {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.1rem;
+  list-style: revert;
+}
+
+details > summary::marker {
+  font-size: 1.25rem;
+}
+
+details[open] > summary {
+  margin-bottom: 0.5rem;
+}
+
+/* Hónap-szint */
+details details {
+  background: #ffffff;
+  border-color: #e5e7eb;
+  margin-left: 1rem;
+  padding: 0.5rem 0.8rem;
+}
+
+details details summary {
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 0.95rem;
+  list-style: revert;
+}
+
+details details summary::marker {
+  font-size: 1rem;
+}
+
+details details[open] summary {
+  margin-bottom: 0.4rem;
+}
+
+details ul {
+  margin: 0.2rem 0 0.2rem 1rem;
+  padding: 0;
+}
+
+/* --------------------------------------------- */
+/* MEGOSZTÁS BLOKK – PLATFORM SZÍNŰ, IKONOK NÉLKÜL */
+/* --------------------------------------------- */
+
+.share-links {
+  margin: 1.8rem auto 0 auto;
+  padding: 1rem 1.2rem;
+  max-width: 420px;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.share-links span {
+  display: block;
+  margin-bottom: 0.8rem;
+  font-weight: 600;
+  color: #444;
+  font-size: 1rem;
+}
+
+.share-links .share-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+@media (min-width: 600px) {
+  .share-links .share-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.8rem 1rem;
+  }
+}
+
+.share-links a.share {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.55rem 0.9rem;
+  border-radius: 6px;
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  text-decoration: none;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  font-weight: 600;
+}
+
+@media (hover: hover) {
+  .share-links a.share:hover {
+    background: #eef1f4;
+  }
+}
+
+/* PLATFORM SZÍNEK */
+.share.fb { color: #1877F2; border-color: #1877F2; }
+.share.x  { color: #000000; border-color: #000000; }
+.share.li { color: #0076B2; border-color: #0076B2; }
+.share.rd { color: #FF4500; border-color: #FF4500; }
+.share.tg { color: #26A5E4; border-color: #26A5E4; }
+.share.wa { color: #25D366; border-color: #25D366; }
+.share.vk { color: #0077FF; border-color: #0077FF; }
+
+/* Piros pont a legfrissebb témához */
+.red-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: red;
+  border-radius: 50%;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
+/* UX szerű tudatása, hogy mit jelent a piros pont */
+.latest-info {
+  font-size: 0.9rem;
+  color: #888;
+  margin-top: 0.5rem;
+  text-align: center;
+}

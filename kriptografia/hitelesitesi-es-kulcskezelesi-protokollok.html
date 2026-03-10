@@ -1,0 +1,64 @@
+<h1 id="hitelesítési-és-kulcskezelési-protokollok">Hitelesítési és kulcskezelési protokollok</h1>
+
+<p>A hitelesítési és kulcskezelési protokollok biztosítják, hogy a kommunikáló felek valóban azok legyenek, akiknek mondják magukat, valamint hogy a titkosításhoz szükséges kulcsok biztonságosan kerüljenek átadásra vagy kezelésre. Ezek a protokollok a modern hálózati biztonság alaprétegét alkotják.</p>
+
+<hr />
+
+<h2 id="smime">S/MIME</h2>
+<p>A <strong>Secure/Multipurpose Internet Mail Extensions (S/MIME)</strong> egy vállalati környezetben széles körben használt szabvány, amely <strong>e‑mailek titkosítására és digitális aláírására</strong> szolgál.<br />
+A PKI‑alapú működésnek köszönhetően:</p>
+
+<ul>
+  <li>biztosítja az üzenetek bizalmasságát,</li>
+  <li>ellenőrzi a feladó hitelességét,</li>
+  <li>és védi az üzenet integritását.</li>
+</ul>
+
+<p>Leginkább nagyvállalati rendszerekben, Microsoft Exchange és hasonló infrastruktúrák mellett használják.</p>
+
+<hr />
+
+<h2 id="srtp">SRTP</h2>
+<p>A <strong>Secure Real‑Time Transport Protocol (SRTP)</strong> a VoIP‑hívások és videókommunikáció titkosítására szolgáló protokoll.<br />
+Fő céljai:</p>
+
+<ul>
+  <li>a hang- és videócsomagok titkosítása,</li>
+  <li>a lehallgatás megakadályozása,</li>
+  <li>a csomagok integritásának védelme.</li>
+</ul>
+
+<p>A legtöbb modern kommunikációs platform (pl. WebRTC) SRTP‑t használ a valós idejű média biztonságához.</p>
+
+<hr />
+
+<h2 id="eaptls">EAP‑TLS</h2>
+<p>Az <strong>Extensible Authentication Protocol – Transport Layer Security (EAP‑TLS)</strong> a vállalati Wi‑Fi hálózatok egyik legbiztonságosabb hitelesítési módszere.<br />
+Jellemzői:</p>
+
+<ul>
+  <li>kliens- és szerveroldali tanúsítványokat használ,</li>
+  <li>nem igényel jelszót,</li>
+  <li>ellenáll a brute‑force és phishing támadásoknak.</li>
+</ul>
+
+<p>A WPA2‑Enterprise és WPA3‑Enterprise környezetekben ez a “gold standard”.</p>
+
+<hr />
+
+<h2 id="fido2--webauthn">FIDO2 / WebAuthn</h2>
+<p>A <strong>FIDO2</strong> és a hozzá tartozó <strong>WebAuthn</strong> szabványok a <strong>jelszómentes hitelesítés</strong> modern alapjai.<br />
+A működés lényege:</p>
+
+<ul>
+  <li>a felhasználó eszköze (pl. telefon, hardverkulcs, biometrikus azonosító) végzi a hitelesítést,</li>
+  <li>a privát kulcs soha nem hagyja el az eszközt,</li>
+  <li>a weboldalak csak a nyilvános kulcsot ismerik.</li>
+</ul>
+
+<p>Ez a megközelítés gyakorlatilag megszünteti a jelszólopás, credential stuffing és phishing támadások nagy részét.</p>
+
+<hr />
+
+<h2 id="tömörgyönyör-összegzőm-miért-is-fontosak-ezek-amelyekről-️-fent-írtam">Tömörgyönyör összegzőm miért is fontosak ezek, amelyekről ☝️ fent írtam</h2>
+<p>A hitelesítési és kulcskezelési protokollok a digitális biztonság kritikus elemei: védik az e‑maileket, a valós idejű kommunikációt, a vállalati hálózatokat és a felhasználói fiókokat. A modern trend egyértelműen a <strong>jelszómentes</strong>, kulcsalapú hitelesítés irányába mutat, ahol a felhasználó eszköze válik a biztonság központi elemévé.</p>

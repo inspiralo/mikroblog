@@ -1,0 +1,74 @@
+<h1 id="blokklánc-specifikus-protokollok">Blokklánc-specifikus protokollok</h1>
+
+<p>A blokkláncok működésének alapját olyan speciális kriptográfiai protokollok adják, amelyek biztosítják az adatok változtathatatlanságát, a tranzakciók hitelességét és a hálózat konszenzusát. Ezek a protokollok különböző szerepeket töltenek be: egyesek az adatszerkezetet védik, mások a konszenzust biztosítják, míg vannak olyanok is, amelyek a skálázást vagy a magánszférát erősítik.</p>
+
+<h2 id="merkletree-protokollok">Merkle‑tree protokollok</h2>
+<p>A Merkle‑fák hash‑alapú adatszerkezetek, amelyek lehetővé teszik nagy mennyiségű adat hatékony és biztonságos ellenőrzését.<br />
+A blokkláncokban:</p>
+
+<ul>
+  <li>biztosítják a tranzakciók integritását</li>
+  <li>lehetővé teszik a gyors ellenőrzést (pl. SPV kliensek)</li>
+  <li>csökkentik az adatmennyiséget, amit a csomópontoknak kezelniük kell</li>
+</ul>
+
+<p>A Merkle‑fa a legtöbb blokklánc (Bitcoin, Ethereum) alapvető építőeleme.</p>
+
+<h2 id="zeroknowledge-proofs-zkp">Zero‑Knowledge Proofs (ZKP)</h2>
+<p>A Zero‑Knowledge Proofs olyan kriptográfiai módszerek, amelyek lehetővé teszik, hogy egy fél bizonyítson egy állítást anélkül, hogy felfedné a bizonyítékot.<br />
+Ismert típusok:</p>
+
+<ul>
+  <li><strong>zk‑SNARK</strong> – gyors, kis méretű bizonyítékok, de megbízható beállítást igényel</li>
+  <li><strong>zk‑STARK</strong> – átlátható, kvantumbiztosabb megközelítés, nagyobb bizonyítékmérettel</li>
+</ul>
+
+<p>Felhasználás:</p>
+
+<ul>
+  <li>privát tranzakciók (pl. Zcash)</li>
+  <li>Layer‑2 skálázás (zk‑Rollupok)</li>
+  <li>decentralizált identitásmegoldások</li>
+</ul>
+
+<h2 id="bft-konszenzus-protokollok">BFT konszenzus protokollok</h2>
+<p>A Byzantine Fault Tolerant (BFT) protokollok olyan konszenzusmechanizmusok, amelyek akkor is működőképesek maradnak, ha a hálózat egy része rosszindulatúan viselkedik.<br />
+Ismert megvalósítások:</p>
+
+<ul>
+  <li><strong>Tendermint</strong> – gyors, finalitást biztosító konszenzus (Cosmos ökoszisztéma)</li>
+  <li>PBFT‑alapú rendszerek – engedélyezett blokkláncokban gyakoriak</li>
+</ul>
+
+<p>Előnyök:</p>
+
+<ul>
+  <li>gyors blokkvéglegesség</li>
+  <li>alacsony energiaigény</li>
+  <li>magas biztonság kisebb hálózatokban</li>
+</ul>
+
+<h2 id="lightning-network-protokollok">Lightning Network protokollok</h2>
+<p>A Lightning Network a Bitcoin második rétegű (Layer‑2) skálázási megoldása, amely gyors, olcsó és off‑chain tranzakciókat tesz lehetővé.<br />
+Alapjai:</p>
+
+<ul>
+  <li>fizetési csatornák két fél között</li>
+  <li>HTLC‑k (Hashed Time‑Locked Contracts) a biztonságos útvonalválasztáshoz</li>
+  <li>off‑chain tranzakciók, amelyek csak a csatorna lezárásakor kerülnek a fő láncra</li>
+</ul>
+
+<p>Előnyök:</p>
+
+<ul>
+  <li>azonnali fizetések</li>
+  <li>alacsony díjak</li>
+  <li>nagyobb skálázhatóság a Bitcoin számára</li>
+</ul>
+
+<h2 id="érdekelnének-téged-ezek-a-témák-mélyebben-is">Érdekelnének Téged ezek a témák mélyebben is❓</h2>
+<p>Ennek igazán örülnék❗A <a href="https://inspirator.blog/kripto-lexikon"><strong>Kripto Lexikon</strong></a> vár Téged szeretettel. Ezt a lexikont vagy egyesek szavajárása szerint már - már enciklopédiát pont 
+az ilyen, kizárólag kripto / blokklánc alapú fogalmak iránt érdeklődőknek fejlesztettem ki. Lehet megtalálod amit keresel. Próbáld ki, veszíteni nem vesztíthetsz semmit.</p>
+
+<p>Összefoglalóan, a blokklánc-specifikus protokollok adják a decentralizált rendszerek működésének alapját: a Merkle‑fák az adatszerkezetet védik, a ZKP‑k a magánszférát és a skálázást segítik, 
+a BFT protokollok a konszenzust biztosítják, míg a Lightning Network a gyors és olcsó tranzakciókat teszi lehetővé.</p>
