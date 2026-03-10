@@ -18,7 +18,7 @@
   <meta name="robots" content="index, follow">
   <meta name="google-site-verification" content="PmmDkzXqp2XU_rrwqWjlzWymh3ZcoXHG5N9ib6DFrwM" />
 
-  <!-- Dinamikus OG title (fallbackkel) -->
+  <!-- Dinamikus OG title -->
   <meta property="og:title" content="{{ page.title | default: site.title | escape }}">
 
   <!-- Robusztus OG description fallback -->
@@ -42,7 +42,7 @@
   <!-- GitHub-szerű Markdown stílus -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.5.1/github-markdown.min.css">
 
-  <!-- Saját stílusok -->
+  <!-- Saját stílusok – baseurl-kompatibilis -->
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 
   {% include head-custom.html %}
@@ -90,7 +90,8 @@
   <!-- GitHub-szerű felső fejléc -->
   <header class="site-header">
     <div class="container">
-      <a href="{{ site.baseurl | relative_url }}" class="site-title">Mikroblog</a>
+      <!-- FIX: nincs több duplázódás -->
+      <a href="{{ '/' | relative_url }}" class="site-title">Mikroblog</a>
     </div>
   </header>
 
@@ -102,7 +103,8 @@
     {% if page.url != "/" %}
       {% include share.html %}
       <div class="back-button">
-        <button type="button" onclick="if (document.referrer) { history.back(); } else { window.location.href='{{ site.baseurl | relative_url }}'; }">
+        <!-- FIX: vissza gomb is baseurl-kompatibilis -->
+        <button type="button" onclick="if (document.referrer) { history.back(); } else { window.location.href='{{ '/' | relative_url }}'; }">
           ⬅️ Vissza
         </button>
       </div>
