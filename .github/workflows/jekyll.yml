@@ -24,8 +24,8 @@ jobs:
           gem install bundler
           bundle install
 
-      - name: Build Jekyll site
-        run: bundle exec jekyll build --source docs --destination _site
+      - name: Build Jekyll site (with baseurl)
+        run: bundle exec jekyll build --source docs --destination _site --baseurl "/mikroblog"
 
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
