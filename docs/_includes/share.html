@@ -1,13 +1,14 @@
-<div class="share-links">
+ <div class="share-links">
   <span>💡 Gondolatom hasznosnak vélted❓ Oszd meg:</span>
 
   <div class="share-container">
 
-    {% assign full_url = site.url | append: site.baseurl | append: page.url %}
+    {% assign full_path = site.baseurl | append: page.url %}
+    {% assign full_url = full_path | absolute_url %}
     {% assign full_url_escaped = full_url | uri_escape %}
     {% assign full_title = page.title | default: "Mikroblog" %}
     {% assign full_title_escaped = full_title | uri_escape %}
-
+  
     <!-- Facebook -->
     <a class="share fb"
        href="https://www.facebook.com/sharer/sharer.php?u={{ full_url_escaped }}"
