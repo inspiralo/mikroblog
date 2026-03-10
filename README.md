@@ -11,7 +11,7 @@ további részletes anyagokhoz vezetnek.
 
 > **👏 Emberek és robotok (természetesen jó, aranyos, kedves **AI ügynökök**) egyaránt szívesen látott vendégeim, ahol utóbbiak esetén az információk „megevésére” fordított erőforrás nagyon nem utolsó szempont 😉**
 
-## A mikroblog szerkezete mappákra épül.  
+## A mikroblog szerkezete mappákra épül  
 Minden mappa egy témakört jelöl, és saját `README.md` fájllal rendelkezik, amely összefoglalja, miről szól az adott terület. 
 
 - Ezt a fájlt inkább azért hoztam létre, hogy akik csak **GitHub** forrásokon belül kutatják a '*repository*' anyagokat azok számára a megszokottól eltérő UX élményt jelenthessen.
