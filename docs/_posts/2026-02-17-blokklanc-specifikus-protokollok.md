@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "Blokklánc specifikus protokollok"
 category: kriptografia
 tags: [blokklánc, blokklánc-protokollok, merkle-tree, zkp, zk-snark, zk-stark, bft, tendermint, lightning-network, bitcoin, layer2, kriptográfia, decentralizáció, konszenzus, skálázás]
