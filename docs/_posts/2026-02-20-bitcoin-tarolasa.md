@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "bitcoin tárolása"
+category: kriptografia
 tags: [bitcoin, bitcoin tárolása, privát kulcs, seed phrase, wallet, hardver tárca, kriptográfia, biztonság, bitcoin címek, kulcskezelés]
 date: 2026-02-20
 permalink: /kriptografia/bitcoin-tarolasa.html
