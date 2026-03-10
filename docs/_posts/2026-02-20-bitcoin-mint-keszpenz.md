@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "bitcoin mint készpénz"
 category: kriptografia
 tags: [bitcoin, bitcoin készpénz, rsk, rbtc, el salvador, decentralizáció, pénzrendszer, kriptográfia, társadalmi hatások, bitcoin gazdaság]
