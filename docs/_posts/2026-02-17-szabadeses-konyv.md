@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "Szabadesés – Losonctól Kaliforniáig"
 category: konyvekrol
 tags: [Szabadesés, könyv, bemutató, könyvajánló, Imre Regina Mária]
