@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "Miért fontos ma is Dickens gyerekhőse?"
 category: konyvekrol
 tags: [könyvekről, olvasás, ifjúság, irodalom]
