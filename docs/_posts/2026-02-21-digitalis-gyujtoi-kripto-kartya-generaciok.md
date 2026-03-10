@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "Digitális gyűjtői kripto kártyák – és ebben hol helyezkedik el a Bleap?"
 category: kriptografia
 tags: ["kriptográfia", "kripto kártya", "Bleap", "generációk"]
