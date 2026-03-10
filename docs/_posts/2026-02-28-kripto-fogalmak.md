@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "Itt megismerheted a fontosabb kripto fogalmakat!"
 category: kriptografia
 tags: [kripto fogalmak, kripto tudástár, blokkláncokról, kripto enciklopédia, kripto szótár]
