@@ -20,16 +20,23 @@ jobs:
           bundler-cache: true
 
       - name: Install dependencies
-        run: |
-          gem install bundler
-          bundle install
+        run: bundle install
 
-      - name: Build Jekyll site (with baseurl)
-        run: bundle exec jekyll build --source docs --destination _site --baseurl "/mikroblog"
+      - name: Build Jekyll site
+        run: bundle exec jekyll build --source docs --destination _site
 
-      - name: Deploy to gh-pages
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./_site
-          publish_branch: gh-pages
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+
+    steps:
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4
