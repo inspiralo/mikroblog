@@ -1,0 +1,8 @@
+url: "https://inspiralo.github.io"
+baseurl: "/mikroblog"
+
+markdown: kramdown
+highlighter: rouge
+
+plugins:
+  - jekyll-sitemap
