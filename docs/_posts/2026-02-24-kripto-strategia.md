@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "Mi a helyes kripto stratégia, ha már a kripto tanulás ösvényén haladsz?"
 category: kriptografia
 tags: [Bitcoin, kripto kezdés, kripto tanulás, kripto stratégia, DCA, fundamentális alapok, tokenizált gazdaságok]
