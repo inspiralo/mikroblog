@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "Érthetetlen zsivány pszichológia!"
 category: kriptografia
 tags: [scam, átverés, buta levél, igénytelen, erőforráspazarlás]
