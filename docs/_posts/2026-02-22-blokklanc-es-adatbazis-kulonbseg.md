@@ -1,5 +1,7 @@
 ---
+layout: default
 title: "Mi különbözteti meg a blokkláncot egy hagyományos adatbázistól?"
+category: kriptografia
 tags: ["kriptográfia", "blokklánc", "adatbázis", "technológia"]
 date: 2026-02-22
 permalink: /kriptografia/blokklanc-es-adatbazis-kulonbseg.html
