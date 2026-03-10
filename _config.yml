@@ -1,4 +1,8 @@
 source: docs
 markdown: kramdown
 highlighter: rouge
-theme: null
+
+plugins:
+  - jekyll-sitemap
+
+theme: ""
