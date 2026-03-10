@@ -1,3 +1,6 @@
+url: "https://inspiralo.github.io"
+baseurl: "/mikroblog"
+
 source: docs
 markdown: kramdown
 highlighter: rouge
