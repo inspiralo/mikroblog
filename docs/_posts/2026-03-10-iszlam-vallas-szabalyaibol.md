@@ -3,7 +3,7 @@ layout: post
 title: "Az iszlám vallás szabályaiból"
 category: konyvekrol
 tags: [iszlám jog, Korán, könyvbemutató, könyvajánló, többnejűség, kötelesség, női szerepek, vallási társadalom, iszlám etika, saría]
-date: 2026-02-17
+date: 2026-03-10
 permalink: /konyvekrol/a-bitcoin-letrehozasa.html
 categories: ["konyvekrol"]
 ---
