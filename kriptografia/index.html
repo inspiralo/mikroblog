@@ -1,4 +1,230 @@
-<h1 id="kriptográfia">Kriptográfia</h1>
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RHBHX1SJFT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-RHBHX1SJFT');
+</script>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow">
+  <meta name="google-site-verification" content="PmmDkzXqp2XU_rrwqWjlzWymh3ZcoXHG5N9ib6DFrwM" />
+
+  <!-- Dinamikus OG title -->
+  <meta property="og:title" content="Kriptográfia">
+
+  <!-- Robusztus OG description fallback -->
+  
+    <meta property="og:description" content="Kriptográfia
+
+A kriptográfia olyan módszerek és algoritmusok összessége, amelyek célja az információ védelme: bizalmasság, integritás, hitelesség és a nem‑me...">
+  
+
+  <meta property="og:image" content="https://inspiralo.github.io/mikroblog/inspirator-GitHub-kozossegi-megosztas-1280x640.png">
+  <meta property="og:url" content="/mikroblog/kriptografia/">
+  <meta property="og:type" content="article">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://inspiralo.github.io/mikroblog/inspirator-GitHub-kozossegi-megosztas-1280x640.png">
+
+  <title>Kriptográfia</title>
+
+  <!-- GitHub-szerű Markdown stílus -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.5.1/github-markdown.min.css">
+
+  <!-- Saját stílusok – baseurl-kompatibilis -->
+  <link rel="stylesheet" href="/mikroblog/assets/css/style.css">
+
+  <link rel="icon" type="image/x-icon" href="/mikroblog/favicon.ico">
+
+
+  <!-- JSON-LD strukturált adat -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Kriptográfia",
+    "description": "Kriptográfia
+
+A kriptográfia olyan módszerek és algoritmusok összessége, amelyek célja az információ védelme: bizalmasság, integritás, hitelesség és a nem‑megtagadhatóság biztosítása. A modern digitális világban ez alapvető technológia minden online kommunikáció, tranzakció és adatvédelem mögött.
+
+
+
+Miért fontos a kriptográfia❓
+
+A kriptográfia védi többek között:
+
+
+ a jelszavakat és hitelesítést,
+ az online vásárlásokat és banki adatokat,
+ a kriptovaluták tranzakcióit,
+ a webes kommunikációt (SSL/TLS),
+ az üzenetküldő alkalmazások titkosítását (end‑to‑end),
+ a digitális aláírásokat és dokumentumhitelesítést.
+
+
+
+
+A kriptográfia fő típusai
+
+Szimmetrikus kriptográfia
+
+ Egyetlen közös kulcsot használ titkosításhoz és visszafejtéshez.
+ Gyors és hatékony nagy adatmennyiségnél.
+ Példák: AES, DES.
+
+
+Aszimmetrikus kriptográfia
+
+ Két kulcsot használ: nyilvános és privát kulcs.
+ Biztonságos kulcscsere, hitelesítés és digitális aláírás alapja.
+ Példa: RSA.
+
+
+Hash függvények és digitális aláírások
+
+ Hash: az adatok integritásának ellenőrzése (pl. SHA‑1, SHA‑256).
+ Digitális aláírás: hitelesség és nem‑megtagadhatóság biztosítása.
+
+
+
+
+Kulcskezelés
+
+A kriptográfia egyik legkritikusabb területe a kulcsok biztonságos kezelése:
+
+
+ generálás,
+ tárolás,
+ csere,
+ megsemmisítés.
+
+
+A Diffie–Hellman kulcscsere protokoll az egyik alapvető megoldás a biztonságos kulcsmegosztásra.
+
+
+
+Modern irányok
+
+Elliptikus görbéken alapuló kriptográfia (ECC)
+
+ Kisebb kulcsméret, nagyobb hatékonyság.
+ Mobil eszközökhöz ideális.
+ Használja többek között: USA kormányzati rendszerek, Bitcoin, Apple iMessage.
+
+
+Kvantumbiztos kriptográfia
+
+ A kvantumszámítógépek fenyegetése miatt új algoritmusokra van szükség.
+ A kvantumkriptográfia fizikai törvényeken alapul, nem matematikai nehézségen.
+ Előny: a lehallgatás észlelhető.
+ Hátrány: jelenleg drága és technológiailag korlátozott.
+
+
+
+
+Összegzés
+
+A kriptográfia a digitális biztonság alapja: védi az adatokat, hitelesíti a kommunikációt és biztosítja a tranzakciók integritását. A jövő a kvantumbiztos és elliptikus görbéken alapuló megoldások felé mutat.
+Ez a mikroblogom egyik legfontosabb szeglete: itt találod az apróbb gondolataimat, edukatív jegyzeteimet és a kriptográfia világához kapcsolódó rövid tartalmaimat.
+
+
+
+Bejegyzéseim időrendben 👇
+
+{% assign raw_posts = site.categories[“kriptografia”] %}
+{% if raw_posts %}
+ {% assign posts = raw_posts | sort: “date” | reverse %}
+{% else %}
+ {% assign posts = “” %}
+{% endif %}
+
+
+ 
+  
+   {% assign years = posts
+   group_by_exp: “post”, “post.date
+   date: ‘%Y’” %}
+  
+ 
+
+
+{% for year in years %}
+
+ {{ year.name }}
+
+ {% assign months = year.items | group_by_exp: &quot;post&quot;, &quot;post.date | date: &#39;%Y. %m.&#39;&quot; %}
+
+ {% for month in months %}
+ 
+  {{ month.name }}
+  
+   {% for post in month.items %}
+   
+    {{ post.title }}
+    {{ post.date | date: &quot;%Y. %m. %d.&quot; }}
+    {% if post.tags %}
+     Címkék: {{ post.tags | join: &#39;, &#39; }}
+    {% endif %}
+   
+   {% endfor %}
+  
+ 
+ {% endfor %}
+
+
+{% endfor %}
+",
+    "datePublished": "",
+
+    "author": {
+      "@type": "Person",
+      "name": "Inspirátor",
+      "sameAs": [
+        "https://inspiralo.github.io",
+        "https://inspiralo.github.io/mikroblog/",
+        "https://inspirator.blog",
+        "https://seo.inspirator.blog",
+        "https://substack.com/@mrgeniusrefferator"
+      ]
+    },
+
+    "publisher": {
+      "@type": "Person",
+      "name": "Inspirátor"
+    },
+
+    "brand": {
+      "@type": "Brand",
+      "name": "Inspirátor"
+    },
+
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "/mikroblog/kriptografia/"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- GitHub-szerű felső fejléc -->
+  <header class="site-header">
+    <div class="container">
+      <!-- FIX: nincs több duplázódás -->
+      <a href="/mikroblog/" class="site-title">Mikroblog</a>
+    </div>
+  </header>
+
+  <main class="page-content" aria-label="Content">
+    <div class="markdown-body">
+      <h1 id="kriptográfia">Kriptográfia</h1>
 
 <p>A kriptográfia olyan módszerek és algoritmusok összessége, amelyek célja az információ védelme: <em>bizalmasság</em>, <em>integritás</em>, <em>hitelesség</em> és a <em>nem‑megtagadhatóság</em> biztosítása. A modern digitális világban ez alapvető technológia minden <strong>online kommunikáció</strong>, <strong>tranzakció</strong> és <strong>adatvédelem</strong> mögött.</p>
 
@@ -205,3 +431,61 @@ Ez a mikroblogom egyik legfontosabb szeglete: itt találod az apróbb gondolatai
 
 </details>
 
+
+    </div>
+
+    
+      <div class="share-links">
+  <span>💡 Gondolatom hasznosnak vélted❓ Oszd meg:</span>
+
+  <div class="share-container">
+
+    <!-- Facebook -->
+    <a class="share fb"
+       href="https://www.facebook.com/sharer/sharer.php?u=/mikroblog/kriptografia/"
+       target="_blank" rel="noopener">Facebook</a>
+
+    <!-- X / Twitter -->
+    <a class="share x"
+       href="https://twitter.com/intent/tweet?url=/mikroblog/kriptografia/&text=Kriptográfia"
+       target="_blank" rel="noopener">X</a>
+
+    <!-- LinkedIn -->
+    <a class="share li"
+       href="https://www.linkedin.com/sharing/share-offsite/?url=/mikroblog/kriptografia/"
+       target="_blank" rel="noopener">LinkedIn</a>
+
+    <!-- Reddit -->
+    <a class="share rd"
+       href="https://www.reddit.com/submit?url=/mikroblog/kriptografia/&title=Kriptográfia"
+       target="_blank" rel="noopener">Reddit</a>
+
+    <!-- Telegram -->
+    <a class="share tg"
+       href="https://t.me/share/url?url=/mikroblog/kriptografia/&text=Kriptográfia"
+       target="_blank" rel="noopener">Telegram</a>
+
+    <!-- WhatsApp -->
+    <a class="share wa"
+       href="https://api.whatsapp.com/send?text=Kriptográfia%20/mikroblog/kriptografia/"
+       target="_blank" rel="noopener">WhatsApp</a>
+
+    <!-- VKontakte -->
+    <a class="share vk"
+       href="https://vk.com/share.php?url=/mikroblog/kriptografia/&title=Kriptográfia"
+       target="_blank" rel="noopener">VK</a>
+
+  </div>
+</div>
+
+      <div class="back-button">
+        <!-- FIX: vissza gomb is baseurl-kompatibilis -->
+        <button type="button" onclick="if (document.referrer) { history.back(); } else { window.location.href='/mikroblog/'; }">
+          ⬅️ Vissza
+        </button>
+      </div>
+    
+  </main>
+
+</body>
+</html>
