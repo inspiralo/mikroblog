@@ -27,7 +27,7 @@ Ez ☝️ alapján nagyon úgy tűnik, mintha az eddigi **Presearch Search Rewar
 <li>csak egészen egyszerűen szeretne a keresőgép használatával bevételhez jutni, amellett persze, hogy az adatvédelme is maximálisan garantált,</li> 
 <br>
 
-azok számára, mintha ez a bevételszerzési forrás, hívhatjuk *motivációnak* is, mintha megszűnne. Mondom újra, ez egyelőre csak feltételezés részemről, a tényeket április után érzékelhetjük, amikor is a
+azok számára, ez a bevételszerzési forrás, hívhatjuk *motivációnak* is, mintha megszűnne. Mondom újra, ez egyelőre csak feltételezés részemről, a tényeket április után érzékelhetjük, amikor is a
 jelenlegi híreik alapján a '**PRE**' kriptovaluta új ticker nevet fog kapni. A '**PRE**' kriptovaluta migrációjára mindenkinek 3 hónap áll majd rendelkezésre. Ahol nem történik meg a migráció, ott
 a '**PRE**' egyenlegek **20%**-a megsemmisül. 
 
