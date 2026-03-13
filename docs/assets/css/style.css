@@ -261,3 +261,12 @@ details ul {
   margin-top: 0.5rem;
   text-align: center;
 }
+
+/* --------------------------------------------- */
+/* Twitter beágyazások középre igazítása         */
+/* --------------------------------------------- */
+
+.twitter-tweet {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
