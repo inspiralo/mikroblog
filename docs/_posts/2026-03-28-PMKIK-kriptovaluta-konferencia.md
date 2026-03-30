@@ -34,7 +34,7 @@ stigmájából, hogy ez egy piramis játék lenne.
 
 ## A kripto konferencián az alábbi előadók vettek részt, de a résztvevők teljes összeállításából látható, hogy a közgazdász szemléletmód, valamint a programozástechnikához közelebb álló fejlesztői aspketus is azért találkozhatott egymással :
 - Dr. Bogár László közgazdász professzor (Kriptovaluta, avagy a globális hatalom a szükségletek felett)
-- Dr. Mező Tamás (Kriptovaluta, vagy a globális pénzhatalom automatizálása)
+- Dr. Mező Tamás (Kriptovaluta, avagy a globális pénzhatalom automatizálása)
 - Dr. Szegő Szilvia (Kriptovaluta, avagy a nagy pénzhatalmi játszma az idővel)
 
 >A pódiumbeszélgetés hasznos volt, mert ehhez szervesen tudott kapcsolódni Dr. Nagy István kriptofejlesztési tanácsadó, így a programozástechnikai értelemben vett szakmai tapasztalatok találkozni
