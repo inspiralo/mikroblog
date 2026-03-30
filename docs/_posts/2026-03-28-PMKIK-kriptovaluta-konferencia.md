@@ -28,7 +28,7 @@ stigmájából, hogy ez egy piramis játék lenne.
 
 <img src="{{ site.baseurl }}/assets/img/Bogar-Laszlo-PMKIK-kriptovaluta-konferencia.webp" alt="Bogár László közgazdász professzor, PMKIK - Kriptovaluta konferencia" style="width:100%;">
 
->A vállalkozói rétegnek, így a **PMKIK** által átadott üzenetben, egyértélműen előjött az a felismerés, hogy bizony az amerikai dollárral kapcsolatoban (USD) igen súlyos, az egész világra amúgy kivetülő gondok vannak. 
+>A vállalkozói rétegnek, így a **PMKIK** által átadott üzenetben, egyértélműen előjött az a felismerés, hogy bizony az amerikai dollárral kapcsolatosan (USD) igen súlyos, az egész világra amúgy kivetülő gondok vannak. 
 >Hiszen fedezete az körülbelül annyi, mint amit az az alábbi kép is jól prezentál, amit a konferencia szemléltetett. 👇
 <img src="{{ site.baseurl }}/assets/img/a-fo-problema-a-fedezet-nelkuli-usd.webp" alt="A fő probléma a fedezet nélküli USD" style="width:100%;">
 
