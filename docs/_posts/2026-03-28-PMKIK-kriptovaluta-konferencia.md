@@ -51,8 +51,8 @@ hanem nagyon. Szóval erre nem kaptam választ, de  sajnálatosan azért az szá
 >Ellenben amiért megérte jelen lennem az az, hogy a vállalkozói rétegnek át tudtam adni azt az üzenetet, ami egyébként a konferencián nem hangzott el, de felszólásomkor látható volt azért az előadók,
 mondandommal kapcsolatos egyetértése, hasonló elvi állásfoglalása 👇
 
-Röviden kifejettem annak lényegét, hogy sok értelme nincs a bitcoin vagy bármely egyéb kriptovaluta úgy mint altcoin fiat devizákhoz való mérése, de ha mégis ezt tesszük és csodálkozunk, hogy miért van,
-hogy egyre több intézményi befektető, államok is világszerte vásárolják a bitcoin-t, az árfolyama mégis esik. Itt mutattam rá arra, hogyha a BTC-t nem a saját hálózatán tartjuk, akkor az nagyon is problémás, ugyanis, amíg
+Röviden kifejettem annak lényegét, hogy sok értelme nincs a bitcoin vagy bármely egyéb kriptovaluta úgy mint altcoin fiat devizákhoz való mérésének, de ha mégis ezt tesszük és csodálkozunk,
+hogy egyre több intézményi befektető, államok is világszerte vásárolják a bitcoin-t, az árfolyama ennek ellenére esik hát akkor... Itt mutattam rá arra, hogyha a BTC-t nem a saját hálózatán tartjuk, akkor az nagyon is problémás, ugyanis, amíg
 a saját hálózatán a BTC-t nem lehet inflálni, addig egyéb, manipulatív jellegű hálózatokon nagyon is lehet. 
 
 - Ide soroltam a becsomagolt, wrapped btc-ket,
