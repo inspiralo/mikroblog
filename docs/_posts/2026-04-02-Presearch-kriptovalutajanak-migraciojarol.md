@@ -16,7 +16,7 @@ Nem olyan régen, **2026. március 13.**-án jeleztem Nektek, hogy felkeltette �
 a [Presearch jövőképét](https://inspiralo.github.io/mikroblog/kriptografia/Presearch-jovokep.html "Milyen változások lesznek a kedvenc decentralizált keresőnk jövőjében?") pedzegette.
 
 ℹ️ Áttanulmányozva a változásokat, nagyobb százalékos esélyét látom annak, hogy valamilyen formában a *search staking* azért megmarad. Szerintem a **Presearch ökoszisztémájában** végbemenő változások
-megértéséhez szükséges, három kardinális. az **Ethereum** világában szerepet játszó, ugyan a mainstream által egyre felkapottabb, de egyelőre csupán szabványajánlás kategóriában nyilvántartott innovációk
+megértéséhez szükséges, három kardinális, az **Ethereum** világában szerepet játszó, ugyan a mainstream által egyre felkapottabb, de egyelőre csupán szabványajánlás kategóriában nyilvántartott innovációk
 megismerése ⬇️
 
 - EIP-712
