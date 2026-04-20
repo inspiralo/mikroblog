@@ -33,7 +33,7 @@ A mikroblog a nagyobb, részletesebb tartalmaim előszobája: gyorsan bejárhat�
 </a>
 
 <a href="{{ '/kozeleti/' | relative_url }}" class="topic-card">
-  {% if latest_category == "konyvekrol" %}<span class="red-dot"></span>{% endif %}
+  {% if latest_category == "kozeleti" %}<span class="red-dot"></span>{% endif %}
   📁 <strong>Közéleti</strong>
 </a>
 
