@@ -10,8 +10,7 @@ categories: ["konyvekrol"]
 
 # Érdekes olvasmány Jack London-tól a Sea Wolf (magyarul : tengeri farkas)
 Nem pusztán azért ajánlom olvasára, mert egy lebilincselően érdekes, több kihívást tartogató kalandregény. Hanem azért is, mert a két 
-főszereplő **Humphrey van Wayden** az addig elkényeztetett életmódot élő értelmiségi és **Wolf Larsen** névre hallgató kapitány között rengeteg 
-nagyon érdekes és tanulságos dialógus zajlik. 
+főszereplő **Humphrey van Wayden** az addig elkényeztetett életmódot élő értelmiségi és **Wolf Larsen** névre hallgató kapitány között rengeteg nagyon érdekes és tanulságos dialógus zajlik. 
 
 >Bár a szerző, **Jack London** egyetlen egyszer sem mondta ki azt, hogy *kapitalizmus*, mégis, üzenetében előre jelezte mindazt a társadalmi problémát 
 amit a járadékalapú kapitalizmus kezdett el terjeszteni. 👇
