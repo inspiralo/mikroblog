@@ -2,7 +2,7 @@
 layout: default
 title: "A tengeri farkas, Jack London írótól több mint egy kalandregény"
 category: konyvekrol
-tags: [Jack London, tengeri farkas, kalandregény, járadék, kapitalizmus, kihívásokWolf Larsen, Humphrey van Weyden, fókavadászhajó, túlélés a tengeren, erő és hatalom, darwinizmus, morális dilemmák, lélektani regény, kalandregény, tengerregény, természet és ember viszonya, erőszak és túlélés, szabadság és kiszolgáltatottság, hajózás, küzdelem az elemekkel, emberi természet, erkölcsi fejlődés]
+tags: [Jack London,tengeri farkas,kalandregény,járadék,kapitalizmus,kihívások,Wolf Larsen,Humphrey van Weyden,fókavadászhajó,túlélés a tengeren,erő és hatalom,darwinizmus,morális dilemmák,lélektani regény,tengerregény,természet és ember viszonya,erőszak és túlélés,szabadság és kiszolgáltatottság,hajózás,küzdelem az elemekkel,emberi természet, erkölcsi fejlődés]
 date: 2026-05-22
 permalink: /konyvekrol/Jack-London-tengeri-farkas-uzeneterteku-kalandregeny.html
 categories: ["konyvekrol"]
