@@ -20,7 +20,8 @@ Minden mappa egy témakört jelöl, és saját `README.md` fájllal rendelkezik,
 
 ### Jelenleg most így, ezekkel a témákkal szolgálhatok:
 
- [🏨 Hotelek](https://github.com/inspiralo/mikroblog/tree/main/docs/hotelek), [🔑 Kriptográfia](https://github.com/inspiralo/mikroblog/tree/main/docs/kriptografia), 
+ [🏨 Hotelek](https://github.com/inspiralo/mikroblog/tree/main/docs/hotelek), 
+ [🔑 Kriptográfia](https://github.com/inspiralo/mikroblog/tree/main/docs/kriptografia), 
  [📚 Könyvekről](https://github.com/inspiralo/mikroblog/tree/main/docs/konyvekrol)
  [♨️ Wellness élményekről](https://github.com/inspiralo/mikroblog/tree/main/docs/wellness-elmenyekrol)
  [🤖 Mesterséges Intelligencia](https://github.com/inspiralo/mikroblog/tree/main/docs/mesterseges-intelligencia)
