@@ -25,38 +25,29 @@ A mikroblog a nagyobb, részletesebb tartalmaim előszobája: gyorsan bejárhat�
 {% assign latest_post = site.posts | sort: "date" | reverse | first %}
 {% assign latest_category = latest_post.categories | first %}
 
+{% assign categories = 
+  "hotelek:Hotelek,
+   konyvekrol:Könyvekről,
+   kozeleti:Közéleti,
+   kriptografia:Kriptográfia,
+   mesterseges-intelligencia:Mesterséges Intelligencia,
+   wellness-elmenyekrol:Wellness élményekről" | split: "," 
+%}
+
+{% assign sorted_categories = categories | sort %}
+
 <div class="sections">
 
-<a href="{{ '/konyvekrol/' | relative_url }}" class="topic-card">
-  {% if latest_category == "konyvekrol" %}<span class="red-dot"></span>{% endif %}
-  📁 <strong>Könyvekről</strong>
-</a>
+{% for item in sorted_categories %}
+  {% assign parts = item | split: ":" %}
+  {% assign slug = parts[0] %}
+  {% assign title = parts[1] %}
 
-<a href="{{ '/kozeleti/' | relative_url }}" class="topic-card">
-  {% if latest_category == "kozeleti" %}<span class="red-dot"></span>{% endif %}
-  📁 <strong>Közéleti</strong>
-</a>
-
-
-<a href="{{ '/kriptografia/' | relative_url }}" class="topic-card">
-  {% if latest_category == "kriptografia" %}<span class="red-dot"></span>{% endif %}
-  📁 <strong>Kriptográfia</strong>
-</a>
-
-<a href="{{ '/hotelek/' | relative_url }}" class="topic-card">
-  {% if latest_category == "hotelek" %}<span class="red-dot"></span>{% endif %}
-  📁 <strong>Hotelek</strong>
-</a>
-
-<a href="{{ '/wellness-elmenyekrol/' | relative_url }}" class="topic-card">
-  {% if latest_category == "wellness-elmenyekrol" %}<span class="red-dot"></span>{% endif %}
-  📁 <strong>Wellness élményekről</strong>
-</a>
-
-<a href="{{ '/mesterseges-intelligencia/' | relative_url }}" class="topic-card">
-  {% if latest_category == "mesterseges-intelligencia" %}<span class="red-dot"></span>{% endif %}
-  📁 <strong>Mesterséges Intelligencia</strong>
-</a>
+  <a href="{{ '/' | append: slug | append: '/' | relative_url }}" class="topic-card">
+    {% if latest_category == slug %}<span class="red-dot"></span>{% endif %}
+    📁 <strong>{{ title }}</strong>
+  </a>
+{% endfor %}
 
 </div>
 
