@@ -3,7 +3,7 @@ layout: default
 title: "Google előbb utóbb kinyírja az organikus találati élményt, egyfajta buborékképzéssel?"
 category: mesterseges-intelligencia
 tags: [mesterséges intelligencia,LLM,nagy nyelvi modell, Gemini nano modell, Chrome böngésző, Google]
-date: 2026-06-03
+date: 2026-06-13
 permalink: /mesterseges-intelligencia/google-organikus-halal.html
 categories: ["mesterseges-intelligencia"]
 ---
