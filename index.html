@@ -94,38 +94,36 @@ A mikroblog a nagyobb, részletesebb tartalmaim előszobája: gyorsan bejárhat�
  
 
 
+{% assign categories = 
+ “hotelek:Hotelek,
+  konyvekrol:Könyvekről,
+  kozeleti:Közéleti,
+  kriptografia:Kriptográfia,
+  mesterseges-intelligencia:Mesterséges Intelligencia,
+  wellness-elmenyekrol:Wellness élményekről” | split: “,” 
+%}
+
+
+ 
+  
+   {% assign sorted_categories = categories
+   sort %}
+  
+ 
 
 
 
- {% if latest_category == &quot;konyvekrol&quot; %}{% endif %}
- 📁 Könyvekről
 
+{% for item in sorted_categories %}
+ {% assign parts = item | split: &quot;:&quot; %}
+ {% assign slug = parts[0] %}
+ {% assign title = parts[1] %}
 
-
- {% if latest_category == &quot;kozeleti&quot; %}{% endif %}
- 📁 Közéleti
-
-
-
-
- {% if latest_category == &quot;kriptografia&quot; %}{% endif %}
- 📁 Kriptográfia
-
-
-
- {% if latest_category == &quot;hotelek&quot; %}{% endif %}
- 📁 Hotelek
-
-
-
- {% if latest_category == &quot;wellness-elmenyekrol&quot; %}{% endif %}
- 📁 Wellness élményekről
-
-
-
- {% if latest_category == &quot;mesterseges-intelligencia&quot; %}{% endif %}
- 📁 Mesterséges Intelligencia
-
+ 
+  {% if latest_category == slug %}{% endif %}
+  📁 {{ title }}
+ 
+{% endfor %}
 
 
 
@@ -202,36 +200,61 @@ A mikroblog a nagyobb, részletesebb tartalmaim előszobája: gyorsan bejárhat�
 
 <div class="sections">
 
-<a href="/mikroblog/konyvekrol/" class="topic-card">
+
   
-  📁 <strong>Könyvekről</strong>
-</a>
-
-<a href="/mikroblog/kozeleti/" class="topic-card">
   
-  📁 <strong>Közéleti</strong>
-</a>
-
-
-<a href="/mikroblog/kriptografia/" class="topic-card">
   
-  📁 <strong>Kriptográfia</strong>
-</a>
 
-<a href="/mikroblog/hotelek/" class="topic-card">
+  <a href="/mikroblog/%0A%20%20%20konyvekrol/" class="topic-card">
+    
+    📁 <strong>Könyvekről</strong>
+  </a>
+
   
-  📁 <strong>Hotelek</strong>
-</a>
-
-<a href="/mikroblog/wellness-elmenyekrol/" class="topic-card">
   
-  📁 <strong>Wellness élményekről</strong>
-</a>
+  
 
-<a href="/mikroblog/mesterseges-intelligencia/" class="topic-card">
-  <span class="red-dot"></span>
-  📁 <strong>Mesterséges Intelligencia</strong>
-</a>
+  <a href="/mikroblog/%0A%20%20%20kozeleti/" class="topic-card">
+    
+    📁 <strong>Közéleti</strong>
+  </a>
+
+  
+  
+  
+
+  <a href="/mikroblog/%0A%20%20%20kriptografia/" class="topic-card">
+    
+    📁 <strong>Kriptográfia</strong>
+  </a>
+
+  
+  
+  
+
+  <a href="/mikroblog/%0A%20%20%20mesterseges-intelligencia/" class="topic-card">
+    
+    📁 <strong>Mesterséges Intelligencia</strong>
+  </a>
+
+  
+  
+  
+
+  <a href="/mikroblog/%0A%20%20%20wellness-elmenyekrol/" class="topic-card">
+    
+    📁 <strong>Wellness élményekről</strong>
+  </a>
+
+  
+  
+  
+
+  <a href="/mikroblog/hotelek/" class="topic-card">
+    
+    📁 <strong>Hotelek</strong>
+  </a>
+
 
 </div>
 
