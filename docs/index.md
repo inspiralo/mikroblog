@@ -54,7 +54,7 @@ A mikroblog a nagyobb, részletesebb tartalmaim előszobája: gyorsan bejárhat�
 </a>
 
 <a href="{{ '/mesterseges-intelligencia/' | relative_url }}" class="topic-card">
-  {% if latest_category == "wellness-elmenyekrol" %}<span class="red-dot"></span>{% endif %}
+  {% if latest_category == "mesterseges-intelligencia" %}<span class="red-dot"></span>{% endif %}
   📁 <strong>Mesterséges Intelligencia</strong>
 </a>
 
