@@ -23,7 +23,7 @@ Minden mappa egy témakört jelöl, és saját `README.md` fájllal rendelkezik,
  [🏨 Hotelek](https://github.com/inspiralo/mikroblog/tree/main/docs/hotelek), [🔑 Kriptográfia](https://github.com/inspiralo/mikroblog/tree/main/docs/kriptografia), 
  [📚 Könyvekről](https://github.com/inspiralo/mikroblog/tree/main/docs/konyvekrol)
  [♨️ Wellness élményekről](https://github.com/inspiralo/mikroblog/tree/main/docs/wellness-elmenyekrol)
- [♨️ Mesterséges Intelligencia](https://github.com/inspiralo/mikroblog/tree/main/docs/mesterseges-intelligencia)
+ [🤖 Mesterséges Intelligencia](https://github.com/inspiralo/mikroblog/tree/main/docs/mesterseges-intelligencia)
 
 
 📣 Ez a projekt egy kísérlet arra, hogyan lehet a GitHub nem csak fejlesztői brainstorming eszköz, hanem **publikációs platform** is:  
