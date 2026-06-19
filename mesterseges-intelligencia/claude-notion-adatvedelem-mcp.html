@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RHBHX1SJFT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-RHBHX1SJFT');
+</script>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow">
+  <meta name="google-site-verification" content="PmmDkzXqp2XU_rrwqWjlzWymh3ZcoXHG5N9ib6DFrwM" />
+
+  <!-- Dinamikus OG title -->
+  <meta property="og:title" content="A legtöbb felhasználó rosszul köti össze a Claude‑ot a Notionnel – és észre sem veszi, mennyi adatot ad át">
+
+  <!-- Robusztus OG description fallback -->
+  
+    <meta property="og:description" content="A legtöbb ember automatikusan rányom a Claude Desktop → Settings → Connectors → Notion felhős OAuth‑os csatlakozásra.
+
+">
+  
+
+  <meta property="og:image" content="https://inspiralo.github.io/mikroblog/inspirator-GitHub-kozossegi-megosztas-1280x640.png">
+
+  <!-- FIX: OG URL mindig helyes, még Pages-bug esetén is -->
+  <meta property="og:url" content="https://inspiralo.github.io/mikroblog/mesterseges-intelligencia/claude-notion-adatvedelem-mcp.html">
+
+  <meta property="og:type" content="article">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://inspiralo.github.io/mikroblog/inspirator-GitHub-kozossegi-megosztas-1280x640.png">
+
+  <title>A legtöbb felhasználó rosszul köti össze a Claude‑ot a Notionnel – és észre sem veszi, mennyi adatot ad át</title>
+
+  <!-- GitHub-szerű Markdown stílus -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.5.1/github-markdown.min.css">
+
+  <!-- Saját stílusok – baseurl-kompatibilis -->
+  <link rel="stylesheet" href="/mikroblog/assets/css/style.css">
+
+  <link rel="icon" type="image/x-icon" href="/mikroblog/favicon.ico">
+
+
+  <!-- JSON-LD strukturált adat -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "A legtöbb felhasználó rosszul köti össze a Claude‑ot a Notionnel – és észre sem veszi, mennyi adatot ad át",
+    "description": "A legtöbb ember automatikusan rányom a Claude Desktop → Settings → Connectors → Notion felhős OAuth‑os csatlakozásra.
+
+",
+    "datePublished": "2026-06-19 00:00:00 +0000",
+
+    "author": {
+      "@type": "Person",
+      "name": "Inspirátor",
+      "sameAs": [
+        "https://inspiralo.github.io",
+        "https://inspiralo.github.io/mikroblog/",
+        "https://inspirator.blog",
+        "https://seo.inspirator.blog",
+        "https://substack.com/@mrgeniusrefferator"
+      ]
+    },
+
+    "publisher": {
+      "@type": "Person",
+      "name": "Inspirátor"
+    },
+
+    "brand": {
+      "@type": "Brand",
+      "name": "Inspirátor"
+    },
+
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://inspiralo.github.io/mikroblog/mesterseges-intelligencia/claude-notion-adatvedelem-mcp.html"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- GitHub-szerű felső fejléc -->
+  <header class="site-header">
+    <div class="container">
+      <a href="/mikroblog/" class="site-title">Mikroblog</a>
+    </div>
+  </header>
+
+  <main class="page-content" aria-label="Content">
+    <div class="markdown-body">
+      <p>A legtöbb ember automatikusan rányom a <strong>Claude Desktop → Settings → Connectors → Notion</strong> felhős OAuth‑os csatlakozásra.</p>
+
+<blockquote>
+  <p>Ez a „kényelmes” út viszont <strong>adatvédelmi szempontból a lehető legrosszabb döntés</strong>❗</p>
+</blockquote>
+
+<h2 id="-miért-rossz-döntés-a-claude-ai-felhőalapú-csatlakoztatás-a-notion-hez">💡 Miért rossz döntés a Claude AI felhőalapú csatlakoztatás a Notion-hez❓</h2>
+
+<p>Mert a felhős Notion MCP szerver <strong>örökli a teljes jogosultságkészletedet</strong>, és a Claude nem azt látja, amit te engedélyezel neki — hanem <strong>mindent, amit az OAuth token enged</strong>.<br />
+Ez nem finomhangolható, nem auditálható, és nem is lokális.</p>
+
+<p>✅ A helyes megoldás:<br />
+<strong>saját, lokálisan futó MCP szerver</strong>, ahol te adod meg az Internal Integration Secretet, te szabályozod az API‑hívásokat, és minden adatmozgás <strong>a saját gépeden</strong> történik.<br />
+Ez az egyetlen módja annak, hogy a Claude valóban csak azt lássa, amit te engedsz neki.</p>
+
+<p>A részletes technikai útmutató és a táblázatos összehasonlítás itt található:<br />
+👉 <a href="https://inspirator.blog/claude-ai-notion-integracio/">Claude AI integráció</a></p>
+
+    </div>
+
+    
+      <div class="share-links">
+  <span>💡 Gondolatom hasznosnak vélted❓ Oszd meg:</span>
+
+  <div class="share-container">
+
+    
+    
+    
+    
+
+    <!-- Facebook -->
+    <a class="share fb"
+       href="https://www.facebook.com/sharer/sharer.php?u=https://inspiralo.github.io/mikroblog/mesterseges-intelligencia/claude-notion-adatvedelem-mcp.html"
+       target="_blank" rel="noopener">Facebook</a>
+
+    <!-- X / Twitter -->
+    <a class="share x"
+       href="https://twitter.com/intent/tweet?text=A%20legt%C3%B6bb%20felhaszn%C3%A1l%C3%B3%20rosszul%20k%C3%B6ti%20%C3%B6ssze%20a%20Claude%E2%80%91ot%20a%20Notionnel%20%E2%80%93%20%C3%A9s%20%C3%A9szre%20sem%20veszi,%20mennyi%20adatot%20ad%20%C3%A1t&url=https://inspiralo.github.io/mikroblog/mesterseges-intelligencia/claude-notion-adatvedelem-mcp.html"
+       target="_blank" rel="noopener">X</a>
+
+    <!-- LinkedIn -->
+    <a class="share li"
+       href="https://www.linkedin.com/sharing/share-offsite/?url=https://inspiralo.github.io/mikroblog/mesterseges-intelligencia/claude-notion-adatvedelem-mcp.html"
+       target="_blank" rel="noopener">LinkedIn</a>
+
+    <!-- Reddit -->
+    <a class="share rd"
+       href="https://www.reddit.com/submit?url=https://inspiralo.github.io/mikroblog/mesterseges-intelligencia/claude-notion-adatvedelem-mcp.html&title=A%20legt%C3%B6bb%20felhaszn%C3%A1l%C3%B3%20rosszul%20k%C3%B6ti%20%C3%B6ssze%20a%20Claude%E2%80%91ot%20a%20Notionnel%20%E2%80%93%20%C3%A9s%20%C3%A9szre%20sem%20veszi,%20mennyi%20adatot%20ad%20%C3%A1t"
+       target="_blank" rel="noopener">Reddit</a>
+
+    <!-- Telegram -->
+    <a class="share tg"
+       href="https://t.me/share/url?url=https://inspiralo.github.io/mikroblog/mesterseges-intelligencia/claude-notion-adatvedelem-mcp.html&text=A%20legt%C3%B6bb%20felhaszn%C3%A1l%C3%B3%20rosszul%20k%C3%B6ti%20%C3%B6ssze%20a%20Claude%E2%80%91ot%20a%20Notionnel%20%E2%80%93%20%C3%A9s%20%C3%A9szre%20sem%20veszi,%20mennyi%20adatot%20ad%20%C3%A1t"
+       target="_blank" rel="noopener">Telegram</a>
+
+    <!-- WhatsApp -->
+    <a class="share wa"
+       href="https://api.whatsapp.com/send?text=A%20legt%C3%B6bb%20felhaszn%C3%A1l%C3%B3%20rosszul%20k%C3%B6ti%20%C3%B6ssze%20a%20Claude%E2%80%91ot%20a%20Notionnel%20%E2%80%93%20%C3%A9s%20%C3%A9szre%20sem%20veszi,%20mennyi%20adatot%20ad%20%C3%A1t%20https://inspiralo.github.io/mikroblog/mesterseges-intelligencia/claude-notion-adatvedelem-mcp.html"
+       target="_blank" rel="noopener">WhatsApp</a>
+
+    <!-- VKontakte -->
+    <a class="share vk"
+       href="https://vk.com/share.php?url=https://inspiralo.github.io/mikroblog/mesterseges-intelligencia/claude-notion-adatvedelem-mcp.html&title=A%20legt%C3%B6bb%20felhaszn%C3%A1l%C3%B3%20rosszul%20k%C3%B6ti%20%C3%B6ssze%20a%20Claude%E2%80%91ot%20a%20Notionnel%20%E2%80%93%20%C3%A9s%20%C3%A9szre%20sem%20veszi,%20mennyi%20adatot%20ad%20%C3%A1t"
+       target="_blank" rel="noopener">VK</a>
+
+  </div>
+</div>
+
+      <div class="back-button">
+        <button type="button" onclick="if (document.referrer) { history.back(); } else { window.location.href='/mikroblog/'; }">
+          ⬅️ Vissza
+        </button>
+      </div>
+    
+  </main>
+
+</body>
+</html>
