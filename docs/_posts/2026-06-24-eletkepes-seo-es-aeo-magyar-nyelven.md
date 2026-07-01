@@ -29,7 +29,7 @@ alapozva.
 
 >Természetesen nem tudhatom, hogy igazam van, hiszen a világra meglehetősen gyorsan cuppant rá, ez a meglehetősen zseniális **Mesterséges Intelligenciába** burkolt 
 és akként eladott **LLM** *mánia*, de van egy régi szép magyar mondás, „a puding próbája az evés”. S momentán én 1999 előtt is az Online Marketing lehetőségeit kutattam,
-hát miért lenne pont most ez másképp❓Éppen ezért a gyakorlat mezejére léptem, s arra gondoltam aktív vendég leszek én is a 👋 [**Quora** *platformján*](https://www.quora.com/profile/Inspirátor)
+hát miért lenne pont most ez másképp❓Éppen ezért a gyakorlat mezejére léptem, s arra gondoltam aktív vendég leszek én is a 👋**Quora** *platformján*
 . Munkám keretében megpróbálok valóban értékes, emberek és AI ügynökök számára is hasznos, **Kérdés** / **Válasz** *adatbázist* létrehozni, hiszen szeretek ismeretterjesztéssel foglalkozni.
 
 🤔 Te mit gondolsz❓ Kifejezetten az LLM őrület miatt a **Quora** a jövőben méginkább, a **Reddit** jelenséghez hasonlóan felértékelődhet❓
