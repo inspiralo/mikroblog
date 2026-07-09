@@ -18,13 +18,13 @@ Ezek a licencek egy új, GPU‑alapú decentralizált infrastruktúrát hoznak a
 </div>
 
 <div style="margin-top:20px;">
-  <div style="background:#f7f7f7; padding:12px 15px; font-size:20px; border-radius:4px; margin-bottom:8px; text-align:center;">
+  <div style="background:#f7f7f7; padding:12px 15px; font-size:20px; border-radius:4px; margin-bottom:8px; display:flex; justify-content:center;">
     Eddig lehet licitet tenni.
   </div>
-  <div style="background:#f7f7f7; padding:12px 15px; font-size:20px; border-radius:4px; margin-bottom:8px; text-align:center;">
+  <div style="background:#f7f7f7; padding:12px 15px; font-size:20px; border-radius:4px; margin-bottom:8px; display:flex; justify-content:center;">
     Eddig lehet felüllicitálni másokat.
   </div>
-  <div style="background:#f7f7f7; padding:12px 15px; font-size:20px; border-radius:4px; margin-bottom:8px; text-align:center;">
+  <div style="background:#f7f7f7; padding:12px 15px; font-size:20px; border-radius:4px; margin-bottom:8px; display:flex; justify-content:center;">
     Eddig dől el, ki kerül be a top 75-be.
   </div>
 </div>
@@ -34,13 +34,13 @@ Ezek a licencek egy új, GPU‑alapú decentralizált infrastruktúrát hoznak a
 </div>
 
 <div style="margin-top:20px;">
-  <div style="background:#2D8EFF; padding:12px 15px; font-size:20px; border-radius:4px; margin-bottom:8px; color:#ffffff; text-align:center;">
+  <div style="background:#2D8EFF; padding:12px 15px; font-size:20px; border-radius:4px; margin-bottom:8px; color:#ffffff; display:flex; justify-content:center;">
     az aukció lezár,
   </div>
-  <div style="background:#2D8EFF; padding:12px 15px; font-size:20px; border-radius:4px; margin-bottom:8px; color:#ffffff; text-align:center;">
+  <div style="background:#2D8EFF; padding:12px 15px; font-size:20px; border-radius:4px; margin-bottom:8px; color:#ffffff; display:flex; justify-content:center;">
     nem lehet új licitet tenni,
   </div>
-  <div style="background:#2D8EFF; padding:12px 15px; font-size:20px; border-radius:4px; margin-bottom:8px; color:#ffffff; text-align:center;">
+  <div style="background:#2D8EFF; padding:12px 15px; font-size:20px; border-radius:4px; margin-bottom:8px; color:#ffffff; display:flex; justify-content:center;">
     nem lehet módosítani,
   </div>
 </div>
