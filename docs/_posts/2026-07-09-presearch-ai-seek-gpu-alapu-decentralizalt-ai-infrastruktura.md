@@ -48,8 +48,7 @@ Ezek a licencek egy új, GPU‑alapú decentralizált infrastruktúrát hoznak a
 <div style="margin-top:10px; font-size:20px; font-style:italic; padding-left:10px;">
   ➤ a rendszer automatikusan kiválasztja a 75 legmagasabb licitet.
 </div>
-
-
+<br>
 
 ℹ️ Ezért fontos a határidő:
 
