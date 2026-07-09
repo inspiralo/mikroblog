@@ -13,41 +13,42 @@ categories: ["kriptografia"]
 A Presearch 2026 júliusában elindította a **Series IV Node Auction** programot, amelyben **75 darab AI‑Seek Node License** kerül aukcióra. 
 Ezek a licencek egy új, GPU‑alapú decentralizált infrastruktúrát hoznak a hálózatba, kifejezetten az AI‑alapú keresés következő generációjához kapcsolódóan.
 
-<div style="border:2px solid #ff0000; padding:15px; border-radius:8px; text-align:center; font-size:22px; font-weight:bold;">
+<div style="border:2px solid #ff0000; padding:15px; border-radius:8px; text-align:center; font-size:22px; font-weight:bold; margin-top:20px;">
 📅 Határidő: <span style="color:red;">2026. július 22. 9:00 – július 26. 21:00 PST</span>
 </div>
 
-<div style="margin-top:15px;">
-  <div style="background:#f7f7f7; padding:10px 15px; font-size:18px; border-radius:4px; margin-bottom:8px;">
+<div style="margin-top:20px;">
+  <div style="background:#f7f7f7; padding:12px 15px; font-size:20px; border-radius:4px; margin-bottom:8px; text-align:center;">
     Eddig lehet licitet tenni.
   </div>
-  <div style="background:#f7f7f7; padding:10px 15px; font-size:18px; border-radius:4px; margin-bottom:8px;">
+  <div style="background:#f7f7f7; padding:12px 15px; font-size:20px; border-radius:4px; margin-bottom:8px; text-align:center;">
     Eddig lehet felüllicitálni másokat.
   </div>
-  <div style="background:#f7f7f7; padding:10px 15px; font-size:18px; border-radius:4px; margin-bottom:8px;">
+  <div style="background:#f7f7f7; padding:12px 15px; font-size:20px; border-radius:4px; margin-bottom:8px; text-align:center;">
     Eddig dől el, ki kerül be a top 75-be.
   </div>
 </div>
 
-<div style="text-align:center; font-size:24px; font-weight:bold; margin-top:25px;">
+<div style="text-align:center; font-size:26px; font-weight:bold; margin-top:30px;">
   A határidő után:
 </div>
 
-<div style="margin-top:15px;">
-  <div style="background:#fff4f4; padding:10px 15px; font-size:18px; border-radius:4px; margin-bottom:8px;">
+<div style="margin-top:20px;">
+  <div style="background:#2D8EFF; padding:12px 15px; font-size:20px; border-radius:4px; margin-bottom:8px; color:#ffffff;">
     az aukció lezár,
   </div>
-  <div style="background:#fff4f4; padding:10px 15px; font-size:18px; border-radius:4px; margin-bottom:8px;">
+  <div style="background:#2D8EFF; padding:12px 15px; font-size:20px; border-radius:4px; margin-bottom:8px; color:#ffffff;">
     nem lehet új licitet tenni,
   </div>
-  <div style="background:#fff4f4; padding:10px 15px; font-size:18px; border-radius:4px; margin-bottom:8px;">
+  <div style="background:#2D8EFF; padding:12px 15px; font-size:20px; border-radius:4px; margin-bottom:8px; color:#ffffff;">
     nem lehet módosítani,
   </div>
 </div>
 
-<div style="margin-top:10px; font-size:18px; font-style:italic; padding-left:10px;">
+<div style="margin-top:10px; font-size:20px; font-style:italic; padding-left:10px;">
   ➤ a rendszer automatikusan kiválasztja a 75 legmagasabb licitet.
 </div>
+
 
 
 ℹ️ Ezért fontos a határidő:
