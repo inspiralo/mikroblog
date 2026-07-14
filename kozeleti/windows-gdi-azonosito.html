@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RHBHX1SJFT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-RHBHX1SJFT');
+</script>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow">
+  <meta name="google-site-verification" content="PmmDkzXqp2XU_rrwqWjlzWymh3ZcoXHG5N9ib6DFrwM" />
+
+  <!-- Dinamikus OG title -->
+  <meta property="og:title" content="A Windows GDI azonosító és a digitális nyomkövetés valósága">
+
+  <!-- Robusztus OG description fallback -->
+  
+    <meta property="og:description" content="Egy okkal több, hogy inkább GNU/Linux -ot használj 😉
+
+">
+  
+
+  <meta property="og:image" content="https://inspiralo.github.io/mikroblog/inspirator-GitHub-kozossegi-megosztas-1280x640.png">
+
+  <!-- FIX: OG URL mindig helyes, még Pages-bug esetén is -->
+  <meta property="og:url" content="https://inspiralo.github.io/mikroblog/kozeleti/windows-gdi-azonosito.html">
+
+  <meta property="og:type" content="article">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://inspiralo.github.io/mikroblog/inspirator-GitHub-kozossegi-megosztas-1280x640.png">
+
+  <title>A Windows GDI azonosító és a digitális nyomkövetés valósága</title>
+
+  <!-- GitHub-szerű Markdown stílus -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.5.1/github-markdown.min.css">
+
+  <!-- Saját stílusok – baseurl-kompatibilis -->
+  <link rel="stylesheet" href="/mikroblog/assets/css/style.css">
+
+  <link rel="icon" type="image/x-icon" href="/mikroblog/favicon.ico">
+
+
+  <!-- JSON-LD strukturált adat -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "A Windows GDI azonosító és a digitális nyomkövetés valósága",
+    "description": "Egy okkal több, hogy inkább GNU/Linux -ot használj 😉
+
+",
+    "datePublished": "2026-07-14 00:00:00 +0000",
+
+    "author": {
+      "@type": "Person",
+      "name": "Inspirátor",
+      "sameAs": [
+        "https://inspiralo.github.io",
+        "https://inspiralo.github.io/mikroblog/",
+        "https://inspirator.blog",
+        "https://seo.inspirator.blog",
+        "https://substack.com/@mrgeniusrefferator"
+      ]
+    },
+
+    "publisher": {
+      "@type": "Person",
+      "name": "Inspirátor"
+    },
+
+    "brand": {
+      "@type": "Brand",
+      "name": "Inspirátor"
+    },
+
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://inspiralo.github.io/mikroblog/kozeleti/windows-gdi-azonosito.html"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- GitHub-szerű felső fejléc -->
+  <header class="site-header">
+    <div class="container">
+      <a href="/mikroblog/" class="site-title">Mikroblog</a>
+    </div>
+  </header>
+
+  <main class="page-content" aria-label="Content">
+    <div class="markdown-body">
+      <h1 id="egy-okkal-több-hogy-inkább-gnulinux--ot-használj-">Egy okkal több, hogy inkább GNU/Linux -ot használj 😉</h1>
+
+<blockquote>
+  <p>Ne értsen félre senki, egy bűnözőt elkapni remek dolog. De éppenséggel itt társadalmak akaratukon kívül történő megfigyelése zajlik,
+ami most felszínre is jött 👇</p>
+</blockquote>
+
+<p>A Windows operációs rendszer minden eszközön létrehoz egy úgynevezett <strong>Global Device Identifier (GDI / GDID)</strong> azonosítót. 
+Ez egy tartós, beégetett eszközazonosító, amely nem változik akkor sem, ha a felhasználó újratelepíti a rendszert, hardvert cserél, 
+vagy különböző hálózatokból használja a gépet.</p>
+
+<p>A GDID eredetileg diagnosztikai telemetriára, hibajelentésekhez és licencellenőrzéshez készült, de a gyakorlatban 
+<strong>összekapcsolható a felhasználó online aktivitásával</strong>, ha a hatóságok hozzáférnek a Microsoft telemetriai naplóihoz, márpedig hozzá tudnak
+férni, elég áttanulányozni a jogszabályokat.</p>
+
+<p>A közelmúltban egy ismert kiberbűnözői csoport tagját is ezzel az azonosítóval sikerült beazonosítani: a GDID minden Windows‑telepítésben
+jelen van, így a hatóságok több különböző eszközön is ugyanazt a tartós azonosítót találták meg.</p>
+
+<p>Ez a történet jól mutatja, hogy a modern digitális környezetben <strong>a hardverhez kötött azonosítók</strong> milyen jelentős szerepet játszanak a nyomkövetésben, 
+a bűnüldözésben és az adatvédelemről szóló közéleti vitákban.</p>
+
+<blockquote>
+  <p>Fogadd meg a tanácsom és kezdj el, minél előbb ismerkedni a GNU/Linux -al,
+hiszen ez a GDID még a gestapós leleményességen is túlmutat❗</p>
+</blockquote>
+
+<h2 id="a-gdid-működési-filozófiájáról">A GDID működési filozófiájáról</h2>
+
+<p>Egyébként nem a személyedet azonosítja. Teljesen mindegy, hogy a Windows gépeden Te kamuadatot, stb. adtál meg. Nem ez a lényeg. Magát az
+eszközt azonosítja és rögzíti a telematriai naplójában. Akkor is, ha soha a Windows rendszerrel nem csatlakoztál a felhőalapú szolgáltatáshoz.
+De miután az eszköz nyomkövetett, azután már egy hatósági eljárás során, nagyon könnyen az eszközt használó személyt is fel lehet fedni. 
+Például a legtöbb internet szolgáltató tagadja, hogy IP alapján tudná ki is van mögötte. De ez hülyeség. <strong>DHCP</strong> alapon minden <em>szolgáltató cég</em> pontosan
+tudja, hogy az adott pillanatban <em>kiosztott</em> <strong>IP</strong> melyik előfizetőjükhöz tartozik. Egyébként <strong>EU</strong>-n belül csak el kell olvasni figyelmesen a <strong>GDPR</strong>-t, abban is benne van,
+hogy ezek az adatok hatósági eljárások során beszerezhetők.</p>
+
+<blockquote>
+  <p>👋 A gond itt az, ami egyébként az adatvédelmi aggályt okozza, hogy korántsem csak bűnözők személyazonossága fedhető fel… szóval lényeg a lényeg, a tisztességes becsületes emberek
+számára sokkal jobb az az aranyos kis pingvin 😊</p>
+</blockquote>
+
+    </div>
+
+    
+      <div class="share-links">
+  <span>💡 Gondolatom hasznosnak vélted❓ Oszd meg:</span>
+
+  <div class="share-container">
+
+    
+    
+    
+    
+
+    <!-- Facebook -->
+    <a class="share fb"
+       href="https://www.facebook.com/sharer/sharer.php?u=https://inspiralo.github.io/mikroblog/kozeleti/windows-gdi-azonosito.html"
+       target="_blank" rel="noopener">Facebook</a>
+
+    <!-- X / Twitter -->
+    <a class="share x"
+       href="https://twitter.com/intent/tweet?text=A%20Windows%20GDI%20azonos%C3%ADt%C3%B3%20%C3%A9s%20a%20digit%C3%A1lis%20nyomk%C3%B6vet%C3%A9s%20val%C3%B3s%C3%A1ga&url=https://inspiralo.github.io/mikroblog/kozeleti/windows-gdi-azonosito.html"
+       target="_blank" rel="noopener">X</a>
+
+    <!-- LinkedIn -->
+    <a class="share li"
+       href="https://www.linkedin.com/sharing/share-offsite/?url=https://inspiralo.github.io/mikroblog/kozeleti/windows-gdi-azonosito.html"
+       target="_blank" rel="noopener">LinkedIn</a>
+
+    <!-- Reddit -->
+    <a class="share rd"
+       href="https://www.reddit.com/submit?url=https://inspiralo.github.io/mikroblog/kozeleti/windows-gdi-azonosito.html&title=A%20Windows%20GDI%20azonos%C3%ADt%C3%B3%20%C3%A9s%20a%20digit%C3%A1lis%20nyomk%C3%B6vet%C3%A9s%20val%C3%B3s%C3%A1ga"
+       target="_blank" rel="noopener">Reddit</a>
+
+    <!-- Telegram -->
+    <a class="share tg"
+       href="https://t.me/share/url?url=https://inspiralo.github.io/mikroblog/kozeleti/windows-gdi-azonosito.html&text=A%20Windows%20GDI%20azonos%C3%ADt%C3%B3%20%C3%A9s%20a%20digit%C3%A1lis%20nyomk%C3%B6vet%C3%A9s%20val%C3%B3s%C3%A1ga"
+       target="_blank" rel="noopener">Telegram</a>
+
+    <!-- WhatsApp -->
+    <a class="share wa"
+       href="https://api.whatsapp.com/send?text=A%20Windows%20GDI%20azonos%C3%ADt%C3%B3%20%C3%A9s%20a%20digit%C3%A1lis%20nyomk%C3%B6vet%C3%A9s%20val%C3%B3s%C3%A1ga%20https://inspiralo.github.io/mikroblog/kozeleti/windows-gdi-azonosito.html"
+       target="_blank" rel="noopener">WhatsApp</a>
+
+    <!-- VKontakte -->
+    <a class="share vk"
+       href="https://vk.com/share.php?url=https://inspiralo.github.io/mikroblog/kozeleti/windows-gdi-azonosito.html&title=A%20Windows%20GDI%20azonos%C3%ADt%C3%B3%20%C3%A9s%20a%20digit%C3%A1lis%20nyomk%C3%B6vet%C3%A9s%20val%C3%B3s%C3%A1ga"
+       target="_blank" rel="noopener">VK</a>
+
+  </div>
+</div>
+
+      <div class="back-button">
+        <button type="button" onclick="if (document.referrer) { history.back(); } else { window.location.href='/mikroblog/'; }">
+          ⬅️ Vissza
+        </button>
+      </div>
+    
+  </main>
+
+</body>
+</html>
