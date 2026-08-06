@@ -52,6 +52,11 @@ A mikroblog a nagyobb, részletesebb tartalmaim előszobája: gyorsan bejárhat�
   📁 <strong>Mesterséges Intelligencia</strong>
 </a>
 
+<a href="{{ '/online-marketing/' | relative_url }}" class="topic-card">
+  {% if latest_category == "online-marketing" %}<span class="red-dot"></span>{% endif %}
+  📁 <strong>Online Marketing</strong>
+</a>
+
 <a href="{{ '/wellness-elmenyekrol/' | relative_url }}" class="topic-card">
   {% if latest_category == "wellness-elmenyekrol" %}<span class="red-dot"></span>{% endif %}
   📁 <strong>Wellness élményekről</strong>
