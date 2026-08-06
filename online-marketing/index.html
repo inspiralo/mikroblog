@@ -56,9 +56,55 @@
     "description": "Online Marketing
 
  Az Online Marketing világa igen szerteágazó. Ezekben a témákban apróbb gondolataim hasznosak lehetnek számodra, ha tartalomfejlesztő vagy.
-Nem tervezem, hogy sűrűn írnék ide, de ha valamit érdekesnek találok arról teszek egy megjegyzést. Már csak azért is mert az utóbbi időkben az
-Online Marketing folyamatokat inkább negatív változások érték, így ha vannak jó dolgok, megérdemli a kommunikációt 😉
+Nem tervezem, hogy sűrűn írnék ide, de ha valamit érdekesnek találok arról teszek egy megjegyzést. Már csak azért is mert az utóbbi időkben az Online Marketing folyamatokat inkább negatív változások érték, így ha vannak jó dolgok, megérdemli a kommunikációt 😉
 
+
+
+
+Bejegyzéseim időrendben 👇
+
+{% assign raw_posts = site.categories[“online-marketing”] %}
+{% if raw_posts %}
+ {% assign posts = raw_posts | sort: “date” | reverse %}
+{% else %}
+ {% assign posts = “” %}
+{% endif %}
+
+
+ 
+  
+   {% assign years = posts
+   group_by_exp: “post”, “post.date
+   date: ‘%Y’” %}
+  
+ 
+
+
+{% for year in years %}
+
+ {{ year.name }}
+
+ {% assign months = year.items | group_by_exp: &quot;post&quot;, &quot;post.date | date: &#39;%Y. %m.&#39;&quot; %}
+
+ {% for month in months %}
+ 
+  {{ month.name }}
+  
+   {% for post in month.items %}
+   
+    {{ post.title }}
+    {{ post.date | date: &quot;%Y. %m. %d.&quot; }}
+    {% if post.tags %}
+     Címkék: {{ post.tags | join: &#39;, &#39; }}
+    {% endif %}
+   
+   {% endfor %}
+  
+ 
+ {% endfor %}
+
+
+{% endfor %}
 ",
     "datePublished": "",
 
@@ -105,9 +151,13 @@ Online Marketing folyamatokat inkább negatív változások érték, így ha van
       <h1 id="online-marketing">Online Marketing</h1>
 <blockquote>
   <p>Az Online Marketing világa igen szerteágazó. Ezekben a témákban apróbb gondolataim hasznosak lehetnek számodra, ha tartalomfejlesztő vagy.
-Nem tervezem, hogy sűrűn írnék ide, de ha valamit érdekesnek találok arról teszek egy megjegyzést. Már csak azért is mert az utóbbi időkben az
-Online Marketing folyamatokat inkább negatív változások érték, így ha vannak jó dolgok, megérdemli a kommunikációt 😉</p>
+Nem tervezem, hogy sűrűn írnék ide, de ha valamit érdekesnek találok arról teszek egy megjegyzést. Már csak azért is mert az utóbbi időkben az Online Marketing folyamatokat inkább negatív változások érték, így ha vannak jó dolgok, megérdemli a kommunikációt 😉</p>
 </blockquote>
+
+<hr />
+
+<h2 id="bejegyzéseim-időrendben-">Bejegyzéseim időrendben 👇</h2>
+
 
     </div>
 
